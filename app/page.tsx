@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_top,_rgba(251,191,36,0.18),_transparent_28%),linear-gradient(135deg,#1c1917_0%,#292524_45%,#0c0a09_100%)] px-6 py-10">
@@ -6,7 +8,7 @@ export default function Home() {
       <section className="relative grid w-full max-w-5xl overflow-hidden rounded-[2rem] border border-amber-200/15 bg-stone-900/75 shadow-[0_30px_80px_rgba(0,0,0,0.45)] backdrop-blur md:grid-cols-[1.1fr_0.9fr]">
         <div className="flex flex-col justify-between gap-10 bg-[linear-gradient(180deg,rgba(245,158,11,0.22),rgba(120,53,15,0.08))] p-8 sm:p-10">
           <div className="space-y-5">
-            <span className="inline-flex w-fit rounded-full border border-amber-300/30 bg-amber-300/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-amber-100">
+            <span className="inline-flex w-fit rounded-full border border-amber-300/30 bg-amber-300/10 px-4 py-1 text-xs font-semibold tracking-[0.35em] text-amber-100 uppercase">
               Ayyanar Restaurant
             </span>
             <div className="space-y-4">
@@ -40,15 +42,15 @@ export default function Home() {
         <div className="flex items-center justify-center p-6 sm:p-10">
           <div className="w-full max-w-md rounded-[1.75rem] border border-white/10 bg-stone-950/80 p-7 shadow-2xl">
             <div className="mb-6 space-y-2">
-              <p className="text-sm uppercase tracking-[0.3em] text-amber-300/80">
+              <p className="text-sm tracking-[0.3em] text-amber-300/80 uppercase">
                 Staff Login
               </p>
               <h2 className="text-3xl font-semibold text-white">
                 Sign in to continue
               </h2>
               <p className="text-sm leading-6 text-stone-400">
-                Use any dummy credentials for now. Backend authentication is
-                not connected yet.
+                Use any dummy credentials for now. Backend authentication is not
+                connected yet.
               </p>
             </div>
 
@@ -64,7 +66,7 @@ export default function Home() {
                   id="email"
                   type="email"
                   placeholder="manager@ayyanar.com"
-                  className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition focus:border-amber-300/60 focus:bg-white/8"
+                  className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white transition outline-none focus:border-amber-300/60 focus:bg-white/8"
                 />
               </div>
 
@@ -76,21 +78,27 @@ export default function Home() {
                   >
                     Password
                   </label>
-                  <a href="#" className="text-sm text-amber-300 hover:text-amber-200">
+                  <Link
+                    href="/forgot-password"
+                    className="text-sm text-amber-300 hover:text-amber-200"
+                  >
                     Forgot password?
-                  </a>
+                  </Link>
                 </div>
                 <input
                   id="password"
                   type="password"
                   placeholder="Enter your password"
-                  className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition focus:border-amber-300/60 focus:bg-white/8"
+                  className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white transition outline-none focus:border-amber-300/60 focus:bg-white/8"
                 />
               </div>
 
               <div className="flex items-center justify-between text-sm text-stone-300">
                 <label className="flex items-center gap-2">
-                  <input type="checkbox" className="h-4 w-4 rounded border-white/20" />
+                  <input
+                    type="checkbox"
+                    className="h-4 w-4 rounded border-white/20"
+                  />
                   Keep me signed in
                 </label>
                 <span>Shift starts at 6:30 PM</span>
