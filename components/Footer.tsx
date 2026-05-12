@@ -12,7 +12,9 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-[1.4fr_0.8fr_0.8fr]">
           <div>
-            <h3 className="text-2xl font-semibold text-primary">Ayyanar Restaurant</h3>
+            <h3 className="text-primary text-2xl font-semibold">
+              Ayyanar Restaurant
+            </h3>
             <p className="mt-4 max-w-md text-sm leading-7 text-white/58">
               Authentic South Indian dining with a polished room, generous
               hospitality, and flavors rooted in Tamil Nadu kitchens.
@@ -20,11 +22,13 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-white">Explore</h4>
+            <h4 className="text-sm font-semibold tracking-[0.2em] text-white uppercase">
+              Explore
+            </h4>
             <ul className="mt-5 space-y-3 text-sm text-white/58">
               {links.map(([label, href]) => (
                 <li key={href}>
-                  <a href={href} className="transition hover:text-primary">
+                  <a href={href} className="hover:text-primary transition">
                     {label}
                   </a>
                 </li>
@@ -33,7 +37,9 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-white">Contact</h4>
+            <h4 className="text-sm font-semibold tracking-[0.2em] text-white uppercase">
+              Contact
+            </h4>
             <ul className="mt-5 space-y-3 text-sm text-white/58">
               <li>Chennai, Tamil Nadu</li>
               <li>+91 98765 43210</li>
@@ -48,7 +54,7 @@ export default function Footer() {
             href="https://wa.me/919876543210"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex w-fit border border-primary/35 px-5 py-2 text-xs font-bold uppercase tracking-[0.18em] text-primary transition hover:bg-primary hover:text-[#17120b]"
+            className="border-primary/35 text-primary hover:bg-primary inline-flex w-fit border px-5 py-2 text-xs font-bold tracking-[0.18em] uppercase transition hover:text-[#17120b]"
           >
             WhatsApp
           </a>

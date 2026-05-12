@@ -17,7 +17,7 @@ export default function Gallery() {
       label: "Biryani",
     },
     {
-      src: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?auto=format&fit=crop&w=1200&q=80",
+      src: "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1200&auto=format&fit=crop",
       label: "Fresh from kitchen",
     },
     {
@@ -27,14 +27,14 @@ export default function Gallery() {
   ];
 
   return (
-    <section id="gallery" className="bg-[#11100d] py-24 text-white">
+    <section id="gallery" className="bg-[#0B1A2F] py-24 text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-14 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.28em] text-primary">
+            <p className="text-primary mb-4 text-xs font-semibold tracking-[0.28em] uppercase">
               Gallery
             </p>
-            <h2 className="max-w-2xl text-4xl font-semibold leading-tight md:text-5xl">
+            <h2 className="max-w-2xl text-4xl leading-tight font-semibold md:text-5xl">
               Warm rooms, generous plates, polished details.
             </h2>
           </div>
@@ -48,9 +48,8 @@ export default function Gallery() {
           {images.map((image, index) => (
             <figure
               key={image.src}
-              className={`group relative overflow-hidden border border-white/10 ${
-                index === 0 || index === 5 ? "md:col-span-2 md:row-span-2" : ""
-              }`}
+              className={`group relative overflow-hidden border border-white/10 ${index === 0 || index === 5 ? "md:col-span-2 md:row-span-2" : ""
+                }`}
             >
               <img
                 src={image.src}
@@ -58,7 +57,7 @@ export default function Gallery() {
                 className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-85" />
-              <figcaption className="absolute bottom-4 left-4 text-xs font-semibold uppercase tracking-[0.22em] text-white">
+              <figcaption className="absolute bottom-4 left-4 text-xs font-semibold tracking-[0.22em] text-white uppercase">
                 {image.label}
               </figcaption>
             </figure>
