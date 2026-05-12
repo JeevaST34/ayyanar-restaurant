@@ -1,9 +1,21 @@
 export default function About() {
   const highlights = [
-    ["Stone-ground masalas", "Spices roasted in small batches for deeper aroma."],
-    ["Family dining", "Comfortable table layouts for everyday meals and milestones."],
-    ["Coastal specials", "Seafood, curries, and fry plates with Tamil Nadu character."],
-    ["Catering ready", "Custom menus for office lunches, weddings, and home events."],
+    [
+      "Stone-ground masalas",
+      "Spices roasted in small batches for deeper aroma.",
+    ],
+    [
+      "Family dining",
+      "Comfortable table layouts for everyday meals and milestones.",
+    ],
+    [
+      "Coastal specials",
+      "Seafood, curries, and fry plates with Tamil Nadu character.",
+    ],
+    [
+      "Catering ready",
+      "Custom menus for office lunches, weddings, and home events.",
+    ],
   ];
 
   return (
@@ -19,22 +31,22 @@ export default function About() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B1A2F]/60 to-transparent" />
             </div>
-            <div className="absolute -bottom-7 left-6 right-6 border border-primary/25 bg-[#0B1A2F]/95 p-6 backdrop-blur">
-              <p className="text-xs uppercase tracking-[0.24em] text-primary">
+            <div className="border-primary/25 absolute right-6 -bottom-7 left-6 border bg-[#0B1A2F]/95 p-6 backdrop-blur">
+              <p className="text-primary text-xs tracking-[0.24em] uppercase">
                 House promise
               </p>
               <p className="mt-3 text-lg leading-7 text-white">
-                Traditional recipes, composed plating, attentive service, and the
-                comfort of a generous South Indian table.
+                Traditional recipes, composed plating, attentive service, and
+                the comfort of a generous South Indian table.
               </p>
             </div>
           </div>
 
           <div className="pt-6 lg:pt-0">
-            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.28em] text-primary">
+            <p className="text-primary mb-4 text-xs font-semibold tracking-[0.28em] uppercase">
               About the restaurant
             </p>
-            <h2 className="max-w-2xl text-4xl font-semibold leading-tight text-white md:text-5xl">
+            <h2 className="max-w-2xl text-4xl leading-tight font-semibold text-white md:text-5xl">
               Heritage cooking shaped for a calmer, classier dining experience.
             </h2>
             <p className="mt-6 max-w-2xl text-base leading-8 text-white/68">
@@ -47,8 +59,12 @@ export default function About() {
             <div className="mt-10 grid gap-px overflow-hidden border border-white/10 bg-white/10 sm:grid-cols-2">
               {highlights.map(([title, description]) => (
                 <div key={title} className="bg-[#17140f] p-6">
-                  <h3 className="text-base font-semibold text-white">{title}</h3>
-                  <p className="mt-2 text-sm leading-6 text-white/58">{description}</p>
+                  <h3 className="text-base font-semibold text-white">
+                    {title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-6 text-white/58">
+                    {description}
+                  </p>
                 </div>
               ))}
             </div>

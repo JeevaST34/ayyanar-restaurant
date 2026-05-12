@@ -31,10 +31,10 @@ export default function Gallery() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-14 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.28em] text-primary">
+            <p className="text-primary mb-4 text-xs font-semibold tracking-[0.28em] uppercase">
               Gallery
             </p>
-            <h2 className="max-w-2xl text-4xl font-semibold leading-tight md:text-5xl">
+            <h2 className="max-w-2xl text-4xl leading-tight font-semibold md:text-5xl">
               Warm rooms, generous plates, polished details.
             </h2>
           </div>
@@ -58,7 +58,7 @@ export default function Gallery() {
                 className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-85" />
-              <figcaption className="absolute bottom-4 left-4 text-xs font-semibold uppercase tracking-[0.22em] text-white">
+              <figcaption className="absolute bottom-4 left-4 text-xs font-semibold tracking-[0.22em] text-white uppercase">
                 {image.label}
               </figcaption>
             </figure>
