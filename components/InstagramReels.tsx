@@ -1,8 +1,7 @@
 export default function InstagramReels() {
   const reels = [
     {
-      thumbnail:
-        "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?auto=format&fit=crop&w=600&q=80",
+      thumbnail: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1200&auto=format&fit=crop",
       title: "Biryani dum reveal",
       views: "12.5K",
       duration: "0:45",

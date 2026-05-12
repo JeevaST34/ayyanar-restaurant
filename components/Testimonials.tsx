@@ -13,8 +13,7 @@ export default function Testimonials() {
       role: "Family dining",
       rating: "5.0",
       text: "Ayyanar feels elegant without becoming stiff. Perfect for birthdays and family dinners.",
-      image:
-        "https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&w=200&q=80",
+      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop",
     },
     {
       name: "Karthik Raj",

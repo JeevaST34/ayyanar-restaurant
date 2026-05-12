@@ -17,7 +17,7 @@ export default function Gallery() {
       label: "Biryani",
     },
     {
-      src: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?auto=format&fit=crop&w=1200&q=80",
+      src: "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1200&auto=format&fit=crop",
       label: "Fresh from kitchen",
     },
     {
@@ -48,9 +48,8 @@ export default function Gallery() {
           {images.map((image, index) => (
             <figure
               key={image.src}
-              className={`group relative overflow-hidden border border-white/10 ${
-                index === 0 || index === 5 ? "md:col-span-2 md:row-span-2" : ""
-              }`}
+              className={`group relative overflow-hidden border border-white/10 ${index === 0 || index === 5 ? "md:col-span-2 md:row-span-2" : ""
+                }`}
             >
               <img
                 src={image.src}
