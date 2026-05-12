@@ -37,7 +37,7 @@ export default function Testimonials() {
 
         <div className="grid gap-px overflow-hidden border border-white/10 bg-white/10 md:grid-cols-3">
           {testimonials.map((testimonial) => (
-            <article key={testimonial.name} className="bg-[#11100d] p-7">
+            <article key={testimonial.name} className="bg-[#0B1A2F] p-7">
               <div className="mb-8 flex items-center justify-between">
                 <span className="text-sm font-semibold text-primary">{testimonial.rating}/5</span>
                 <span className="h-px w-16 bg-primary/35" />

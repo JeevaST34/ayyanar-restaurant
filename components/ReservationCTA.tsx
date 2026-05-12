@@ -6,8 +6,8 @@ export default function ReservationCTA() {
   ];
 
   return (
-    <section id="reservations" className="relative overflow-hidden bg-[#21150f] py-24 text-white">
-      <div className="absolute inset-0 bg-[linear-gradient(115deg,rgba(157,47,37,0.5),transparent_50%),linear-gradient(0deg,rgba(216,180,106,0.12),transparent)]" />
+    <section id="reservations" className="relative overflow-hidden bg-[#0B1A2F] py-24 text-white">
+      <div className="absolute inset-0 bg-[linear-gradient(115deg,rgba(245,90,36,0.4),transparent_50%),linear-gradient(0deg,rgba(58,169,245,0.12),transparent)]" />
 
       <div className="relative mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
         <div>
@@ -25,7 +25,7 @@ export default function ReservationCTA() {
 
           <div className="mt-10 grid gap-px overflow-hidden border border-white/10 bg-white/10 sm:grid-cols-3 lg:grid-cols-1">
             {details.map(([label, value]) => (
-              <div key={label} className="bg-[#11100d]/70 p-5">
+              <div key={label} className="bg-[#0B1A2F]/60 p-5">
                 <p className="text-xs uppercase tracking-[0.2em] text-primary">{label}</p>
                 <p className="mt-2 font-medium text-white">{value}</p>
               </div>
@@ -33,7 +33,7 @@ export default function ReservationCTA() {
           </div>
         </div>
 
-        <form className="border border-white/15 bg-[#11100d]/85 p-6 shadow-2xl shadow-black/25 backdrop-blur md:p-8">
+        <form className="border border-white/15 bg-[#0B1A2F]/85 p-6 shadow-2xl shadow-black/25 backdrop-blur md:p-8">
           <div className="grid gap-4 md:grid-cols-2">
             <label className="block">
               <span className="mb-2 block text-xs uppercase tracking-[0.18em] text-white/55">Name</span>
@@ -62,7 +62,7 @@ export default function ReservationCTA() {
             </label>
             <label className="block">
               <span className="mb-2 block text-xs uppercase tracking-[0.18em] text-white/55">Occasion</span>
-              <select className="w-full border border-white/15 bg-[#16120e] px-4 py-3 text-white outline-none transition focus:border-primary">
+              <select className="w-full border border-white/15 bg-[#0B1A2F] px-4 py-3 text-white outline-none transition focus:border-primary">
                 <option>Casual dining</option>
                 <option>Birthday</option>
                 <option>Family celebration</option>

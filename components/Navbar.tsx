@@ -20,20 +20,14 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#11100d]/85 backdrop-blur-xl">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#0B1A2F]/90 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-        <a href="#home" className="group flex items-center gap-3">
-          <span className="grid h-11 w-11 place-items-center border border-primary/45 bg-primary/10 text-sm font-semibold tracking-[0.22em] text-primary transition duration-300 group-hover:rotate-6 group-hover:bg-primary/15">
-            AR
-          </span>
-          <span>
-            <span className="block text-sm font-semibold uppercase tracking-[0.28em] text-white">
-              Ayyanar
-            </span>
-            <span className="block text-xs uppercase tracking-[0.22em] text-white/55">
-              South Indian Dining
-            </span>
-          </span>
+        <a href="#home" className="group flex items-center">
+          <img
+            src="https://res.cloudinary.com/dxfk1lmpg/image/upload/v1778585023/ChatGPT_Image_May_12_2026_03_35_27_PM_2_qaktev.svg"
+            alt="Ayyanar Restaurant Logo"
+            className="h-14 w-auto transition duration-300 group-hover:scale-105"
+          />
         </a>
 
         <nav aria-label="Primary navigation" className="hidden items-center gap-7 lg:flex">
@@ -62,7 +56,7 @@ export default function Navbar() {
             aria-expanded={isMenuOpen}
             aria-controls="header-menu"
             onClick={() => setIsMenuOpen((open) => !open)}
-            className="group relative grid h-12 w-12 place-items-center overflow-hidden rounded-full border border-primary/35 bg-[radial-gradient(circle_at_top,_rgba(216,180,106,0.18),_rgba(17,16,13,0.96)_64%)] text-primary shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_10px_35px_rgba(0,0,0,0.35)] transition duration-300 hover:-translate-y-0.5 hover:border-primary/55 hover:shadow-[0_0_0_1px_rgba(216,180,106,0.12),0_16px_40px_rgba(0,0,0,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 lg:hidden"
+            className="group relative grid h-12 w-12 place-items-center overflow-hidden rounded-full border border-primary/35 bg-[radial-gradient(circle_at_top,_rgba(58,169,245,0.18),_rgba(11,26,47,0.96)_64%)] text-primary shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_10px_35px_rgba(0,0,0,0.35)] transition duration-300 hover:-translate-y-0.5 hover:border-primary/55 hover:shadow-[0_0_0_1px_rgba(58,169,245,0.12),0_16px_40px_rgba(0,0,0,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 lg:hidden"
           >
             <span className="pointer-events-none absolute inset-[5px] rounded-full border border-primary/15 transition duration-300 group-hover:scale-110 group-hover:border-primary/30" />
             <span className="pointer-events-none absolute h-16 w-6 -translate-x-8 rotate-12 bg-gradient-to-r from-transparent via-primary/25 to-transparent transition duration-500 group-hover:translate-x-8" />
@@ -99,7 +93,7 @@ export default function Navbar() {
           }`}
       >
         <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
-          <div className="rounded-[1.75rem] border border-primary/20 bg-[linear-gradient(180deg,rgba(216,180,106,0.08),rgba(17,16,13,0.96))] p-3 shadow-[0_22px_60px_rgba(0,0,0,0.42)]">
+          <div className="rounded-[1.75rem] border border-primary/20 bg-[linear-gradient(180deg,rgba(58,169,245,0.08),rgba(11,26,47,0.96))] p-3 shadow-[0_22px_60px_rgba(0,0,0,0.42)]">
             <nav
               aria-label="Primary navigation"
               className="grid gap-2 sm:grid-cols-2"

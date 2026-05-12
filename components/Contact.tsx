@@ -19,7 +19,7 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="bg-[#11100d] py-24 text-white">
+    <section id="contact" className="bg-[#0B1A2F] py-24 text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-14 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
@@ -53,8 +53,8 @@ export default function Contact() {
 
           <div className="relative min-h-[420px] overflow-hidden border border-white/10 bg-[#181510]">
             <div className="absolute inset-0 opacity-35 [background-image:linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:44px_44px]" />
-            <div className="absolute left-1/2 top-1/2 h-5 w-5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary shadow-[0_0_0_12px_rgba(216,180,106,0.12),0_0_0_32px_rgba(216,180,106,0.08)]" />
-            <div className="absolute bottom-6 left-6 right-6 border border-primary/25 bg-[#11100d]/90 p-6 backdrop-blur">
+            <div className="absolute left-1/2 top-1/2 h-5 w-5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary shadow-[0_0_0_12px_rgba(58,169,245,0.12),0_0_0_32px_rgba(58,169,245,0.08)]" />
+            <div className="absolute bottom-6 left-6 right-6 border border-primary/25 bg-[#0B1A2F]/90 p-6 backdrop-blur">
               <p className="text-xs uppercase tracking-[0.22em] text-primary">Ayyanar Restaurant</p>
               <p className="mt-3 text-lg font-semibold text-white">T. Nagar, Chennai</p>
               <p className="mt-2 text-sm leading-6 text-white/58">

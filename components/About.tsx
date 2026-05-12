@@ -7,7 +7,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="bg-[#11100d] py-24 text-white">
+    <section id="about" className="bg-[#0B1A2F] py-24 text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-14 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div className="relative">
@@ -17,9 +17,9 @@ export default function About() {
                 alt="Warm restaurant dining room"
                 className="h-full w-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#11100d]/60 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0B1A2F]/60 to-transparent" />
             </div>
-            <div className="absolute -bottom-7 left-6 right-6 border border-primary/25 bg-[#17140f]/95 p-6 backdrop-blur">
+            <div className="absolute -bottom-7 left-6 right-6 border border-primary/25 bg-[#0B1A2F]/95 p-6 backdrop-blur">
               <p className="text-xs uppercase tracking-[0.24em] text-primary">
                 House promise
               </p>

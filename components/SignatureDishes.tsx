@@ -46,14 +46,14 @@ export default function SignatureDishes() {
 
         <div className="grid gap-px overflow-hidden border border-white/10 bg-white/10 md:grid-cols-2 lg:grid-cols-4">
           {dishes.map((dish, index) => (
-            <article key={index} className="group bg-[#11100d]">
+            <article key={index} className="group bg-[#0B1A2F]">
               <div className="relative h-64 overflow-hidden">
                 <img
                   src={dish.image}
                   alt={dish.name}
                   className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#11100d]/75 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0B1A2F]/75 to-transparent" />
                 <p className="absolute bottom-4 left-4 text-sm font-semibold text-primary">
                   {dish.price}
                 </p>

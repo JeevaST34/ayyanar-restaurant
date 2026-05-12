@@ -45,7 +45,7 @@ export default function Menu() {
   ];
 
   return (
-    <section id="menu" className="bg-[#11100d] py-24 text-white">
+    <section id="menu" className="bg-[#0B1A2F] py-24 text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-14 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>

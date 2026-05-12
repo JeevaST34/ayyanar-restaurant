@@ -27,7 +27,7 @@ export default function InstagramReels() {
   ];
 
   return (
-    <section className="bg-[#11100d] pb-24 text-white">
+    <section className="bg-[#0B1A2F] pb-24 text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-10 flex items-center justify-between gap-4 border-t border-white/10 pt-14">
           <div>
@@ -60,7 +60,7 @@ export default function InstagramReels() {
                 alt={reel.title}
                 className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#11100d] via-[#11100d]/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0B1A2F] via-[#0B1A2F]/30 to-transparent" />
               <div className="absolute left-5 top-5 grid h-12 w-12 place-items-center rounded-full border border-white/40 bg-black/35 text-white backdrop-blur">
                 <svg className="h-5 w-5 translate-x-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                   <path d="M6.5 4.75v10.5L15 10 6.5 4.75Z" />

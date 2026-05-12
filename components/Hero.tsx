@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[94vh] items-center overflow-hidden bg-[#11100d] px-4 pb-16 pt-36 text-white sm:px-6 lg:px-8"
+      className="relative flex min-h-[94vh] items-center overflow-hidden bg-[#0B1A2F] px-4 pb-16 pt-36 text-white sm:px-6 lg:px-8"
     >
       <div className="absolute inset-0 z-0">
         <img
@@ -10,8 +10,8 @@ export default function Hero() {
           alt="A refined table of South Indian dishes"
           className="absolute inset-0 h-full w-full object-cover opacity-60"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(17,16,13,0.96)_0%,rgba(17,16,13,0.82)_38%,rgba(17,16,13,0.34)_100%)]" />
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#11100d] to-transparent" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(11,26,47,0.96)_0%,rgba(11,26,47,0.82)_38%,rgba(11,26,47,0.34)_100%)]" />
+        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#0B1A2F] to-transparent" />
       </div>
 
       <div className="relative z-10 mx-auto grid w-full max-w-7xl items-end gap-10 lg:grid-cols-[1.05fr_0.95fr]">
