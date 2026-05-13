@@ -268,7 +268,7 @@ export default function MenuPage() {
             >
               Back to homepage
             </MotionLink>
-            <div className="rounded-full bg-[#F5E6DA] px-4 py-3 text-sm font-semibold text-[#3B2A24]">
+            <div className="rounded-full bg-[#F5E6DA] px-4 py-3 text-center text-[12px] font-semibold text-[#3B2A24]">
               Crafted for authentic South Indian flavour.
             </div>
           </div>

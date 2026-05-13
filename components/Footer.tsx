@@ -56,7 +56,7 @@ export default function Footer() {
             href="https://wa.me/919876543210"
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-[#C89C7A]/75 bg-white/10 px-5 py-2 text-xs font-bold tracking-[0.18em] text-[#FFF7F1] uppercase transition hover:border-[#EA5828] hover:text-[#EA5828]"
+            className="w-fit border border-[#C89C7A]/75 bg-white/10 px-5 py-2 text-xs font-bold tracking-[0.18em] text-[#FFF7F1] uppercase transition hover:border-[#EA5828] hover:text-[#EA5828]"
           >
             WhatsApp
           </MotionLink>
