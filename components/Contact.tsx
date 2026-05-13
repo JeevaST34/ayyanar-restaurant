@@ -4,11 +4,11 @@ export default function Contact() {
   const contactCards = [
     {
       label: "Address",
-      value: ["12 Orchard Boulevard", "Singapore 238801", "Singapore"],
+      value: ["11 Veerasamy Rd", "Singapore 207319", "Singapore"],
     },
     {
       label: "Phone",
-      value: ["+65 9876 5432", "+65 9876 5433"],
+      value: ["+65 9865 0140"],
     },
     {
       label: "Email",
@@ -20,9 +20,9 @@ export default function Contact() {
     {
       label: "Hours",
       value: [
-        "Monday - Sunday: 11:00 AM - 11:00 PM",
-        "Lunch: 11:00 AM - 3:00 PM",
-        "Dinner: 6:00 PM - 11:00 PM",
+        "Monday - Sunday: 7:00 AM - 11:30 PM",
+        // "Lunch: 11:00 AM - 3:00 PM",
+        // "Dinner: 6:00 PM - 11:00 PM",
       ],
     },
   ];
@@ -70,7 +70,7 @@ export default function Contact() {
           <div className="relative min-h-[420px] overflow-hidden rounded-[28px] border border-[#C89C7A] bg-[#F5E6DA] shadow-[0_18px_42px_rgba(234,88,40,0.1)]">
             <iframe
               title="Ayyanar Restaurant location on Google Maps"
-              src="https://www.google.com/maps?q=Orchard+Road,+Singapore&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.779047491051!2d103.8532823!3d1.3077817999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19455a495c35%3A0x2a666437645110f0!2sAYYANAR%20RESTAURANT!5e0!3m2!1sen!2sin!4v1778680576237!5m2!1sen!2sin"
               className="absolute inset-0 h-full w-full border-0"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -81,7 +81,7 @@ export default function Contact() {
                 Ayyanar Restaurant
               </p>
               <p className="mt-3 text-lg font-semibold text-[#3B2A24]">
-                Orchard Road, Singapore
+                11 Veerasamy Rd, Singapore 207319
               </p>
               <p className="mt-2 text-sm leading-6 text-[#6B7280]">
                 This section displays a Google Maps embed for the restaurant

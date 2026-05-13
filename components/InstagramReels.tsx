@@ -8,30 +8,26 @@ import {
 export default function InstagramReels() {
   const reels = [
     {
-      thumbnail:
-        "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1200&auto=format&fit=crop",
-      title: "Biryani dum reveal",
+      thumbnail: "/images/dishes/Mutton-bone-Soup.png",
+      title: "Mutton Bone Soup",
       views: "12.5K",
       duration: "0:45",
     },
     {
-      thumbnail:
-        "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80",
-      title: "Pepper fry toss",
+      thumbnail: "/images/dishes/chettinad-masala.jfif",
+      title: "Chettinad Masala",
       views: "8.9K",
       duration: "1:12",
     },
     {
-      thumbnail:
-        "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=80",
-      title: "Private dining setup",
+      thumbnail: "/images/dishes/prawn-masala.jfif",
+      title: "Prawn Masala",
       views: "15.2K",
       duration: "0:58",
     },
     {
-      thumbnail:
-        "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80",
-      title: "Service before dinner",
+      thumbnail: "/images/dishes/mutton-gravy.png",
+      title: "Mutton Gravy",
       views: "6.7K",
       duration: "2:15",
     },
@@ -88,7 +84,7 @@ export default function InstagramReels() {
                 {reel.duration}
               </span>
               <div className="absolute inset-x-5 bottom-5">
-                <h3 className="text-lg font-semibold text-white">
+                <h3 className="text-lg font-semibold text-white!">
                   {reel.title}
                 </h3>
                 <p className="mt-1 text-sm text-white/75">{reel.views} views</p>

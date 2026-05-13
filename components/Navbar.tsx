@@ -59,7 +59,7 @@ export default function Navbar() {
             href="tel:+919876543210"
             className="hidden text-sm font-semibold text-[#ffffff]! transition hover:text-[#EA5828] lg:inline"
           >
-            +91 98765 43210
+            +65 9865 0140
           </a>
 
           <button
@@ -138,7 +138,7 @@ export default function Navbar() {
                 href="tel:+919876543210"
                 className="text-sm font-medium text-[#3B2A24] transition lg:hidden"
               >
-                +91 98765 43210
+                +65 9865 0140
               </a>
               <a
                 href="#reservations"

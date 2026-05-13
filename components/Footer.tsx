@@ -14,10 +14,14 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-[1.4fr_0.8fr_0.8fr]">
           <div>
-            <h3 className="text-2xl font-semibold text-[#FFF7F1]">
-              Ayyanar Restaurant
-            </h3>
-            <p className="mt-4 max-w-md text-sm leading-7 text-[#FFF7F1]/80">
+            <a href="#home" className="group mb-6 inline-block">
+              <img
+                src="https://res.cloudinary.com/dxfk1lmpg/image/upload/v1778585023/ChatGPT_Image_May_12_2026_03_35_27_PM_2_qaktev.svg"
+                alt="Ayyanar Restaurant Logo"
+                className="h-12 w-auto transition duration-300 group-hover:scale-105"
+              />
+            </a>
+            <p className="text-sm leading-7 text-[#FFF7F1]/80">
               Authentic South Indian dining with a polished room, generous
               hospitality, and premium service tailored to Singapore dining.
             </p>
@@ -44,7 +48,7 @@ export default function Footer() {
             </h4>
             <ul className="mt-5 space-y-3 text-sm text-[#FFF7F1]/70">
               <li>Singapore</li>
-              <li>+65 9876 5432</li>
+              <li>+65 9865 0140</li>
               <li>hello@ayyanarrestaurant.com</li>
             </ul>
           </div>

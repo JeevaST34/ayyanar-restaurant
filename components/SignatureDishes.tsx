@@ -9,35 +9,31 @@ export default function SignatureDishes() {
   const dishes = [
     {
       name: "Chicken Biryani",
-      price: "S$ 36",
+      price: "S$ 7",
       description:
         "Dum-cooked seeraga samba rice, tender chicken, mint, and slow-bloomed masala.",
-      image:
-        "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=80",
+      image: "/images/ChatGPT Image May 13, 2026, 06_57_32 PM.png",
     },
     {
-      name: "Parotta Combo",
-      price: "S$ 27",
+      name: "Chicken Fried Rice",
+      price: "S$ 6",
       description:
-        "Flaky layered parotta served with rich salna, onion relish, and curry.",
-      image:
-        "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+        "Fragrant rice stir-fried with succulent chicken pieces, vibrant vegetables, and a blend of aromatic spices.",
+      image: "/images/ChatGPT Image May 13, 2026, 07_04_58 PM.png",
     },
     {
       name: "Meals Special",
-      price: "S$ 22",
+      price: "S$ 5",
       description:
         "A proper banana-leaf style spread with sambar, rasam, kootu, poriyal, and curd.",
-      image:
-        "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=1200&q=80",
+      image: "/images/ChatGPT Image May 13, 2026, 06_59_55 PM.png",
     },
     {
-      name: "Seafood Fry",
-      price: "S$ 44",
+      name: "Fish Biryani",
+      price: "S$ 8",
       description:
-        "Fresh catch marinated with chilli, pepper, curry leaf, and crisp-fried edges.",
-      image:
-        "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=1200&q=80",
+        "Dum-cooked seeraga samba rice, marinated fish, mint, and slow-bloomed masala.",
+      image: "/images/ChatGPT Image May 13, 2026, 07_08_16 PM.png",
     },
   ];
 

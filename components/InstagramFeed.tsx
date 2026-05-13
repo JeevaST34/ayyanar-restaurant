@@ -8,39 +8,33 @@ import {
 export default function InstagramFeed() {
   const posts = [
     {
-      image:
-        "https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=500&q=80",
-      label: "Weekend thali",
+      image: "/images/dishes/Chicken-uppu-kari.jfif",
+      label: "Chicken Uppu Kari",
       likes: 245,
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=500&q=80",
-      label: "Parotta layers",
+      image: "/images/dishes/Egg-masala.png",
+      label: "Egg Masala",
       likes: 189,
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=500&q=80",
-      label: "Dum biryani",
+      image: "/images/dishes/Fish-fry.jfif",
+      label: "Fish Fry",
       likes: 312,
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=500&q=80",
-      label: "Seafood fry",
+      image: "/images/dishes/mutton-nalli.png",
+      label: "Mutton Nalli",
       likes: 156,
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=500&q=80",
-      label: "Dining room",
+      image: "/images/dishes/Crab-masala.jfif",
+      label: "Crab Masala",
       likes: 278,
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=500&q=80",
-      label: "Family table",
+      image: "/images/dishes/pepperchicken.jfif",
+      label: "Pepper Chicken",
       likes: 334,
     },
   ];

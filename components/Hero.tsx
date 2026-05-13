@@ -14,7 +14,7 @@ export default function Hero() {
     >
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1800&q=80"
+          src="/images/ChatGPT Image May 13, 2026, 06_57_32 PM.png"
           alt="A refined table of South Indian dishes"
           className="absolute inset-0 h-full w-full object-cover opacity-70"
         />
@@ -57,7 +57,7 @@ export default function Hero() {
               Open Daily
             </p>
             <p className="mt-2 text-base font-semibold text-[#3B2A24]">
-              11:00 AM - 11:00 PM
+              7:00 AM - 11:30 PM
             </p>
           </div>
           <div className="card-surface p-6">

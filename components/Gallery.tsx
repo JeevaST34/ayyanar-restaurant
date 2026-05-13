@@ -3,29 +3,29 @@ import { MotionContainer, MotionImage, MotionSection } from "./Animated";
 export default function Gallery() {
   const images = [
     {
-      src: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
-      label: "Dining room",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80",
-      label: "Service details",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80",
-      label: "Evening tables",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=80",
+      src: "/images/ChatGPT Image May 13, 2026, 06_57_32 PM.png",
       label: "Biryani",
     },
     {
-      src: "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1200&auto=format&fit=crop",
-      label: "Fresh from kitchen",
+      src: "/images/ChatGPT Image May 13, 2026, 06_52_38 PM.png",
+      label: "Idly",
     },
     {
-      src: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
-      label: "Grill and spice",
+      src: "/images/ChatGPT Image May 13, 2026, 06_52_47 PM.png",
+      label: "Pongal",
     },
+    {
+      src: "/images/ChatGPT Image May 13, 2026, 06_52_44 PM.png",
+      label: "Vadai",
+    },
+    {
+      src: "/images/ChatGPT Image May 13, 2026, 06_59_55 PM.png",
+      label: "Veg Meals",
+    },
+    // {
+    //   src: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
+    //   label: "Grill and spice",
+    // },
   ];
 
   return (

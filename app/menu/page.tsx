@@ -124,120 +124,120 @@ const imageCards = [
     src: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=80",
   },
   {
-    label: "Ragi Dosai",
-    src: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+    label: "Rava Dosai",
+    src: "/images/rava-dosa.png",
   },
-  {
-    label: "Suzhiyam",
-    src: "https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=1200&q=80",
-  },
+  // {
+  //   label: "Suzhiyam",
+  //   src: "https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=1200&q=80",
+  // },
   {
     label: "Vadai",
-    src: "https://images.unsplash.com/photo-1531219432768-244f7f0c51da?auto=format&fit=crop&w=1200&q=80",
+    src: "/images/ChatGPT Image May 13, 2026, 06_52_44 PM.png",
   },
-  {
-    label: "Bonda",
-    src: "https://images.unsplash.com/photo-1564758866814-11699448dfbb?auto=format&fit=crop&w=1200&q=80",
-  },
+  // {
+  //   label: "Bonda",
+  //   src: "https://images.unsplash.com/photo-1564758866814-11699448dfbb?auto=format&fit=crop&w=1200&q=80",
+  // },
   {
     label: "Samosa",
-    src: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    label: "Puffs",
-    src: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    label: "Bun Butter",
-    src: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    label: "Sundal",
-    src: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    label: "Pepper Chicken",
-    src: "https://images.unsplash.com/photo-1543353071-087092ec3938?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    label: "Mutton Gravy",
-    src: "https://images.unsplash.com/photo-1476671492381-488d4cfb47b4?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    label: "Crab Masala",
-    src: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    label: "Fish Curry",
-    src: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    label: "Mutton Nalli",
-    src: "https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    label: "Egg Masala",
-    src: "https://images.unsplash.com/photo-1532634896-26909d0d8b83?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    label: "Chicken Uppu Kari",
-    src: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    label: "Chettinad Chicken",
-    src: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    label: "Mutton Bone Soup",
-    src: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    label: "Prawn Masala",
-    src: "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    label: "Set Meals",
-    src: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    label: "Idli",
-    src: "https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    label: "Dosai",
     src: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=80",
   },
   {
+    label: "Puffs",
+    src: "/images/test 4/puffs.png",
+  },
+  {
+    label: "Bun Butter",
+    src: "/images/test 4/bun butter.png",
+  },
+  // {
+  //   label: "Sundal",
+  //   src: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+  // },
+  {
+    label: "Pepper Chicken",
+    src: "/images/dishes/pepperchicken.jfif",
+  },
+  {
+    label: "Mutton Gravy",
+    src: "/images/dishes/mutton-gravy.png",
+  },
+  {
+    label: "Crab Masala",
+    src: "/images/dishes/crab-masala.jfif",
+  },
+  {
+    label: "Fish Curry",
+    src: "/images/dishes/fish-fry.jfif",
+  },
+  {
+    label: "Mutton Nalli",
+    src: "/images/dishes/mutton-nalli.png",
+  },
+  {
+    label: "Egg Masala",
+    src: "/images/dishes/Egg-masala.png",
+  },
+  {
+    label: "Chicken Uppu Kari",
+    src: "/images/dishes/Chicken-uppu-kari.jfif",
+  },
+  {
+    label: "Chettinad Chicken",
+    src: "/images/dishes/chettinad-masala.jfif",
+  },
+  {
+    label: "Mutton Bone Soup",
+    src: "/images/dishes/Mutton-bone-Soup.png",
+  },
+  {
+    label: "Prawn Masala",
+    src: "/images/dishes/prawn-masala.jfif",
+  },
+  {
+    label: "Set Meals",
+    src: "/images/dinner/dinner/Meals.png",
+  },
+  {
+    label: "Idli",
+    src: "/images/dinner/dinner/idly.png",
+  },
+  {
+    label: "Dosai",
+    src: "/images/dinner/dinner/Dosa.png",
+  },
+  {
     label: "Ven Pongal",
-    src: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+    src: "/images/ChatGPT Image May 13, 2026, 06_52_47 PM.png",
   },
   {
     label: "Poori",
-    src: "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1200&q=80",
+    src: "/images/dinner/dinner/Poori.png",
   },
   {
     label: "Chapathi",
-    src: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1200&q=80",
+    src: "/images/dinner/dinner/Chappathi.png",
   },
   {
     label: "Masala Dosai",
-    src: "https://images.unsplash.com/photo-1546525848-3ce03ca516f6?auto=format&fit=crop&w=1200&q=80",
+    src: "/images/dinner/dinner/masala-dosai.png",
   },
   {
     label: "Chicken Kothu Prata",
-    src: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    src: "/images/dinner/dinner/Chicken-Kothu-Parotta.png",
   },
   {
     label: "Uthappam",
-    src: "https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=1200&q=80",
+    src: "/images/dinner/dinner/uthappam.png",
   },
   {
     label: "Chicken Fried Noodles",
-    src: "https://images.unsplash.com/photo-1543353071-087092ec3938?auto=format&fit=crop&w=1200&q=80",
+    src: "/images/dinner/dinner/Chicken-fried-noodles.png",
   },
   {
     label: "Parotta",
-    src: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
+    src: "/images/dinner/dinner/parotta.png",
   },
 ];
 
@@ -318,7 +318,7 @@ export default function MenuPage() {
                 </p>
               </div>
               <div className="grid gap-1 p-3 sm:grid-cols-2">
-                {imageCards.slice(0, 8).map((image) => (
+                {imageCards.slice(16, 24).map((image) => (
                   <figure
                     key={image.label}
                     className="overflow-hidden rounded-3xl bg-[#F5E6DA]"
@@ -336,14 +336,19 @@ export default function MenuPage() {
               </div>
             </section>
 
-            {/* <section className="card-surface p-6 md:p-8">
+            <section className="card-surface p-6 md:p-8">
               <h2 className="text-2xl font-semibold">More Favorites</h2>
               <p className="mt-3 text-sm leading-6 text-[#6B7280]">
-                From crispy dosas and street-style snacks to rich curries and set meal classics, our menu is designed for sharing and celebration.
+                From crispy dosas and street-style snacks to rich curries and
+                set meal classics, our menu is designed for sharing and
+                celebration.
               </p>
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
                 {imageCards.slice(8).map((image) => (
-                  <figure key={image.label} className="overflow-hidden rounded-3xl bg-[#F5E6DA]">
+                  <figure
+                    key={image.label}
+                    className="overflow-hidden rounded-3xl bg-[#F5E6DA]"
+                  >
                     <img
                       src={image.src}
                       alt={image.label}
@@ -355,7 +360,7 @@ export default function MenuPage() {
                   </figure>
                 ))}
               </div>
-            </section> */}
+            </section>
           </aside>
         </div>
       </div>
