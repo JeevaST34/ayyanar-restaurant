@@ -1,157 +1,234 @@
+import {
+  MotionArticle,
+  MotionContainer,
+  MotionLink,
+  MotionSection,
+} from "./Animated";
+
 export default function Menu() {
   const menuCategories = [
     {
-      title: "Morning & Tiffin",
-      note: "Comforting classics served with fresh chutneys.",
+      title: "Breakfast",
+      note: "Light South Indian favorites to start your day.",
       items: [
         {
-          name: "Idli Sambar",
-          price: "Rs. 80",
-          description: "Soft steamed rice cakes, ghee, sambar, coconut chutney",
+          name: "Idly",
+          price: "S$ 0.80",
+          description: "Steamed rice cakes served with chutney.",
         },
         {
-          name: "Medu Vada",
-          price: "Rs. 90",
-          description: "Crisp lentil vada, pepper, curry leaves, sambar",
+          name: "Vadai",
+          price: "S$ 0.80",
+          description: "Crispy lentil donuts with a peppery crunch.",
         },
         {
-          name: "Ghee Roast Dosa",
-          price: "Rs. 140",
-          description: "Paper-thin dosa with potato masala and podi",
+          name: "Pongal",
+          price: "S$ 2.00",
+          description: "Creamy rice and lentil porridge with ghee.",
+        },
+        {
+          name: "Poori (2 pcs)",
+          price: "S$ 2.00",
+          description: "Fluffy fried bread with potato masala.",
+        },
+        {
+          name: "Kal Dosai",
+          price: "S$ 1.50",
+          description: "Thin dosa with savory coconut chutney.",
+        },
+        {
+          name: "Variety Rice",
+          price: "S$ 1.50",
+          description: "Seasoned rice with peas, carrots and spices.",
         },
       ],
     },
     {
-      title: "House Curries",
-      note: "Slow-cooked gravies with layered spice.",
+      title: "Lunch",
+      note: "Hearty midday meals for every appetite.",
       items: [
         {
-          name: "Chettinad Chicken",
-          price: "Rs. 310",
-          description: "Black pepper, fennel, coconut, roasted country spices",
+          name: "Veg Meals",
+          price: "S$ 5.00",
+          description: "Rice, curry, sambar, rasam, poriyal and appalam.",
         },
         {
-          name: "Paneer Tikka Masala",
-          price: "Rs. 250",
-          description: "Charred paneer, tomato gravy, fenugreek finish",
+          name: "Chicken Meals",
+          price: "S$ 7.00",
+          description: "Homestyle chicken curry with rice and sides.",
         },
         {
-          name: "Meen Kuzhambu",
-          price: "Rs. 340",
-          description: "Tamarind fish curry with shallots and curry leaves",
+          name: "Mutton Meals",
+          price: "S$ 8.00",
+          description: "Slow-cooked mutton curry with steamed rice.",
+        },
+        {
+          name: "Fish Meals",
+          price: "S$ 8.00",
+          description: "Tangy fish curry with rice and accompaniments.",
         },
       ],
     },
     {
-      title: "Biryani & Rice",
-      note: "Aromatic rice dishes for the main event.",
+      title: "Dinner",
+      note: "Classic dinner plates and dosas served warm.",
       items: [
         {
-          name: "Chicken Biryani",
-          price: "Rs. 290",
-          description: "Seeraga samba rice, raita, brinjal gravy",
+          name: "Idly",
+          price: "S$ 0.80",
+          description: "Soft steamed rice cakes with sambar.",
         },
         {
-          name: "Mutton Biryani",
-          price: "Rs. 390",
-          description: "Slow-cooked mutton, saffron, mint, fried onion",
+          name: "Podi Idly",
+          price: "S$ 3.00",
+          description: "Idly tossed in spiced lentil powder.",
         },
         {
-          name: "Vegetable Meals",
-          price: "Rs. 180",
-          description: "Rice, sambar, rasam, poriyal, kootu, appalam, curd",
+          name: "Dosai",
+          price: "S$ 1.50",
+          description: "Classic dosa with coconut chutney.",
+        },
+        {
+          name: "Masala Dosai",
+          price: "S$ 2.50",
+          description: "Golden dosa wrapped around potato masala.",
+        },
+        {
+          name: "Onion Dosai",
+          price: "S$ 2.50",
+          description: "Dosa studded with caramelized onions.",
+        },
+        {
+          name: "Podi Dosai",
+          price: "S$ 2.00",
+          description: "Dosa served with spicy podi and ghee.",
+        },
+        {
+          name: "Onion Podi Dosai",
+          price: "S$ 2.50",
+          description: "Onion dosa finished with podi and ghee.",
+        },
+        {
+          name: "Vendhaya Keerai Dosai",
+          price: "S$ 2.50",
+          description: "Fenugreek dosa with a fragrant green hue.",
         },
       ],
     },
     {
-      title: "Sweets & Sips",
-      note: "A softer finish after the spice.",
+      title: "Hot Drinks",
+      note: "Comforting beverages to pair with every plate.",
       items: [
         {
-          name: "Elaneer Payasam",
-          price: "Rs. 130",
-          description: "Tender coconut, milk, cardamom, roasted cashew",
+          name: "Tea",
+          price: "S$ 1.00",
+          description: "Strong brewed tea with milk.",
         },
         {
-          name: "Gulab Jamun",
-          price: "Rs. 100",
-          description: "Warm milk dumplings in light rose syrup",
+          name: "Masala Tea",
+          price: "S$ 1.00",
+          description: "Tea spiced with cardamom and ginger.",
         },
         {
-          name: "Filter Coffee",
-          price: "Rs. 70",
-          description: "Strong decoction, frothy milk, brass tumbler style",
+          name: "Coffee",
+          price: "S$ 1.50",
+          description: "Rich South Indian filter coffee.",
+        },
+        {
+          name: "Horlicks Hot",
+          price: "S$ 1.50",
+          description: "Warm malted drink with milk.",
+        },
+        {
+          name: "Milo Hot",
+          price: "S$ 1.50",
+          description: "Chocolate malt beverage served hot.",
+        },
+        {
+          name: "Boost",
+          price: "S$ 1.50",
+          description: "Nutritious malt drink with milk.",
         },
       ],
     },
-  ];
-
-  const experiences = [
-    "Chef tasting thali",
-    "Private dining set menu",
-    "Weekend seafood specials",
   ];
 
   return (
-    <section id="menu" className="bg-[#0B1A2F] py-24 text-white">
+    <MotionSection id="menu" className="bg-[#FFF7F1] py-24 text-[#3B2A24]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-14 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
-            <p className="text-primary mb-4 text-xs font-semibold tracking-[0.28em] uppercase">
-              Menu
+            <p className="mb-4 text-xs font-semibold tracking-[0.28em] text-[#EA5828] uppercase">
+              Menu Preview
             </p>
             <h2 className="text-4xl leading-tight font-semibold md:text-5xl">
-              Refined South Indian classics, served generously.
+              A taste of our everyday favorites.
             </h2>
+            <p className="mt-4 max-w-2xl text-sm leading-7 text-[#6B7280]">
+              Enjoy the signature South Indian dishes served at Ayyanar, then
+              visit the full menu page for the complete selection and images.
+            </p>
           </div>
-          <div className="grid gap-3 sm:grid-cols-3">
-            {experiences.map((experience) => (
-              <div
-                key={experience}
-                className="border-primary/20 bg-primary/10 text-accent border px-4 py-4 text-sm font-medium"
-              >
-                {experience}
-              </div>
-            ))}
+          <div className="flex flex-col items-start gap-3 sm:flex-row sm:flex-wrap">
+            <div className="rounded-full bg-[#EA5828] px-4 py-3 text-sm font-semibold text-white">
+              Authentic breakfast staples
+            </div>
+            <div className="rounded-full bg-[#F5E6DA] px-4 py-3 text-sm font-semibold text-[#3B2A24]">
+              Hearty lunch meals
+            </div>
+            <div className="rounded-full bg-[#F5E6DA] px-4 py-3 text-sm font-semibold text-[#3B2A24]">
+              Warm evening plates
+            </div>
           </div>
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-2">
+        <MotionContainer className="grid gap-8 lg:grid-cols-2">
           {menuCategories.map((category) => (
-            <section
+            <MotionArticle
               key={category.title}
-              className="border border-white/10 bg-[#181510] p-6 md:p-8"
+              className="card-surface p-6 md:p-8"
             >
-              <div className="mb-7 flex items-start justify-between gap-4 border-b border-white/10 pb-5">
+              <div className="mb-7 flex items-start justify-between gap-4 border-b border-[#D8B595]/60 pb-5">
                 <div>
-                  <h3 className="text-primary text-2xl font-semibold">
+                  <h3 className="text-2xl font-semibold text-[#3B2A24]">
                     {category.title}
                   </h3>
-                  <p className="mt-2 text-sm text-white/55">{category.note}</p>
+                  <p className="mt-2 text-sm text-[#6B7280]">{category.note}</p>
                 </div>
-                <span className="bg-primary/50 mt-1 h-px w-12" />
+                <span className="mt-1 h-px w-12 bg-[#EA5828]/20" />
               </div>
 
-              <div className="space-y-6">
+              <div className="space-y-5">
                 {category.items.map((item) => (
                   <div
                     key={item.name}
                     className="grid grid-cols-[1fr_auto] gap-5"
                   >
                     <div>
-                      <h4 className="font-medium text-white">{item.name}</h4>
-                      <p className="mt-1 text-sm leading-6 text-white/55">
+                      <h4 className="font-medium text-[#3B2A24]">
+                        {item.name}
+                      </h4>
+                      <p className="mt-1 text-sm leading-6 text-[#6B7280]">
                         {item.description}
                       </p>
                     </div>
-                    <p className="text-primary font-semibold">{item.price}</p>
+                    <p className="font-semibold text-[#EA5828]">{item.price}</p>
                   </div>
                 ))}
               </div>
-            </section>
+            </MotionArticle>
           ))}
+        </MotionContainer>
+
+        <div className="mt-12 flex justify-center">
+          <MotionLink
+            href="/menu"
+            className="btn-primary inline-flex items-center rounded-full px-6 py-3 text-sm font-bold tracking-[0.18em] uppercase"
+          >
+            View full menu
+          </MotionLink>
         </div>
       </div>
-    </section>
+    </MotionSection>
   );
 }

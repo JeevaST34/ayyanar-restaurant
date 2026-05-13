@@ -1,3 +1,5 @@
+import { MotionArticle, MotionContainer, MotionSection } from "./Animated";
+
 export default function Stats() {
   const stats = [
     { number: "25+", label: "Signature dishes" },
@@ -7,21 +9,24 @@ export default function Stats() {
   ];
 
   return (
-    <section className="border-y border-white/10 bg-[#17140f] py-8 text-white">
+    <MotionSection className="bg-[#F5E6DA] py-16 text-[#3B2A24]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 gap-px overflow-hidden border border-white/10 bg-white/10 md:grid-cols-4">
+        <MotionContainer className="grid gap-6 md:grid-cols-4">
           {stats.map((stat, index) => (
-            <div key={index} className="bg-[#17140f] px-5 py-7 text-center">
-              <div className="text-primary mb-2 text-3xl font-semibold md:text-4xl">
+            <MotionArticle
+              className="card-surface px-6 py-8 text-center"
+              key={index}
+            >
+              <div className="text-primary mb-3 text-4xl font-semibold md:text-5xl">
                 {stat.number}
               </div>
-              <div className="text-xs tracking-[0.18em] text-white/58 uppercase">
+              <div className="text-sm tracking-[0.18em] text-[#5B4A42] uppercase">
                 {stat.label}
               </div>
-            </div>
+            </MotionArticle>
           ))}
-        </div>
+        </MotionContainer>
       </div>
-    </section>
+    </MotionSection>
   );
 }

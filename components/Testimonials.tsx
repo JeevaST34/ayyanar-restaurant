@@ -1,3 +1,10 @@
+import {
+  MotionArticle,
+  MotionContainer,
+  MotionImage,
+  MotionSection,
+} from "./Animated";
+
 export default function Testimonials() {
   const testimonials = [
     {
@@ -13,7 +20,8 @@ export default function Testimonials() {
       role: "Family dining",
       rating: "5.0",
       text: "Ayyanar feels elegant without becoming stiff. Perfect for birthdays and family dinners.",
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop",
+      image:
+        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop",
     },
     {
       name: "Karthik Raj",
@@ -26,10 +34,10 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="bg-[#181510] py-24 text-white">
+    <MotionSection className="bg-[#FFE2D1] py-24 text-[#3B2A24]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-14 text-center">
-          <p className="text-primary mb-4 text-xs font-semibold tracking-[0.28em] uppercase">
+          <p className="mb-4 text-xs font-semibold tracking-[0.28em] text-[#EA5828] uppercase">
             Guest notes
           </p>
           <h2 className="mx-auto max-w-3xl text-4xl leading-tight font-semibold md:text-5xl">
@@ -37,35 +45,35 @@ export default function Testimonials() {
           </h2>
         </div>
 
-        <div className="grid gap-px overflow-hidden border border-white/10 bg-white/10 md:grid-cols-3">
+        <MotionContainer className="grid gap-6 md:grid-cols-3">
           {testimonials.map((testimonial) => (
-            <article key={testimonial.name} className="bg-[#0B1A2F] p-7">
+            <MotionArticle className="card-surface p-8" key={testimonial.name}>
               <div className="mb-8 flex items-center justify-between">
-                <span className="text-primary text-sm font-semibold">
+                <span className="text-sm font-semibold text-[#EA5828]">
                   {testimonial.rating}/5
                 </span>
-                <span className="bg-primary/35 h-px w-16" />
+                <span className="h-px w-16 bg-[#EA5828]/20" />
               </div>
-              <p className="min-h-28 text-lg leading-8 text-white/76">
+              <p className="min-h-28 text-lg leading-8 text-[#3B2A24]">
                 {testimonial.text}
               </p>
-              <div className="mt-8 flex items-center gap-4 border-t border-white/10 pt-6">
-                <img
+              <div className="mt-8 flex items-center gap-4 border-t border-[#D8B595]/60 pt-6">
+                <MotionImage
                   src={testimonial.image}
                   alt={testimonial.name}
                   className="h-[52px] w-[52px] rounded-full object-cover"
                 />
                 <div>
-                  <h3 className="font-semibold text-white">
+                  <h3 className="font-semibold text-[#3B2A24]">
                     {testimonial.name}
                   </h3>
-                  <p className="text-sm text-white/48">{testimonial.role}</p>
+                  <p className="text-sm text-[#6B7280]">{testimonial.role}</p>
                 </div>
               </div>
-            </article>
+            </MotionArticle>
           ))}
-        </div>
+        </MotionContainer>
       </div>
-    </section>
+    </MotionSection>
   );
 }

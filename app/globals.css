@@ -1,29 +1,55 @@
 @import "tailwindcss";
 
 :root {
-  --background: #eaf6ff;
-  --foreground: #0b1a2f;
-  --primary: #f55a24;
-  --secondary: #3aa9f5;
-  --accent: #6ccbff;
-  --surface: rgba(255, 255, 255, 0.88);
-  --surface-muted: rgba(234, 246, 255, 0.82);
+  --background: #FFF7F1;
+  --background-alt: #F5E6DA;
+  --background-highlight: #FFE2D1;
+  --card: #FFFFFF;
+  --surface: rgba(255, 255, 255, 0.92);
+  --surface-muted: rgba(255, 255, 255, 0.78);
+  --primary: #EA5828;
+  --accent: #F80901;
+  --heading: #3B2A24;
+  --paragraph: #5B4A42;
+  --border: #D8B595;
+  --footer-bg: #3B2A24;
+  --footer-text: #FFF7F1;
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-foreground: var(--paragraph);
   --color-primary: var(--primary);
-  --color-secondary: var(--secondary);
-  --color-accent: var(--accent);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-secondary: var(--accent);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-heading);
 }
 
 body {
-  background: linear-gradient(135deg, #3aa9f5, #6ccbff, #eaf6ff);
-  color: var(--foreground);
-  font-family: var(--font-geist-sans), serif;
+  background: var(--background);
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><defs><filter id="noise"><feTurbulence baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/></filter></defs><rect width="100%" height="100%" filter="url(%23noise)" opacity="0.02"/></svg>');
+  color: var(--paragraph);
+  font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading);
+  font-family: 'Cormorant Garamond', serif;
+}
+
+a {
+  color: inherit;
+}
+
+* {
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 html {
@@ -32,6 +58,44 @@ html {
 }
 
 ::selection {
-  background: rgba(245, 90, 36, 0.28);
-  color: #0b1a2f;
+  background: rgba(234, 88, 40, 0.16);
+  color: var(--heading);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.card-surface {
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  border-radius: 24px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-surface:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(234, 88, 40, 0.12);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--accent);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-secondary:hover {
+  background: rgba(234, 88, 40, 0.06);
 }

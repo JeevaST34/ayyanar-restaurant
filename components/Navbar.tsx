@@ -1,10 +1,11 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const navItems = [
   { label: "About", href: "#about" },
-  { label: "Menu", href: "#menu" },
+  { label: "Menu", href: "/menu" },
   { label: "Gallery", href: "#gallery" },
   { label: "Stories", href: "#stories" },
   { label: "Contact", href: "#contact" },
@@ -20,14 +21,22 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#0B1A2F]/90 backdrop-blur-xl">
+    <motion.header
+      initial={{ opacity: 0, y: -28 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+      className="fixed inset-x-0 top-0 z-50 border-b border-[#C89C7A]/70 bg-[rgba(59,42,36,0.92)] backdrop-blur-xl"
+    >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-        <a href="#home" className="group flex items-center">
+        <a href="#home" className="group flex items-center gap-3">
           <img
             src="https://res.cloudinary.com/dxfk1lmpg/image/upload/v1778585023/ChatGPT_Image_May_12_2026_03_35_27_PM_2_qaktev.svg"
             alt="Ayyanar Restaurant Logo"
             className="h-14 w-auto transition duration-300 group-hover:scale-105"
           />
+          {/* <span className="hidden text-sm font-semibold uppercase tracking-[0.25em] text-[#FFF7F1] sm:inline-flex">
+            Ayyanar
+          </span> */}
         </a>
 
         <nav
@@ -38,7 +47,7 @@ export default function Navbar() {
             <a
               key={item.href}
               href={item.href}
-              className="hover:text-primary text-xs font-medium tracking-[0.2em] text-white/68 uppercase transition"
+              className="text-xs font-semibold tracking-[0.2em] text-white! uppercase transition hover:text-[#EA5828]"
             >
               {item.label}
             </a>
@@ -48,7 +57,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <a
             href="tel:+919876543210"
-            className="hover:text-primary hidden text-sm font-medium text-white/75 transition lg:inline"
+            className="hidden text-sm font-semibold text-[#ffffff]! transition hover:text-[#EA5828] lg:inline"
           >
             +91 98765 43210
           </a>
@@ -61,10 +70,9 @@ export default function Navbar() {
             aria-expanded={isMenuOpen}
             aria-controls="header-menu"
             onClick={() => setIsMenuOpen((open) => !open)}
-            className="group border-primary/35 text-primary hover:border-primary/55 focus-visible:ring-primary/60 relative grid h-12 w-12 place-items-center overflow-hidden rounded-full border bg-[radial-gradient(circle_at_top,_rgba(58,169,245,0.18),_rgba(11,26,47,0.96)_64%)] shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_10px_35px_rgba(0,0,0,0.35)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_0_1px_rgba(58,169,245,0.12),0_16px_40px_rgba(0,0,0,0.45)] focus-visible:ring-2 focus-visible:outline-none lg:hidden"
+            className="group focus-visible:ring-primary relative grid h-12 w-12 place-items-center overflow-hidden rounded-full border border-[#C89C7A]/70 bg-[rgba(255,255,255,0.08)] text-[#FFF7F1] shadow-[0_10px_30px_rgba(59,42,36,0.22)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_16px_40px_rgba(59,42,36,0.28)] focus-visible:ring-2 focus-visible:outline-none lg:hidden"
           >
-            <span className="border-primary/15 group-hover:border-primary/30 pointer-events-none absolute inset-[5px] rounded-full border transition duration-300 group-hover:scale-110" />
-            <span className="via-primary/25 pointer-events-none absolute h-16 w-6 -translate-x-8 rotate-12 bg-gradient-to-r from-transparent to-transparent transition duration-500 group-hover:translate-x-8" />
+            <span className="pointer-events-none absolute inset-[5px] rounded-full border border-[#C89C7A]/60 transition duration-300" />
             <span className="relative flex h-5 w-5 items-center justify-center">
               <span
                 className={`absolute h-[2px] rounded-full bg-current transition-all duration-300 ${
@@ -86,7 +94,7 @@ export default function Navbar() {
 
           <a
             href="#reservations"
-            className="border-primary bg-primary hover:text-primary hidden border px-4 py-2 text-xs font-bold tracking-[0.18em] text-[#17120b] uppercase transition hover:bg-transparent lg:inline-flex"
+            className="border-primary bg-primary hover:bg-accent hidden border px-4 py-2 text-xs font-bold tracking-[0.18em] text-[#ffffff]! uppercase transition lg:inline-flex"
           >
             Reserve
           </a>
@@ -95,14 +103,14 @@ export default function Navbar() {
 
       <div
         id="header-menu"
-        className={`overflow-hidden border-t border-white/10 transition-all duration-500 ease-out lg:hidden ${
+        className={`overflow-hidden border-t border-[#C89C7A]/65 transition-all duration-500 ease-out lg:hidden ${
           isMenuOpen
             ? "max-h-[28rem] opacity-100"
             : "max-h-0 border-transparent opacity-0"
         }`}
       >
         <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
-          <div className="border-primary/20 rounded-[1.75rem] border bg-[linear-gradient(180deg,rgba(58,169,245,0.08),rgba(11,26,47,0.96))] p-3 shadow-[0_22px_60px_rgba(0,0,0,0.42)]">
+          <div className="rounded-[1.75rem] border border-[#C89C7A]/60 bg-[rgba(255,247,241,0.95)] p-3 shadow-[0_22px_60px_rgba(59,42,36,0.14)]">
             <nav
               aria-label="Primary navigation"
               className="grid gap-2 sm:grid-cols-2"
@@ -112,30 +120,30 @@ export default function Navbar() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="group hover:border-primary/35 hover:bg-primary/[0.08] hover:text-primary flex items-center justify-between rounded-2xl border border-white/8 bg-white/[0.03] px-4 py-3 text-sm tracking-[0.2em] text-white/72 uppercase transition duration-300"
+                  className="group hover:bg-background-highlight hover:text-primary flex items-center justify-between rounded-2xl border border-[#C89C7A]/60 bg-white/80 px-4 py-3 text-sm tracking-[0.2em] text-[#3B2A24] uppercase transition duration-300"
                   style={{
                     transitionDelay: isMenuOpen ? `${index * 45}ms` : "0ms",
                   }}
                 >
                   <span>{item.label}</span>
-                  <span className="text-primary/50 group-hover:text-primary transition duration-300 group-hover:translate-x-1">
+                  <span className="text-primary/60 group-hover:text-primary transition duration-300 group-hover:translate-x-1">
                     0{index + 1}
                   </span>
                 </a>
               ))}
             </nav>
 
-            <div className="mt-3 flex flex-col gap-3 rounded-2xl border border-white/8 bg-black/20 px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
+            <div className="mt-3 flex flex-col gap-3 rounded-2xl border border-[#C89C7A]/60 bg-white/90 px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
               <a
                 href="tel:+919876543210"
-                className="hover:text-primary text-sm font-medium text-white/75 transition lg:hidden"
+                className="text-sm font-medium text-[#3B2A24] transition lg:hidden"
               >
                 +91 98765 43210
               </a>
               <a
                 href="#reservations"
                 onClick={() => setIsMenuOpen(false)}
-                className="border-primary bg-primary hover:text-primary inline-flex w-full items-center justify-center rounded-full border px-4 py-3 text-xs font-bold tracking-[0.18em] text-[#17120b] uppercase transition hover:bg-transparent sm:w-auto"
+                className="border-primary bg-primary hover:bg-accent inline-flex w-full items-center justify-center rounded-full border px-4 py-3 text-xs font-bold tracking-[0.18em] text-[#17120b] uppercase transition sm:w-auto"
               >
                 Reserve Your Table
               </a>
@@ -143,6 +151,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 }

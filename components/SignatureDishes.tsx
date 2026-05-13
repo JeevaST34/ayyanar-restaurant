@@ -1,8 +1,15 @@
+import {
+  MotionArticle,
+  MotionContainer,
+  MotionImage,
+  MotionSection,
+} from "./Animated";
+
 export default function SignatureDishes() {
   const dishes = [
     {
       name: "Chicken Biryani",
-      price: "Rs. 290",
+      price: "S$ 36",
       description:
         "Dum-cooked seeraga samba rice, tender chicken, mint, and slow-bloomed masala.",
       image:
@@ -10,7 +17,7 @@ export default function SignatureDishes() {
     },
     {
       name: "Parotta Combo",
-      price: "Rs. 220",
+      price: "S$ 27",
       description:
         "Flaky layered parotta served with rich salna, onion relish, and curry.",
       image:
@@ -18,7 +25,7 @@ export default function SignatureDishes() {
     },
     {
       name: "Meals Special",
-      price: "Rs. 180",
+      price: "S$ 22",
       description:
         "A proper banana-leaf style spread with sambar, rasam, kootu, poriyal, and curd.",
       image:
@@ -26,7 +33,7 @@ export default function SignatureDishes() {
     },
     {
       name: "Seafood Fry",
-      price: "Rs. 350",
+      price: "S$ 44",
       description:
         "Fresh catch marinated with chilli, pepper, curry leaf, and crisp-fried edges.",
       image:
@@ -35,49 +42,52 @@ export default function SignatureDishes() {
   ];
 
   return (
-    <section className="bg-[#181510] py-24 text-white">
+    <MotionSection className="bg-[#FFE2D1] py-24 text-[#3B2A24]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-14 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <p className="text-primary mb-4 text-xs font-semibold tracking-[0.28em] uppercase">
+            <p className="mb-4 text-xs font-semibold tracking-[0.28em] text-[#EA5828] uppercase">
               Signature menu
             </p>
             <h2 className="max-w-3xl text-4xl leading-tight font-semibold md:text-5xl">
               The plates guests come back for.
             </h2>
           </div>
-          <p className="max-w-md text-sm leading-7 text-white/62">
+          <p className="max-w-md text-sm leading-7 text-[#6B7280]">
             A tighter edit of house favorites, built around aroma, texture, and
             the comforting heat South Indian food does so well.
           </p>
         </div>
 
-        <div className="grid gap-px overflow-hidden border border-white/10 bg-white/10 md:grid-cols-2 lg:grid-cols-4">
+        <MotionContainer className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {dishes.map((dish, index) => (
-            <article key={index} className="group bg-[#0B1A2F]">
+            <MotionArticle
+              key={index}
+              className="group card-surface overflow-hidden transition duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(234,88,40,0.12)]"
+            >
               <div className="relative h-64 overflow-hidden">
-                <img
+                <MotionImage
                   src={dish.image}
                   alt={dish.name}
                   className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0B1A2F]/75 to-transparent" />
-                <p className="text-primary absolute bottom-4 left-4 text-sm font-semibold">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#3B2A24]/35 to-transparent" />
+                <p className="absolute bottom-4 left-4 text-sm font-semibold text-[#EA5828]">
                   {dish.price}
                 </p>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-white">
+                <h3 className="text-xl font-semibold text-[#3B2A24]">
                   {dish.name}
                 </h3>
-                <p className="mt-3 text-sm leading-6 text-white/60">
+                <p className="mt-3 text-sm leading-6 text-[#6B7280]">
                   {dish.description}
                 </p>
               </div>
-            </article>
+            </MotionArticle>
           ))}
-        </div>
+        </MotionContainer>
       </div>
-    </section>
+    </MotionSection>
   );
 }
