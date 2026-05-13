@@ -18,7 +18,7 @@ export default function InstagramFeed() {
       likes: 189,
     },
     {
-      image: "/images/dishes/Fish-fry.jfif",
+      image: "/images/dishes/fish-fry.jfif",
       label: "Fish Fry",
       likes: 312,
     },
@@ -28,7 +28,7 @@ export default function InstagramFeed() {
       likes: 156,
     },
     {
-      image: "/images/dishes/Crab-masala.jfif",
+      image: "/images/dishes/crab-masala.jfif",
       label: "Crab Masala",
       likes: 278,
     },

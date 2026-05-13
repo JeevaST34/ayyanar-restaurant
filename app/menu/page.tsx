@@ -201,7 +201,7 @@ const imageCards = [
   },
   {
     label: "Idli",
-    src: "/images/dinner/dinner/idly.png",
+    src: "/images/dinner/dinner/Idly.png",
   },
   {
     label: "Dosai",
@@ -225,7 +225,7 @@ const imageCards = [
   },
   {
     label: "Chicken Kothu Prata",
-    src: "/images/dinner/dinner/Chicken-Kothu-Parotta.png",
+    src: "/images/dinner/dinner/Chicken-kothu-parotta.png",
   },
   {
     label: "Uthappam",
