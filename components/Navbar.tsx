@@ -30,18 +30,12 @@ export default function Navbar() {
       initial={{ opacity: 0, y: -24 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.65, ease: "easeOut" }}
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${scrolled
-        ? "bg-white/90 backdrop-blur-xl shadow-[0_8px_32px_rgba(2,132,199,0.1)] border-b border-[#bae6fd]"
-        : "bg-gradient-to-b from-[#e0f2fe]/80 to-transparent"
-        }`}
+      className="fixed inset-x-0 top-0 z-50 transition-all duration-500 bg-white/90 backdrop-blur-xl shadow-[0_8px_32px_rgba(2,132,199,0.1)] border-b border-[#bae6fd]"
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4 sm:px-8 lg:px-10">
         <a href="#home" className="group flex items-center gap-3 shrink-0">
           <img
-            src={scrolled
-              ? "https://res.cloudinary.com/dxfk1lmpg/image/upload/v1778580920/ChatGPT_Image_May_12_2026_03_35_27_PM_1_lrummf.svg"
-              : "https://res.cloudinary.com/dxfk1lmpg/image/upload/v1778585023/ChatGPT_Image_May_12_2026_03_35_27_PM_2_qaktev.svg"
-            }
+            src="https://res.cloudinary.com/dxfk1lmpg/image/upload/v1778580920/ChatGPT_Image_May_12_2026_03_35_27_PM_1_lrummf.svg"
             alt="Ayyanar Restaurant Logo"
             className="h-14 w-auto transition duration-300 group-hover:scale-105"
           />
@@ -52,8 +46,7 @@ export default function Navbar() {
             <a
               key={item.href}
               href={item.href}
-              className={`relative text-[0.7rem] font-black tracking-[0.2em] uppercase transition duration-300 group ${scrolled ? "text-[#0369a1] hover:text-[#075985]" : "text-[#075985] hover:text-[#f97316]"
-                }`}
+              className="relative text-[0.7rem] font-black tracking-[0.2em] uppercase transition duration-300 group text-[#0369a1] hover:text-[#075985]"
             >
               {item.label}
               <span className="absolute -bottom-1 left-0 h-[3px] w-0 rounded-full bg-[#f97316] transition-all duration-300 group-hover:w-full" />
@@ -68,10 +61,7 @@ export default function Navbar() {
             aria-expanded={isMenuOpen}
             aria-controls="header-menu"
             onClick={() => setIsMenuOpen((o) => !o)}
-            className={`grid h-12 w-12 place-items-center rounded-full border transition duration-300 lg:hidden ${scrolled
-              ? "border-[#bae6fd] bg-[#f0f9ff] text-[#0284c7] hover:border-[#7dd3fc]"
-              : "border-[#0284c7]/30 bg-white/20 text-[#075985] hover:bg-white/40"
-              }`}
+            className="grid h-12 w-12 place-items-center rounded-full border transition duration-300 lg:hidden border-[#bae6fd] bg-[#f0f9ff] text-[#0284c7] hover:border-[#7dd3fc]"
           >
             <span className="relative flex h-5 w-5 flex-col items-center justify-center gap-[5px]">
               <span className={`h-[2px] rounded-full bg-current transition-all duration-300 ${isMenuOpen ? "w-5 translate-y-[7px] rotate-45" : "w-5"}`} />
