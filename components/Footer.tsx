@@ -16,7 +16,7 @@ export default function Footer() {
           <div>
             <a href="#home" className="group mb-6 inline-block">
               <img
-                src="https://res.cloudinary.com/dxfk1lmpg/image/upload/v1778585023/ChatGPT_Image_May_12_2026_03_35_27_PM_2_qaktev.svg"
+                src="/main-logo.svg"
                 alt="Ayyanar Restaurant Logo"
                 className="h-12 w-auto transition duration-300 group-hover:scale-105"
               />
