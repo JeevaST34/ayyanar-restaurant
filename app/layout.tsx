@@ -17,6 +17,11 @@ const bodyFont = Inter({
 export const metadata: Metadata = {
   title: "Ayyanar Restaurant - Authentic South Indian Dining",
   description: "Experience the authentic flavors of South India at Ayyanar Restaurant. Premium dining with traditional roots, signature dishes, and family-friendly ambience.",
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
