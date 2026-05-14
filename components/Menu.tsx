@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import {
   MotionArticle,
   MotionContainer,
@@ -6,6 +9,8 @@ import {
 } from "./Animated";
 
 export default function Menu() {
+  const [activeTab, setActiveTab] = useState(0);
+
   const menuCategories = [
     {
       title: "Breakfast",
@@ -153,6 +158,43 @@ export default function Menu() {
     },
   ];
 
+  const previewTabs = [
+    {
+      label: "Authentic breakfast staples",
+      categoryIndex: 0,
+    },
+    {
+      label: "Hearty lunch meals",
+      categoryIndex: 1,
+    },
+    {
+      label: "Warm evening plates",
+      categoryIndex: 2,
+    },
+    {
+      label: "Comforting hot drinks",
+      categoryIndex: 3,
+    },
+  ];
+
+  const selectedCategory = menuCategories[previewTabs[activeTab].categoryIndex];
+
+  const splitCategoryItems = (category: (typeof menuCategories)[number]) => {
+    const half = Math.ceil(category.items.length / 2);
+    return [
+      {
+        ...category,
+        items: category.items.slice(0, half),
+      },
+      {
+        ...category,
+        items: category.items.slice(half),
+      },
+    ];
+  };
+
+  const visibleCategories = splitCategoryItems(selectedCategory);
+
   return (
     <MotionSection id="menu" className="bg-[#FFF7F1] py-24 text-[#3B2A24]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -170,22 +212,28 @@ export default function Menu() {
             </p>
           </div>
           <div className="flex flex-col items-start gap-3 sm:flex-row sm:flex-wrap">
-            <div className="rounded-full bg-[#EA5828] px-4 py-3 text-sm font-semibold text-white">
-              Authentic breakfast staples
-            </div>
-            <div className="rounded-full bg-[#F5E6DA] px-4 py-3 text-sm font-semibold text-[#3B2A24]">
-              Hearty lunch meals
-            </div>
-            <div className="rounded-full bg-[#F5E6DA] px-4 py-3 text-sm font-semibold text-[#3B2A24]">
-              Warm evening plates
-            </div>
+            {previewTabs.map((tab, tabIndex) => (
+              <button
+                key={tab.label}
+                type="button"
+                onClick={() => setActiveTab(tabIndex)}
+                className={`rounded-full px-4 py-3 text-sm font-semibold transition focus:ring-2 focus:ring-[#EA5828]/40 focus:outline-none ${
+                  tabIndex === activeTab
+                    ? "bg-[#EA5828] text-white"
+                    : "bg-[#F5E6DA] text-[#3B2A24] hover:bg-[#E7B59F]"
+                }`}
+                aria-pressed={tabIndex === activeTab}
+              >
+                {tab.label}
+              </button>
+            ))}
           </div>
         </div>
 
-        <MotionContainer className="grid gap-8 lg:grid-cols-2">
-          {menuCategories.map((category) => (
+        <MotionContainer key={activeTab} className="grid gap-8 lg:grid-cols-2">
+          {visibleCategories.map((category, index) => (
             <MotionArticle
-              key={category.title}
+              key={`${category.title}-${index}`}
               className="card-surface p-6 md:p-8"
             >
               <div className="mb-7 flex items-start justify-between gap-4 border-b border-[#D8B595]/60 pb-5">
