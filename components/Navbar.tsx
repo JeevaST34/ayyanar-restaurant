@@ -127,18 +127,18 @@ export default function Navbar() {
             </nav>
 
             <div className="mt-3 flex flex-col gap-3 rounded-2xl border border-[#C89C7A]/60 bg-white/90 px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
-              <a
+              {/* <a
                 href="tel:+919876543210"
                 className="text-sm font-medium text-[#3B2A24] transition lg:hidden"
               >
                 +65 8335 6561
-              </a>
+              </a> */}
               <a
-                href="#reservations"
+                href="#contact"
                 onClick={() => setIsMenuOpen(false)}
                 className="border-primary bg-primary hover:bg-accent inline-flex w-full items-center justify-center rounded-full border px-4 py-3 text-xs font-bold tracking-[0.18em] text-[#17120b] uppercase transition sm:w-auto"
               >
-                Reserve Your Table
+                Contact
               </a>
             </div>
           </div>
