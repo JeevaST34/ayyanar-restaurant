@@ -1,68 +1,49 @@
-import {
-  MotionContainer,
-  MotionImage,
-  MotionLink,
-  MotionSection,
-} from "./Animated";
+import { MotionContainer, MotionImage, MotionLink, MotionSection } from "./Animated";
+
+const posts = [
+  { image: "/images/dishes/Chicken-uppu-kari.jfif",  label: "Chicken Uppu Kari", likes: 245 },
+  { image: "/images/dishes/Egg-masala.png",           label: "Egg Masala",        likes: 189 },
+  { image: "/images/dishes/fish-fry.jfif",            label: "Fish Fry",          likes: 312 },
+  { image: "/images/dishes/mutton-nalli.png",         label: "Mutton Nalli",      likes: 156 },
+  { image: "/images/dishes/crab-masala.jfif",         label: "Crab Masala",       likes: 278 },
+  { image: "/images/dishes/pepperchicken.jfif",       label: "Pepper Chicken",    likes: 334 },
+];
 
 export default function InstagramFeed() {
-  const posts = [
-    {
-      image: "/images/dishes/Chicken-uppu-kari.jfif",
-      label: "Chicken Uppu Kari",
-      likes: 245,
-    },
-    {
-      image: "/images/dishes/Egg-masala.png",
-      label: "Egg Masala",
-      likes: 189,
-    },
-    {
-      image: "/images/dishes/fish-fry.jfif",
-      label: "Fish Fry",
-      likes: 312,
-    },
-    {
-      image: "/images/dishes/mutton-nalli.png",
-      label: "Mutton Nalli",
-      likes: 156,
-    },
-    {
-      image: "/images/dishes/crab-masala.jfif",
-      label: "Crab Masala",
-      likes: 278,
-    },
-    {
-      image: "/images/dishes/pepperchicken.jfif",
-      label: "Pepper Chicken",
-      likes: 334,
-    },
-  ];
-
   return (
-    <MotionSection id="stories" className="bg-[#F5E6DA] py-16 text-[#3B2A24]">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mb-12 grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
+    <MotionSection id="stories" className="bg-[#0d47a1] py-[5rem]">
+      <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+        <div className="mb-12 grid gap-8 lg:grid-cols-2 lg:items-end">
           <div>
-            <p className="mb-4 text-xs font-semibold tracking-[0.28em] text-[#EA5828] uppercase">
-              Social stories
+            <p className="mb-4 inline-block text-[0.6875rem] font-semibold tracking-[0.28em] uppercase text-[#42a5f5]">
+              Social Stories
             </p>
-            <h2 className="text-4xl leading-tight font-semibold md:text-5xl">
-              A living feed from the kitchen and dining room.
+            <h2
+              className="text-4xl font-bold leading-tight text-[#e3f2fd] md:text-5xl"
+              style={{ fontFamily: "var(--font-heading), 'Playfair Display', serif" }}
+            >
+              A living feed from
+              <br />
+              <em className="font-normal italic text-[#e64a19]">our kitchen & table.</em>
             </h2>
           </div>
-          <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
-            <p className="max-w-lg text-sm leading-7 text-[#6B7280]">
-              Built as a premium preview area for Instagram content, reels,
-              event moments, and seasonal specials.
+          <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-end">
+            <p className="max-w-xs text-sm leading-7 text-[#e3f2fd]/60">
+              Premium preview of Instagram content, seasonal specials, and
+              kitchen moments.
             </p>
             <a
               href="https://instagram.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex shrink-0 justify-center rounded-full bg-[#EA5828] px-6 py-3 text-xs font-bold tracking-[0.18em] text-white! uppercase shadow-[0_18px_40px_rgba(234,88,40,0.18)] transition hover:bg-[#F80901]"
+              className="btn-primary inline-flex shrink-0 items-center gap-2 whitespace-nowrap"
             >
-              Follow
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="0.7" fill="currentColor" stroke="none"/>
+              </svg>
+              Follow Us
             </a>
           </div>
         </div>
@@ -74,20 +55,24 @@ export default function InstagramFeed() {
               href="https://instagram.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative aspect-square overflow-hidden rounded-[24px] border border-[#C89C7A] bg-white shadow-[0_18px_35px_rgba(59,42,36,0.08)]"
+              className="group relative aspect-square overflow-hidden rounded-2xl border border-[#1565c0] bg-white shadow-[0_4px_16px_rgba(13,27,62,0.10)]"
               aria-label={`Open Instagram post: ${post.label}`}
             >
               <MotionImage
                 src={post.image}
                 alt={post.label}
-                className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                className="h-full w-full object-cover transition duration-500 group-hover:scale-108"
               />
-              <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(234,88,40,0.75),transparent)] opacity-0 transition group-hover:opacity-100" />
-              <div className="absolute inset-x-3 bottom-3 translate-y-3 opacity-0 transition group-hover:translate-y-0 group-hover:opacity-100">
-                <p className="text-xs font-semibold tracking-[0.18em] text-white uppercase">
-                  {post.label}
-                </p>
-                <p className="mt-1 text-xs text-white/70">{post.likes} likes</p>
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#0a2459]/0 transition duration-350 group-hover:bg-[#0a2459]/65">
+                <div className="translate-y-3 opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100 text-center px-2">
+                  <p className="text-[0.7rem] font-bold tracking-[0.15em] text-white uppercase">{post.label}</p>
+                  <p className="mt-1 flex items-center justify-center gap-1 text-[0.65rem] text-white/70">
+                    <svg viewBox="0 0 20 20" fill="currentColor" className="h-3 w-3 text-[#e64a19]">
+                      <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                    </svg>
+                    {post.likes}
+                  </p>
+                </div>
               </div>
             </MotionLink>
           ))}

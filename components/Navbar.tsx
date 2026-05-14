@@ -8,48 +8,51 @@ const navItems = [
   { label: "Menu", href: "/menu" },
   { label: "Gallery", href: "#gallery" },
   { label: "Stories", href: "#stories" },
-  // { label: "Contact", href: "#contact" },
 ];
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const closeMenu = () => setIsMenuOpen(false);
+    const onScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener("resize", closeMenu);
-    return () => window.removeEventListener("resize", closeMenu);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("resize", closeMenu);
+      window.removeEventListener("scroll", onScroll);
+    };
   }, []);
 
   return (
     <motion.header
-      initial={{ opacity: 0, y: -28 }}
+      initial={{ opacity: 0, y: -24 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7, ease: "easeOut" }}
-      className="fixed inset-x-0 top-0 z-50 border-b border-[#C89C7A]/70 bg-[rgba(59,42,36,0.92)] backdrop-blur-xl"
+      transition={{ duration: 0.65, ease: "easeOut" }}
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${scrolled
+          ? "bg-[#0a2459]/96 backdrop-blur-xl shadow-[0_4px_32px_rgba(10,36,89,0.28)] border-b border-[#1e88e5]/20"
+          : "bg-transparent"
+        }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-        <a href="#home" className="group flex items-center gap-3">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 sm:px-8 lg:px-10">
+        <a href="#home" className="group flex items-center gap-3 shrink-0">
           <img
-            src="https://res.cloudinary.com/dxfk1lmpg/image/upload/v1778585023/ChatGPT_Image_May_12_2026_03_35_27_PM_2_qaktev.svg"
+            src="https://res.cloudinary.com/dxfk1lmpg/image/upload/v1778580920/ChatGPT_Image_May_12_2026_03_35_27_PM_1_lrummf.svg"
             alt="Ayyanar Restaurant Logo"
             className="h-14 w-auto transition duration-300 group-hover:scale-105"
           />
-          {/* <span className="hidden text-sm font-semibold uppercase tracking-[0.25em] text-[#FFF7F1] sm:inline-flex">
-            Ayyanar
-          </span> */}
         </a>
 
-        <nav
-          aria-label="Primary navigation"
-          className="hidden items-center gap-7 lg:flex"
-        >
+        <nav aria-label="Primary navigation" className="hidden items-center gap-8 lg:flex">
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="text-xs font-semibold tracking-[0.2em] text-white! uppercase transition hover:text-[#EA5828]"
+              className="relative text-[0.7rem] font-semibold tracking-[0.22em] text-[#e3f2fd]/80 uppercase transition hover:text-[#e3f2fd] group"
             >
               {item.label}
+              <span className="absolute -bottom-0.5 left-0 h-[1.5px] w-0 rounded-full bg-[#e64a19] transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
         </nav>
@@ -57,86 +60,56 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <button
             type="button"
-            aria-label={
-              isMenuOpen ? "Close navigation menu" : "Open navigation menu"
-            }
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={isMenuOpen}
             aria-controls="header-menu"
-            onClick={() => setIsMenuOpen((open) => !open)}
-            className="group focus-visible:ring-primary relative grid h-12 w-12 place-items-center overflow-hidden rounded-full border border-[#C89C7A]/70 bg-[rgba(255,255,255,0.08)] text-[#FFF7F1] shadow-[0_10px_30px_rgba(59,42,36,0.22)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_16px_40px_rgba(59,42,36,0.28)] focus-visible:ring-2 focus-visible:outline-none lg:hidden"
+            onClick={() => setIsMenuOpen((o) => !o)}
+            className="grid h-11 w-11 place-items-center rounded-full border border-[#e3f2fd]/20 bg-[#e3f2fd]/08 text-[#e3f2fd] transition hover:border-[#1e88e5]/50 hover:text-[#42a5f5] lg:hidden"
           >
-            <span className="pointer-events-none absolute inset-[5px] rounded-full border border-[#C89C7A]/60 transition duration-300" />
-            <span className="relative flex h-5 w-5 items-center justify-center">
-              <span
-                className={`absolute h-[2px] rounded-full bg-current transition-all duration-300 ${isMenuOpen ? "w-5 rotate-45" : "top-0 w-5"
-                  }`}
-              />
-              <span
-                className={`absolute h-[2px] rounded-full bg-current transition-all duration-300 ${isMenuOpen ? "w-0 opacity-0" : "w-3 opacity-80"
-                  }`}
-              />
-              <span
-                className={`absolute h-[2px] rounded-full bg-current transition-all duration-300 ${isMenuOpen ? "w-5 -rotate-45" : "top-4 w-4"
-                  }`}
-              />
+            <span className="relative flex h-5 w-5 flex-col items-center justify-center gap-[5px]">
+              <span className={`h-[1.5px] rounded-full bg-current transition-all duration-300 ${isMenuOpen ? "w-5 translate-y-[6.5px] rotate-45" : "w-5"}`} />
+              <span className={`h-[1.5px] rounded-full bg-current transition-all duration-300 ${isMenuOpen ? "w-0 opacity-0" : "w-3.5"}`} />
+              <span className={`h-[1.5px] rounded-full bg-current transition-all duration-300 ${isMenuOpen ? "w-5 -translate-y-[6.5px] -rotate-45" : "w-5"}`} />
             </span>
           </button>
 
           <a
             href="#contact"
-            className="border-primary bg-primary hover:bg-accent hidden border px-4 py-2 text-xs font-bold tracking-[0.18em] text-[#ffffff]! uppercase transition lg:inline-flex"
+            className="hidden rounded-full bg-[#e64a19] px-5 py-2.5 text-[0.7rem] font-bold tracking-[0.18em] text-white uppercase shadow-[0_4px_16px_rgba(230,74,25,0.40)] transition hover:bg-[#c84010] hover:shadow-[0_6px_22px_rgba(230,74,25,0.50)] hover:-translate-y-0.5 lg:inline-flex"
           >
-            Contact
+            Reserve a Table
           </a>
         </div>
       </div>
 
       <div
         id="header-menu"
-        className={`overflow-hidden border-t border-[#C89C7A]/65 transition-all duration-500 ease-out lg:hidden ${isMenuOpen
-          ? "max-h-[28rem] opacity-100"
-          : "max-h-0 border-transparent opacity-0"
+        className={`overflow-hidden border-t border-[#e3f2fd]/10 transition-all duration-500 ease-out lg:hidden ${isMenuOpen ? "max-h-[24rem] opacity-100" : "max-h-0 border-transparent opacity-0"
           }`}
       >
-        <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
-          <div className="rounded-[1.75rem] border border-[#C89C7A]/60 bg-[rgba(255,247,241,0.95)] p-3 shadow-[0_22px_60px_rgba(59,42,36,0.14)]">
-            <nav
-              aria-label="Primary navigation"
-              className="grid gap-2 sm:grid-cols-2"
-            >
-              {navItems.map((item, index) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="group hover:bg-background-highlight hover:text-primary flex items-center justify-between rounded-2xl border border-[#C89C7A]/60 bg-white/80 px-4 py-3 text-sm tracking-[0.2em] text-[#3B2A24] uppercase transition duration-300"
-                  style={{
-                    transitionDelay: isMenuOpen ? `${index * 45}ms` : "0ms",
-                  }}
-                >
-                  <span>{item.label}</span>
-                  <span className="text-primary/60 group-hover:text-primary transition duration-300 group-hover:translate-x-1">
-                    0{index + 1}
-                  </span>
-                </a>
-              ))}
-            </nav>
-
-            <div className="mt-3 flex flex-col gap-3 rounded-2xl border border-[#C89C7A]/60 bg-white/90 px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
+        <div className="bg-[#0a2459]/98 px-5 py-5 sm:px-8">
+          <nav className="grid gap-1">
+            {navItems.map((item, i) => (
               <a
-                href="tel:+919876543210"
-                className="text-sm font-medium text-[#3B2A24] transition lg:hidden"
-              >
-                +65 9865 0140
-              </a>
-              <a
-                href="#reservations"
+                key={item.href}
+                href={item.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="border-primary bg-primary hover:bg-accent inline-flex w-full items-center justify-center rounded-full border px-4 py-3 text-xs font-bold tracking-[0.18em] text-[#17120b] uppercase transition sm:w-auto"
+                className="flex items-center justify-between rounded-xl px-4 py-3.5 text-sm font-semibold tracking-[0.18em] text-[#e3f2fd]/75 uppercase transition hover:bg-[#e3f2fd]/06 hover:text-[#e3f2fd]"
+                style={{ transitionDelay: isMenuOpen ? `${i * 40}ms` : "0ms" }}
               >
-                Reserve Your Table
+                <span>{item.label}</span>
+                <span className="text-[#42a5f5]/70 text-xs">0{i + 1}</span>
               </a>
-            </div>
+            ))}
+          </nav>
+          <div className="mt-4 border-t border-[#e3f2fd]/10 pt-4">
+            <a
+              href="#contact"
+              onClick={() => setIsMenuOpen(false)}
+              className="flex w-full items-center justify-center rounded-full bg-[#e64a19] py-3.5 text-xs font-bold tracking-[0.18em] text-white uppercase shadow-[0_4px_16px_rgba(230,74,25,0.35)] transition hover:bg-[#c84010]"
+            >
+              Reserve a Table
+            </a>
           </div>
         </div>
       </div>

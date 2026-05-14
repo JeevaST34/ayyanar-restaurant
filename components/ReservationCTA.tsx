@@ -1,119 +1,112 @@
-import {
-  MotionArticle,
-  MotionButton,
-  MotionContainer,
-  MotionSection,
-} from "./Animated";
+import { MotionArticle, MotionButton, MotionContainer, MotionSection } from "./Animated";
+
+const details = [
+  ["Location", "11 Veerasamy Rd, Singapore 207319"],
+  ["Dining Hours", "7:00 AM – 11:30 PM, Daily"],
+  ["For Groups", "Private dining and bespoke catering"],
+];
 
 export default function ReservationCTA() {
-  const details = [
-    ["Location", "11 Veerasamy Rd, Singapore 207319"],
-    ["Dining hours", "7:00 AM - 11:30 PM"],
-    ["For groups", "Private dining and catering"],
-  ];
-
   return (
     <MotionSection
       id="reservations"
-      className="relative overflow-hidden bg-[#F5E6DA] py-16 text-[#3B2A24]"
+      className="relative overflow-hidden py-[5rem]"
+      style={{ background: "linear-gradient(160deg, #0a2459, #1565c0)" }}
     >
-      <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(234,88,40,0.18),transparent_50%),linear-gradient(0deg,rgba(255,255,255,0.52),transparent)]" />
+      {/* Subtle radial glow */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(66,165,245,0.18),transparent_60%)]" />
 
-      <div className="relative mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
+      <div className="relative mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:px-10">
+
+        {/* Left — info */}
         <div>
-          <p className="mb-4 text-xs font-semibold tracking-[0.28em] text-[#EA5828] uppercase">
+          <p className="mb-5 inline-block text-[0.6875rem] font-semibold tracking-[0.28em] uppercase text-[#42a5f5]">
             Reservations
           </p>
-          <h2 className="max-w-xl text-4xl leading-tight font-semibold md:text-5xl">
-            Plan the table, the feast, and the occasion.
+          <h2
+            className="text-4xl font-bold leading-tight text-[#e3f2fd] md:text-5xl"
+            style={{ fontFamily: "var(--font-heading), 'Playfair Display', serif" }}
+          >
+            Plan the table,
+            <br />
+            <em className="font-normal italic text-[#e64a19]">the feast, the occasion.</em>
           </h2>
-          <p className="mt-6 max-w-xl text-base leading-8 text-[#5B4A42]">
+          <p className="mt-6 max-w-sm text-sm leading-8 text-[#e3f2fd]/55">
             Book for a quiet dinner, a family celebration, or a larger hosted
-            meal. Our team can help shape the menu around spice preference,
-            guest count, and service style.
+            meal. Our team shapes the menu around spice preference, guest count,
+            and service style.
           </p>
 
-          <MotionContainer className="mt-10 grid gap-6 sm:grid-cols-3 lg:grid-cols-1">
+          <MotionContainer className="mt-10 grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
             {details.map(([label, value]) => (
-              <MotionArticle key={label} className="card-surface p-6">
-                <p className="text-xs tracking-[0.2em] text-[#EA5828] uppercase">
+              <MotionArticle
+                key={label}
+                className="rounded-2xl border border-[#e3f2fd]/12 bg-[#e3f2fd]/06 p-5 backdrop-blur-sm"
+              >
+                <p className="mb-2 inline-block text-[0.6875rem] font-semibold tracking-[0.28em] uppercase text-[#42a5f5]">
                   {label}
                 </p>
-                <p className="mt-3 font-medium text-[#3B2A24]">{value}</p>
+                <p className="text-sm font-medium text-[#e3f2fd]/80">{value}</p>
               </MotionArticle>
             ))}
           </MotionContainer>
         </div>
 
-        <form className="glass-panel p-6 md:p-8">
+        {/* Right — form */}
+        <form className="rounded-3xl border border-[#e3f2fd]/12 bg-[#e3f2fd]/06 p-7 backdrop-blur-sm md:p-9">
           <div className="grid gap-4 md:grid-cols-2">
+            {[
+              { label: "Name",   type: "text",   placeholder: "Your name", span: 1 },
+              { label: "Phone",  type: "tel",    placeholder: "+65",       span: 1 },
+              { label: "Guests", type: "number", placeholder: "4",         span: 1 },
+            ].map(({ label, type, placeholder, span }) => (
+              <label key={label} className={`block ${span === 2 ? "md:col-span-2" : ""}`}>
+                <span className="mb-2 block text-[0.65rem] font-semibold tracking-[0.2em] text-[#e3f2fd]/50 uppercase">
+                  {label}
+                </span>
+                <input
+                  type={type}
+                  placeholder={placeholder}
+                  className="w-full rounded-xl border border-[#e3f2fd]/14 bg-[#e3f2fd]/06 px-4 py-3 text-sm text-[#e3f2fd] placeholder:text-[#e3f2fd]/30 outline-none transition focus:border-[#42a5f5]/60 focus:bg-[#e3f2fd]/10"
+                />
+              </label>
+            ))}
+
             <label className="block">
-              <span className="mb-2 block text-xs tracking-[0.18em] text-[#5B4A42] uppercase">
-                Name
-              </span>
-              <input
-                type="text"
-                className="w-full border border-[#C89C7A] bg-white px-4 py-3 text-[#3B2A24] transition outline-none placeholder:text-[#6B7280] focus:border-[#EA5828]"
-                placeholder="Your name"
-              />
-            </label>
-            <label className="block">
-              <span className="mb-2 block text-xs tracking-[0.18em] text-[#5B4A42] uppercase">
-                Phone
-              </span>
-              <input
-                type="tel"
-                className="w-full border border-[#C89C7A] bg-white px-4 py-3 text-[#3B2A24] transition outline-none placeholder:text-[#6B7280] focus:border-[#EA5828]"
-                placeholder="+65"
-              />
-            </label>
-            <label className="block">
-              <span className="mb-2 block text-xs tracking-[0.18em] text-[#5B4A42] uppercase">
-                Guests
-              </span>
-              <input
-                type="number"
-                min="1"
-                className="w-full border border-[#C89C7A] bg-white px-4 py-3 text-[#3B2A24] transition outline-none placeholder:text-[#6B7280] focus:border-[#EA5828]"
-                placeholder="4"
-              />
-            </label>
-            <label className="block">
-              <span className="mb-2 block text-xs tracking-[0.18em] text-[#5B4A42] uppercase">
+              <span className="mb-2 block text-[0.65rem] font-semibold tracking-[0.2em] text-[#e3f2fd]/50 uppercase">
                 Occasion
               </span>
-              <select className="w-full border border-[#C89C7A] bg-white px-4 py-3 text-[#3B2A24] transition outline-none focus:border-[#EA5828]">
+              <select className="w-full rounded-xl border border-[#e3f2fd]/14 bg-[#0a2459] px-4 py-3 text-sm text-[#e3f2fd]/70 outline-none transition focus:border-[#42a5f5]/60">
                 <option>Casual dining</option>
                 <option>Birthday</option>
                 <option>Family celebration</option>
                 <option>Corporate meal</option>
               </select>
             </label>
+
             <label className="block md:col-span-2">
-              <span className="mb-2 block text-xs tracking-[0.18em] text-[#6B7280] uppercase">
-                Preferred time
+              <span className="mb-2 block text-[0.65rem] font-semibold tracking-[0.2em] text-[#e3f2fd]/50 uppercase">
+                Preferred Date & Time
               </span>
               <input
                 type="datetime-local"
-                className="w-full border border-[#C89C7A] bg-white px-4 py-3 text-[#3B2A24] transition outline-none focus:border-[#EA5828]"
+                className="w-full rounded-xl border border-[#e3f2fd]/14 bg-[#e3f2fd]/06 px-4 py-3 text-sm text-[#e3f2fd]/70 outline-none transition focus:border-[#42a5f5]/60 focus:bg-[#e3f2fd]/10"
               />
             </label>
+
             <label className="block md:col-span-2">
-              <span className="mb-2 block text-xs tracking-[0.18em] text-[#6B7280] uppercase">
-                Requests
+              <span className="mb-2 block text-[0.65rem] font-semibold tracking-[0.2em] text-[#e3f2fd]/50 uppercase">
+                Special Requests
               </span>
               <textarea
                 rows={4}
-                className="w-full resize-none border border-[#C89C7A] bg-white px-4 py-3 text-[#3B2A24] transition outline-none placeholder:text-[#6B7280] focus:border-[#EA5828]"
-                placeholder="Dietary notes, preferred seating, celebration details"
+                placeholder="Dietary notes, seating preferences, celebration details…"
+                className="w-full resize-none rounded-xl border border-[#e3f2fd]/14 bg-[#e3f2fd]/06 px-4 py-3 text-sm text-[#e3f2fd] placeholder:text-[#e3f2fd]/30 outline-none transition focus:border-[#42a5f5]/60 focus:bg-[#e3f2fd]/10"
               />
             </label>
           </div>
 
-          <MotionButton
-            type="submit"
-            className="mt-6 w-full rounded-full bg-[#EA5828] px-7 py-4 text-sm font-bold tracking-[0.18em] text-white uppercase shadow-[0_18px_40px_rgba(234,88,40,0.18)] transition hover:bg-[#F80901]"
-          >
+          <MotionButton type="submit" className="btn-primary mt-6 w-full py-4 text-sm">
             Request Reservation
           </MotionButton>
         </form>
