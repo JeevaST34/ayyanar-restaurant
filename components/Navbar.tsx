@@ -8,7 +8,7 @@ const navItems = [
   { label: "Menu", href: "/menu" },
   { label: "Gallery", href: "#gallery" },
   { label: "Stories", href: "#stories" },
-  { label: "Contact", href: "#contact" },
+  // { label: "Contact", href: "#contact" },
 ];
 
 export default function Navbar() {
@@ -83,10 +83,10 @@ export default function Navbar() {
           </button>
 
           <a
-            href="#reservations"
+            href="#contact"
             className="border-primary bg-primary hover:bg-accent hidden border px-4 py-2 text-xs font-bold tracking-[0.18em] text-[#ffffff]! uppercase transition lg:inline-flex"
           >
-            Reserve
+            Contact
           </a>
         </div>
       </div>
@@ -94,8 +94,8 @@ export default function Navbar() {
       <div
         id="header-menu"
         className={`overflow-hidden border-t border-[#C89C7A]/65 transition-all duration-500 ease-out lg:hidden ${isMenuOpen
-            ? "max-h-[28rem] opacity-100"
-            : "max-h-0 border-transparent opacity-0"
+          ? "max-h-[28rem] opacity-100"
+          : "max-h-0 border-transparent opacity-0"
           }`}
       >
         <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">

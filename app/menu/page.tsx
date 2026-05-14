@@ -311,14 +311,13 @@ export default function MenuPage() {
           <aside className="space-y-6">
             <section className="card-surface overflow-hidden rounded-4xl border border-[#D8B595]/60 bg-white">
               <div className="bg-[#EA5828] px-6 py-5 text-white">
-                <h2 className="text-xl font-semibold">Gallery Highlights</h2>
+                <h2 className="text-xl font-semibold text-white!">Hot Drinks</h2>
                 <p className="mt-2 text-sm text-white/90">
-                  A preview of the dishes and drinks that bring our menu to
-                  life.
+                  Comforting beverages to pair with every plate.
                 </p>
               </div>
               <div className="grid gap-1 p-3 sm:grid-cols-2">
-                {imageCards.slice(16, 20).map((image) => (
+                {imageCards.slice(0, 6).map((image) => (
                   <figure
                     key={image.label}
                     className="overflow-hidden rounded-3xl bg-[#F5E6DA]"
@@ -326,7 +325,7 @@ export default function MenuPage() {
                     <MotionImage
                       src={image.src}
                       alt={image.label}
-                      className="h-36 w-full object-cover"
+                      className="h-32 w-full object-cover"
                     />
                     <figcaption className="bg-white px-3 py-2 text-sm font-semibold text-[#3B2A24]">
                       {image.label}
@@ -361,29 +360,7 @@ export default function MenuPage() {
                 ))}
               </div>
             </section>
-            <section className="card-surface p-6 md:p-8">
-              <h2 className="text-2xl font-semibold">Hot Drinks</h2>
-              <p className="mt-3 text-sm leading-6 text-[#6B7280]">
-                Comforting beverages to pair with every plate.
-              </p>
-              <div className="mt-6 grid gap-3 sm:grid-cols-2">
-                {imageCards.slice(0, 6).map((image) => (
-                  <figure
-                    key={image.label}
-                    className="overflow-hidden rounded-3xl bg-[#F5E6DA]"
-                  >
-                    <MotionImage
-                      src={image.src}
-                      alt={image.label}
-                      className="h-32 w-full object-cover"
-                    />
-                    <figcaption className="bg-white px-3 py-2 text-sm font-semibold text-[#3B2A24]">
-                      {image.label}
-                    </figcaption>
-                  </figure>
-                ))}
-              </div>
-            </section>
+
           </aside>
         </div>
       </div>
