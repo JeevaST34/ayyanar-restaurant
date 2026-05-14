@@ -21,7 +21,7 @@ export default function About() {
 
             <div className="relative overflow-hidden rounded-[24px] shadow-[0_24px_50px_rgba(2,132,199,0.15)]" style={{ height: "540px" }}>
               <MotionImage
-                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80"
+                src="/entrance-image.png"
                 alt="Ayyanar Restaurant dining room"
                 className="h-full w-full object-cover"
               />
@@ -29,13 +29,13 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#0284c7]/40 via-transparent to-transparent" />
 
               {/* Glass info card */}
-              <div className="absolute inset-x-5 bottom-5 rounded-[20px] bg-white/90 backdrop-blur-md border border-white px-6 py-5 shadow-[0_8px_32px_rgba(2,132,199,0.15)]">
+              {/* <div className="absolute inset-x-5 bottom-5 rounded-[20px] bg-white/90 backdrop-blur-md border border-white px-6 py-5 shadow-[0_8px_32px_rgba(2,132,199,0.15)]">
                 <p className="eyebrow mb-2">House Promise</p>
                 <p className="text-[0.8rem] font-medium leading-7 text-[#0369a1]">
                   Traditional recipes, composed plating, attentive service — and
                   the comfort of a generous South Indian table.
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
 
