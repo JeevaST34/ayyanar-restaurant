@@ -19,10 +19,7 @@ export default function Contact() {
     {
       label: "Email",
       icon: "mail",
-      values: [
-        { icon: "mail", text: "hello@ayyanarrestaurant.com" },
-        { icon: "mail", text: "reservations@ayyanarrestaurant.com" },
-      ],
+      values: [{ icon: "mail", text: "hello@ayyanarrestaurant.com" }],
     },
     {
       label: "Hours",
