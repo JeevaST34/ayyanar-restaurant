@@ -7,11 +7,21 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="grain-overlay relative flex min-h-screen items-center justify-center overflow-hidden"
-      style={{ background: "radial-gradient(circle at center, #e0f2fe 0%, #bae6fd 50%, #7dd3fc 100%)" }}
+      className="grain-overlay relative flex min-h-screen items-center justify-center overflow-hidden bg-sky-100"
     >
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 h-full w-full object-cover z-0 opacity-40"
+      >
+        <source src="/images/Hero-bg-video.mp4" type="video/mp4" />
+      </video>
+
       {/* Decorative sunburst rays effect (like the logo) */}
-      <div className="absolute inset-0 z-0 opacity-40 pointer-events-none" style={{ background: "repeating-conic-gradient(from 0deg, transparent 0deg 10deg, rgba(255,255,255,0.2) 10deg 20deg)" }} />
+      <div className="absolute inset-0 z-0 opacity-30 pointer-events-none" style={{ background: "repeating-conic-gradient(from 0deg, transparent 0deg 10deg, rgba(255,255,255,0.2) 10deg 20deg)" }} />
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-white/10 via-transparent to-white/30 pointer-events-none" />
 
       <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-center px-6 pt-36 pb-28 text-center">
         <motion.div
