@@ -7,7 +7,7 @@ const specials = [
     title: "Banana Leaf Thali",
     description:
       "A modern celebration of South Indian hospitality with layered rice, curries, chutneys, and gilded spice.",
-    price: "S$ 42",
+    price: "$ 42",
     image:
       "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=80",
   },
@@ -15,7 +15,7 @@ const specials = [
     title: "Coastal Catch Fry",
     description:
       "Fresh catch marinated in stone-ground chili and curry leaf, served crisp with lemon and shell-fried drama.",
-    price: "S$ 48",
+    price: "$ 48",
     image:
       "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=1200&q=80",
   },
@@ -23,7 +23,7 @@ const specials = [
     title: "Dum Biryani Reserve",
     description:
       "Seeraga samba rice layered with saffron, braised spices, and house-roasted chicken for a refined aroma.",
-    price: "S$ 52",
+    price: "$ 52",
     image:
       "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=1200&q=80",
   },

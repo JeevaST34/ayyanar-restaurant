@@ -9,28 +9,28 @@ export default function SignatureDishes() {
   const dishes = [
     {
       name: "Chicken Biryani",
-      price: "S$ 7",
+      price: "$ 7",
       description:
         "Dum-cooked seeraga samba rice, tender chicken, mint, and slow-bloomed masala.",
       image: "/images/ChatGPT Image May 13, 2026, 06_57_32 PM.png",
     },
     {
       name: "Chicken Fried Rice",
-      price: "S$ 6",
+      price: "$ 6",
       description:
         "Fragrant rice stir-fried with succulent chicken pieces, vibrant vegetables, and a blend of aromatic spices.",
       image: "/images/ChatGPT Image May 13, 2026, 07_04_58 PM.png",
     },
     {
       name: "Meals Special",
-      price: "S$ 5",
+      price: "$ 5",
       description:
         "A proper banana-leaf style spread with sambar, rasam, kootu, poriyal, and curd.",
       image: "/images/ChatGPT Image May 13, 2026, 06_59_55 PM.png",
     },
     {
       name: "Fish Biryani",
-      price: "S$ 8",
+      price: "$ 8",
       description:
         "Dum-cooked seeraga samba rice, marinated fish, mint, and slow-bloomed masala.",
       image: "/images/ChatGPT Image May 13, 2026, 07_08_16 PM.png",

@@ -13,9 +13,12 @@ export default function Hero() {
       className="relative flex min-h-[94vh] items-center overflow-hidden bg-[linear-gradient(135deg,#FFF7F1_0%,#FFE2D1_100%)] px-4 pt-36 pb-16 text-[#3B2A24] sm:px-6 lg:px-8"
     >
       <div className="absolute inset-0 z-0">
-        <img
-          src="/images/ChatGPT Image May 13, 2026, 06_57_32 PM.png"
-          alt="A refined table of South Indian dishes"
+        <video
+          src="/images/Hero-bg-video.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
           className="absolute inset-0 h-full w-full object-cover opacity-70"
         />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,247,241,0.72)_0%,rgba(255,226,209,0.68)_55%,rgba(255,247,241,0.78)_100%)] backdrop-blur-[2px]" />
@@ -42,16 +45,16 @@ export default function Hero() {
             >
               Explore Menu
             </MotionLink>
-            <MotionLink
+            {/* <MotionLink
               href="#reservations"
               className="inline-flex justify-center rounded-full border border-[#EA5828] px-8 py-4 text-sm font-bold tracking-[0.18em] text-[#EA5828] uppercase transition hover:bg-[#EA5828]/10"
             >
               Book a Table
-            </MotionLink>
+            </MotionLink> */}
           </div>
         </div>
 
-        <div className="grid gap-4 border-l border-[#D8B595] pl-5 text-sm text-[#5B4A42] sm:grid-cols-3 lg:grid-cols-1">
+        {/* <div className="grid gap-4 border-l border-[#D8B595] pl-5 text-sm text-[#5B4A42] sm:grid-cols-3 lg:grid-cols-1">
           <div className="card-surface p-6">
             <p className="text-xs tracking-[0.22em] text-[#EA5828] uppercase">
               Open Daily
@@ -76,7 +79,7 @@ export default function Hero() {
               Private dining, family feasts, catering
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </motion.section>
   );

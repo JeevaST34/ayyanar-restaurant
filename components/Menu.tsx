@@ -18,32 +18,32 @@ export default function Menu() {
       items: [
         {
           name: "Idly",
-          price: "S$ 0.80",
+          price: "$ 0.80",
           description: "Steamed rice cakes served with chutney.",
         },
         {
           name: "Vadai",
-          price: "S$ 0.80",
+          price: "$ 0.80",
           description: "Crispy lentil donuts with a peppery crunch.",
         },
         {
           name: "Pongal",
-          price: "S$ 2.00",
+          price: "$ 2.00",
           description: "Creamy rice and lentil porridge with ghee.",
         },
         {
           name: "Poori (2 pcs)",
-          price: "S$ 2.00",
+          price: "$ 2.00",
           description: "Fluffy fried bread with potato masala.",
         },
         {
           name: "Kal Dosai",
-          price: "S$ 1.50",
+          price: "$ 1.50",
           description: "Thin dosa with savory coconut chutney.",
         },
         {
           name: "Variety Rice",
-          price: "S$ 1.50",
+          price: "$ 1.50",
           description: "Seasoned rice with peas, carrots and spices.",
         },
       ],
@@ -54,22 +54,22 @@ export default function Menu() {
       items: [
         {
           name: "Veg Meals",
-          price: "S$ 5.00",
+          price: "$ 5.00",
           description: "Rice, curry, sambar, rasam, poriyal and appalam.",
         },
         {
           name: "Chicken Meals",
-          price: "S$ 7.00",
+          price: "$ 7.00",
           description: "Homestyle chicken curry with rice and sides.",
         },
         {
           name: "Mutton Meals",
-          price: "S$ 8.00",
+          price: "$ 8.00",
           description: "Slow-cooked mutton curry with steamed rice.",
         },
         {
           name: "Fish Meals",
-          price: "S$ 8.00",
+          price: "$ 8.00",
           description: "Tangy fish curry with rice and accompaniments.",
         },
       ],
@@ -80,42 +80,42 @@ export default function Menu() {
       items: [
         {
           name: "Idly",
-          price: "S$ 0.80",
+          price: "$ 0.80",
           description: "Soft steamed rice cakes with sambar.",
         },
         {
           name: "Podi Idly",
-          price: "S$ 3.00",
+          price: "$ 3.00",
           description: "Idly tossed in spiced lentil powder.",
         },
         {
           name: "Dosai",
-          price: "S$ 1.50",
+          price: "$ 1.50",
           description: "Classic dosa with coconut chutney.",
         },
         {
           name: "Masala Dosai",
-          price: "S$ 2.50",
+          price: "$ 2.50",
           description: "Golden dosa wrapped around potato masala.",
         },
         {
           name: "Onion Dosai",
-          price: "S$ 2.50",
+          price: "$ 2.50",
           description: "Dosa studded with caramelized onions.",
         },
         {
           name: "Podi Dosai",
-          price: "S$ 2.00",
+          price: "$ 2.00",
           description: "Dosa served with spicy podi and ghee.",
         },
         {
           name: "Onion Podi Dosai",
-          price: "S$ 2.50",
+          price: "$ 2.50",
           description: "Onion dosa finished with podi and ghee.",
         },
         {
           name: "Vendhaya Keerai Dosai",
-          price: "S$ 2.50",
+          price: "$ 2.50",
           description: "Fenugreek dosa with a fragrant green hue.",
         },
       ],
@@ -126,32 +126,32 @@ export default function Menu() {
       items: [
         {
           name: "Tea",
-          price: "S$ 1.00",
+          price: "$ 1.00",
           description: "Strong brewed tea with milk.",
         },
         {
           name: "Masala Tea",
-          price: "S$ 1.00",
+          price: "$ 1.00",
           description: "Tea spiced with cardamom and ginger.",
         },
         {
           name: "Coffee",
-          price: "S$ 1.50",
+          price: "$ 1.50",
           description: "Rich South Indian filter coffee.",
         },
         {
           name: "Horlicks Hot",
-          price: "S$ 1.50",
+          price: "$ 1.50",
           description: "Warm malted drink with milk.",
         },
         {
           name: "Milo Hot",
-          price: "S$ 1.50",
+          price: "$ 1.50",
           description: "Chocolate malt beverage served hot.",
         },
         {
           name: "Boost",
-          price: "S$ 1.50",
+          price: "$ 1.50",
           description: "Nutritious malt drink with milk.",
         },
       ],

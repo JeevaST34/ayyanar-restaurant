@@ -55,13 +55,6 @@ export default function Navbar() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <a
-            href="tel:+919876543210"
-            className="hidden text-sm font-semibold text-[#ffffff]! transition hover:text-[#EA5828] lg:inline"
-          >
-            +65 9865 0140
-          </a>
-
           <button
             type="button"
             aria-label={
@@ -75,19 +68,16 @@ export default function Navbar() {
             <span className="pointer-events-none absolute inset-[5px] rounded-full border border-[#C89C7A]/60 transition duration-300" />
             <span className="relative flex h-5 w-5 items-center justify-center">
               <span
-                className={`absolute h-[2px] rounded-full bg-current transition-all duration-300 ${
-                  isMenuOpen ? "w-5 rotate-45" : "top-0 w-5"
-                }`}
+                className={`absolute h-[2px] rounded-full bg-current transition-all duration-300 ${isMenuOpen ? "w-5 rotate-45" : "top-0 w-5"
+                  }`}
               />
               <span
-                className={`absolute h-[2px] rounded-full bg-current transition-all duration-300 ${
-                  isMenuOpen ? "w-0 opacity-0" : "w-3 opacity-80"
-                }`}
+                className={`absolute h-[2px] rounded-full bg-current transition-all duration-300 ${isMenuOpen ? "w-0 opacity-0" : "w-3 opacity-80"
+                  }`}
               />
               <span
-                className={`absolute h-[2px] rounded-full bg-current transition-all duration-300 ${
-                  isMenuOpen ? "w-5 -rotate-45" : "top-4 w-4"
-                }`}
+                className={`absolute h-[2px] rounded-full bg-current transition-all duration-300 ${isMenuOpen ? "w-5 -rotate-45" : "top-4 w-4"
+                  }`}
               />
             </span>
           </button>
@@ -103,11 +93,10 @@ export default function Navbar() {
 
       <div
         id="header-menu"
-        className={`overflow-hidden border-t border-[#C89C7A]/65 transition-all duration-500 ease-out lg:hidden ${
-          isMenuOpen
+        className={`overflow-hidden border-t border-[#C89C7A]/65 transition-all duration-500 ease-out lg:hidden ${isMenuOpen
             ? "max-h-[28rem] opacity-100"
             : "max-h-0 border-transparent opacity-0"
-        }`}
+          }`}
       >
         <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
           <div className="rounded-[1.75rem] border border-[#C89C7A]/60 bg-[rgba(255,247,241,0.95)] p-3 shadow-[0_22px_60px_rgba(59,42,36,0.14)]">

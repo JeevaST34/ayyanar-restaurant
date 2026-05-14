@@ -10,82 +10,82 @@ const menuCategories = [
   {
     title: "Breakfast",
     items: [
-      { name: "Idly", price: "S$ 0.80" },
-      { name: "Vadai", price: "S$ 0.80" },
-      { name: "Pongal", price: "S$ 2.00" },
-      { name: "Poori (2 pcs)", price: "S$ 2.00" },
-      { name: "Kal Dosai", price: "S$ 1.50" },
-      { name: "Variety Rice", price: "S$ 1.50" },
+      { name: "Idly", price: "$ 0.80" },
+      { name: "Vadai", price: "$ 0.80" },
+      { name: "Pongal", price: "$ 2.00" },
+      { name: "Poori (2 pcs)", price: "$ 2.00" },
+      { name: "Kal Dosai", price: "$ 1.50" },
+      { name: "Variety Rice", price: "$ 1.50" },
     ],
   },
   {
     title: "Lunch",
     items: [
-      { name: "Veg Meals", price: "S$ 5.00" },
-      { name: "Chicken Meals", price: "S$ 7.00" },
-      { name: "Mutton Meals", price: "S$ 8.00" },
-      { name: "Fish Meals", price: "S$ 8.00" },
+      { name: "Veg Meals", price: "$ 5.00" },
+      { name: "Chicken Meals", price: "$ 7.00" },
+      { name: "Mutton Meals", price: "$ 8.00" },
+      { name: "Fish Meals", price: "$ 8.00" },
     ],
   },
   {
     title: "Biryani",
     items: [
-      { name: "Egg Biriyani", price: "S$ 5.00" },
-      { name: "Chicken Biriyani", price: "S$ 7.00" },
-      { name: "Mutton Biriyani", price: "S$ 8.00" },
-      { name: "Fish Biriyani", price: "S$ 8.00" },
+      { name: "Egg Biriyani", price: "$ 5.00" },
+      { name: "Chicken Biriyani", price: "$ 7.00" },
+      { name: "Mutton Biriyani", price: "$ 8.00" },
+      { name: "Fish Biriyani", price: "$ 8.00" },
     ],
   },
   {
     title: "Dinner",
     items: [
-      { name: "Idly", price: "S$ 0.80" },
-      { name: "Podi Idly", price: "S$ 3.00" },
-      { name: "Dosai", price: "S$ 1.50" },
-      { name: "Masala Dosai", price: "S$ 2.50" },
-      { name: "Onion Dosai", price: "S$ 2.50" },
-      { name: "Podi Dosai", price: "S$ 2.00" },
-      { name: "Onion Podi Dosai", price: "S$ 2.50" },
-      { name: "Vendhaya Keerai Dosai", price: "S$ 2.50" },
-      { name: "Kal Dosai", price: "S$ 1.50" },
+      { name: "Idly", price: "$ 0.80" },
+      { name: "Podi Idly", price: "$ 3.00" },
+      { name: "Dosai", price: "$ 1.50" },
+      { name: "Masala Dosai", price: "$ 2.50" },
+      { name: "Onion Dosai", price: "$ 2.50" },
+      { name: "Podi Dosai", price: "$ 2.00" },
+      { name: "Onion Podi Dosai", price: "$ 2.50" },
+      { name: "Vendhaya Keerai Dosai", price: "$ 2.50" },
+      { name: "Kal Dosai", price: "$ 1.50" },
     ],
   },
   {
     title: "Dinner Specials",
     items: [
-      { name: "Egg Dosai", price: "S$ 2.50" },
-      { name: "Rava Dosai", price: "S$ 2.50" },
-      { name: "Rava Onion Dosai", price: "S$ 3.00" },
-      { name: "Uthappam", price: "S$ 2.00" },
-      { name: "Onion Uthappam", price: "S$ 2.50" },
-      { name: "Onion Podi Uthappam", price: "S$ 3.00" },
-      { name: "Ghee Roast", price: "S$ 4.00" },
-      { name: "Parotta (2 pcs)", price: "S$ 3.00" },
-      { name: "Kothu Parotta", price: "S$ 6.00" },
-      { name: "Chapathi (2 pcs)", price: "S$ 2.50" },
-      { name: "Veg Fried Rice", price: "S$ 5.00" },
-      { name: "Egg Fried Rice", price: "S$ 6.00" },
-      { name: "Chicken Fried Rice", price: "S$ 6.00" },
+      { name: "Egg Dosai", price: "$ 2.50" },
+      { name: "Rava Dosai", price: "$ 2.50" },
+      { name: "Rava Onion Dosai", price: "$ 3.00" },
+      { name: "Uthappam", price: "$ 2.00" },
+      { name: "Onion Uthappam", price: "$ 2.50" },
+      { name: "Onion Podi Uthappam", price: "$ 3.00" },
+      { name: "Ghee Roast", price: "$ 4.00" },
+      { name: "Parotta (2 pcs)", price: "$ 3.00" },
+      { name: "Kothu Parotta", price: "$ 6.00" },
+      { name: "Chapathi (2 pcs)", price: "$ 2.50" },
+      { name: "Veg Fried Rice", price: "$ 5.00" },
+      { name: "Egg Fried Rice", price: "$ 6.00" },
+      { name: "Chicken Fried Rice", price: "$ 6.00" },
     ],
   },
   {
     title: "Egg Special",
     items: [
-      { name: "Omelette", price: "S$ 2.00" },
-      { name: "Half Boil", price: "S$ 1.00" },
-      { name: "Egg Podi Mass", price: "S$ 2.50" },
-      { name: "Egg Kalaki", price: "S$ 2.00" },
+      { name: "Omelette", price: "$ 2.00" },
+      { name: "Half Boil", price: "$ 1.00" },
+      { name: "Egg Podi Mass", price: "$ 2.50" },
+      { name: "Egg Kalaki", price: "$ 2.00" },
     ],
   },
   {
     title: "Hot Drinks",
     items: [
-      { name: "Tea", price: "S$ 1.00" },
-      { name: "Masala Tea", price: "S$ 1.00" },
-      { name: "Coffee", price: "S$ 1.50" },
-      { name: "Horlicks Hot", price: "S$ 1.50" },
-      { name: "Milo Hot", price: "S$ 1.50" },
-      { name: "Boost", price: "S$ 1.50" },
+      { name: "Tea", price: "$ 1.00" },
+      { name: "Masala Tea", price: "$ 1.00" },
+      { name: "Coffee", price: "$ 1.50" },
+      { name: "Horlicks Hot", price: "$ 1.50" },
+      { name: "Milo Hot", price: "$ 1.50" },
+      { name: "Boost", price: "$ 1.50" },
     ],
   },
 ];
@@ -93,27 +93,27 @@ const menuCategories = [
 const imageCards = [
   {
     label: "Tea",
-    src: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=80",
+    src: "/images/beverages/Tea.png",
   },
   {
     label: "Coffee",
-    src: "https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=1200&q=80",
+    src: "/images/beverages/Coeffe.png",
   },
   {
     label: "Horlicks",
-    src: "https://images.pexels.com/photos/926361/pexels-photo-926361.jpeg",
+    src: "/images/beverages/horlicks.png",
   },
   {
     label: "Milo",
-    src: "https://images.pexels.com/photos/10389609/pexels-photo-10389609.jpeg",
+    src: "/images/beverages/milo.png",
   },
   {
-    label: "Badam Milk",
-    src: "https://images.pexels.com/photos/4187716/pexels-photo-4187716.jpeg",
+    label: "Masala Tea",
+    src: "/images/beverages/masala-tea.png",
   },
   {
     label: "Boost",
-    src: "https://images.pexels.com/photos/34541593/pexels-photo-34541593.jpeg",
+    src: "/images/beverages/boost.png",
   },
   {
     label: "Idiyappam",
@@ -318,7 +318,7 @@ export default function MenuPage() {
                 </p>
               </div>
               <div className="grid gap-1 p-3 sm:grid-cols-2">
-                {imageCards.slice(16, 24).map((image) => (
+                {imageCards.slice(16, 20).map((image) => (
                   <figure
                     key={image.label}
                     className="overflow-hidden rounded-3xl bg-[#F5E6DA]"
@@ -350,6 +350,29 @@ export default function MenuPage() {
                     className="overflow-hidden rounded-3xl bg-[#F5E6DA]"
                   >
                     <img
+                      src={image.src}
+                      alt={image.label}
+                      className="h-32 w-full object-cover"
+                    />
+                    <figcaption className="bg-white px-3 py-2 text-sm font-semibold text-[#3B2A24]">
+                      {image.label}
+                    </figcaption>
+                  </figure>
+                ))}
+              </div>
+            </section>
+            <section className="card-surface p-6 md:p-8">
+              <h2 className="text-2xl font-semibold">Hot Drinks</h2>
+              <p className="mt-3 text-sm leading-6 text-[#6B7280]">
+                Comforting beverages to pair with every plate.
+              </p>
+              <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                {imageCards.slice(0, 6).map((image) => (
+                  <figure
+                    key={image.label}
+                    className="overflow-hidden rounded-3xl bg-[#F5E6DA]"
+                  >
+                    <MotionImage
                       src={image.src}
                       alt={image.label}
                       className="h-32 w-full object-cover"
