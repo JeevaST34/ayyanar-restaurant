@@ -7,8 +7,8 @@ export default function Contact() {
       icon: "location",
       values: [
         { icon: "home", text: "11 Veerasamy Rd" },
-        { icon: "building", text: "Singapore 207319" },
-        { icon: "flag", text: "Singapore" },
+        { icon: "building", text: "Sri Veeramakaliamman Temple" },
+        { icon: "flag", text: "Singapore 207319" },
       ],
     },
     {
