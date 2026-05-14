@@ -14,17 +14,17 @@ export default function Contact() {
     {
       label: "Phone",
       icon: "phone",
-      values: [{ icon: "phone", text: "+65 9865 0140" }],
+      values: [{ icon: "phone", text: "+65 8335 6561" }],
     },
     {
       label: "Email",
       icon: "mail",
-      values: [{ icon: "mail", text: "hello@ayyanarrestaurant.com" }],
+      values: [{ icon: "mail", text: "ayyanarrestaurant2026@gmail.com" }],
     },
     {
       label: "Hours",
       icon: "clock",
-      values: [{ icon: "clock", text: "Monday - Sunday: 7:00 AM - 11:30 PM" }],
+      values: [{ icon: "clock", text: "Monday - Sunday: 6:00 AM - 11:00 PM" }],
     },
   ];
 

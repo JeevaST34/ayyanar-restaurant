@@ -131,7 +131,7 @@ export default function Navbar() {
                 href="tel:+919876543210"
                 className="text-sm font-medium text-[#3B2A24] transition lg:hidden"
               >
-                +65 9865 0140
+                +65 8335 6561
               </a>
               <a
                 href="#reservations"

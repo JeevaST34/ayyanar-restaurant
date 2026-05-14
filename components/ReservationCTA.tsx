@@ -8,7 +8,7 @@ import {
 export default function ReservationCTA() {
   const details = [
     ["Location", "11 Veerasamy Rd, Singapore 207319"],
-    ["Dining hours", "7:00 AM - 11:30 PM"],
+    ["Dining hours", "6:00 AM - 11:00 PM"],
     ["For groups", "Private dining and catering"],
   ];
 

@@ -48,8 +48,8 @@ export default function Footer() {
             </h4>
             <ul className="mt-5 space-y-3 text-sm text-[#FFF7F1]/70">
               <li>Singapore</li>
-              <li>+65 9865 0140</li>
-              <li>hello@ayyanarrestaurant.com</li>
+              <li>+65 8335 6561</li>
+              <li>ayyanarrestaurant2026@gmail.com</li>
             </ul>
           </div>
         </div>

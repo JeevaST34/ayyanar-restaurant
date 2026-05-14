@@ -25,7 +25,7 @@ export default function Hero() {
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#FFF7F1] to-transparent" />
       </div>
 
-      <div className="relative z-10 mx-auto flex justify-center w-full max-w-7xl items-end gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+      <div className="relative z-10 mx-auto flex w-full max-w-7xl items-end justify-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
         <div className="max-w-4xl text-center">
           <p className="mb-5 inline-flex border border-[#EA5828]/20 bg-[#EA5828]/10 px-4 py-2 text-xs font-semibold tracking-[0.28em] text-[#EA5828] uppercase">
             Singapore heritage kitchen
@@ -33,12 +33,12 @@ export default function Hero() {
           <h1 className="max-w-4xl text-5xl leading-[0.96] font-bold tracking-normal text-[#3B2A24] sm:text-6xl lg:text-8xl">
             Ayyanar Restaurant
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-[#5B4A42] font-semibold my-4 mx-auto">
+          <p className="mx-auto my-4 mt-6 max-w-2xl text-lg leading-8 font-semibold text-[#5B4A42]">
             A polished South Indian dining room for fire-roasted spices, slow
             dum biryani, coastal seafood, layered parotta, and warm family
             celebrations.
           </p>
-          <div className="mt-9 flex flex-col gap-4 sm:flex-row justify-center">
+          <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
             <MotionLink
               href="#menu"
               className="inline-flex justify-center rounded-full bg-[#EA5828] px-8 py-4 text-sm font-bold tracking-[0.18em] text-white! uppercase shadow-[0_16px_35px_rgba(234,88,40,0.14)] transition hover:bg-[#F80901]"
@@ -60,7 +60,7 @@ export default function Hero() {
               Open Daily
             </p>
             <p className="mt-2 text-base font-semibold text-[#3B2A24]">
-              7:00 AM - 11:30 PM
+              6:00 AM - 11:00 PM
             </p>
           </div>
           <div className="card-surface p-6">
