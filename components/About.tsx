@@ -27,13 +27,13 @@ export default function About() {
           <div className="relative">
             <div className="relative h-[520px] overflow-hidden rounded-[28px] shadow-[0_24px_70px_rgba(234,88,40,0.12)]">
               <MotionImage
-                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80"
+                src="/entrance-image.png"
                 alt="Warm restaurant dining room"
                 className="h-full w-full object-cover"
               />
               <div className="absolute inset-0" />
             </div>
-            <div className="glass-panel absolute right-6 -bottom-7 left-6 border p-6">
+            {/* <div className="glass-panel absolute right-6 -bottom-7 left-6 border p-6">
               <p className="text-xs tracking-[0.24em] text-[#EA5828] uppercase">
                 House promise
               </p>
@@ -41,7 +41,7 @@ export default function About() {
                 Traditional recipes, composed plating, attentive service, and
                 the comfort of a generous South Indian table.
               </p>
-            </div>
+            </div> */}
           </div>
 
           <div className="pt-6 lg:pt-0">
