@@ -62,27 +62,27 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="relative bg-[#0a2459]">
-      {/* Orange top border */}
-      <div className="h-[3px] w-full bg-[#e64a19]" />
+    <footer className="relative bg-[#0284c7] pt-4">
+      {/* Top border gradient */}
+      <div className="absolute inset-x-0 top-0 h-1.5 bg-[#f97316]" />
 
-      <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
-        <div className="grid gap-12 py-16 lg:grid-cols-[1.5fr_1fr_1fr_1fr_1fr]">
+      <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
+        <div className="grid gap-12 py-20 lg:grid-cols-[1.5fr_1fr_1fr_1fr_1fr]">
 
           {/* Brand column */}
           <div className="lg:col-span-1">
-            <a href="#home" className="group mb-6 inline-block">
+            <a href="#home" className="group mb-8 inline-block">
               <img
-                src="https://res.cloudinary.com/dxfk1lmpg/image/upload/v1778580920/ChatGPT_Image_May_12_2026_03_35_27_PM_1_lrummf.svg"
+                src="https://res.cloudinary.com/dxfk1lmpg/image/upload/v1778585023/ChatGPT_Image_May_12_2026_03_35_27_PM_2_qaktev.svg"
                 alt="Ayyanar Restaurant"
-                className="h-14 w-auto transition duration-300 group-hover:scale-105"
+                className="h-16 w-auto transition duration-300 group-hover:scale-105 filter drop-shadow-[0_2px_8px_rgba(0,0,0,0.2)] brightness-0 invert"
               />
             </a>
-            <p className="mt-4 max-w-xs text-sm leading-7 text-[#e3f2fd]/50">
+            <p className="mt-4 max-w-xs text-sm font-medium leading-8 text-white/80">
               Authentic South Indian dining with a polished room, generous
               hospitality, and premium service — in the heart of Singapore.
             </p>
-            <div className="mt-6 flex gap-3">
+            <div className="mt-8 flex gap-4">
               {socialIcons.map((s) => (
                 <a
                   key={s.label}
@@ -90,7 +90,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.label}
-                  className="grid h-9 w-9 place-items-center rounded-full border border-[#e3f2fd]/12 text-[#e3f2fd]/50 transition hover:border-[#e64a19]/60 hover:text-[#e64a19]"
+                  className="grid h-11 w-11 place-items-center rounded-full bg-white/10 text-white transition duration-300 hover:bg-white hover:text-[#f97316]"
                 >
                   {s.icon}
                 </a>
@@ -101,15 +101,15 @@ export default function Footer() {
           {/* Link columns */}
           {footerLinks.map((col) => (
             <div key={col.heading}>
-              <h4 className="mb-5 text-[0.65rem] font-bold tracking-[0.28em] text-[#42a5f5] uppercase">
+              <h4 className="mb-6 text-[0.7rem] font-bold tracking-[0.25em] text-white uppercase opacity-90">
                 {col.heading}
               </h4>
-              <ul className="space-y-3">
+              <ul className="space-y-4">
                 {col.links.map((link) => (
                   <li key={link.label}>
                     <a
                       href={link.href}
-                      className="text-sm text-[#e3f2fd]/50 transition hover:text-[#e3f2fd]/90"
+                      className="text-sm font-medium text-white/70 transition duration-300 hover:text-white"
                     >
                       {link.label}
                     </a>
@@ -121,22 +121,22 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="flex flex-col gap-4 border-t border-[#e3f2fd]/08 py-7 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-xs text-[#e3f2fd]/35">
+        <div className="flex flex-col gap-6 border-t border-white/20 py-8 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-xs font-semibold text-white/60">
             © 2026 Ayyanar Restaurant. All rights reserved.
           </p>
-          <div className="flex items-center gap-5">
-            <a href="#" className="text-xs text-[#e3f2fd]/35 transition hover:text-[#42a5f5]">
+          <div className="flex items-center gap-6">
+            <a href="#" className="text-xs font-semibold text-white/60 transition hover:text-white">
               Privacy Policy
             </a>
-            <a href="#" className="text-xs text-[#e3f2fd]/35 transition hover:text-[#42a5f5]">
+            <a href="#" className="text-xs font-semibold text-white/60 transition hover:text-white">
               Terms of Use
             </a>
             <a
               href="https://wa.me/6598650140"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full border border-[#e64a19]/40 px-4 py-1.5 text-xs font-semibold text-[#e64a19] transition hover:bg-[#e64a19]/10"
+              className="rounded-full bg-white px-5 py-2 text-[0.8rem] font-bold text-[#0284c7] transition duration-300 hover:bg-[#f97316] hover:text-white"
             >
               WhatsApp Us
             </a>

@@ -9,22 +9,29 @@ export default function About() {
   ];
 
   return (
-    <MotionSection id="about" className="bg-[#e3f2fd] py-[5rem]">
-      <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
-        <div className="grid gap-16 lg:grid-cols-[1fr_1fr] lg:items-center">
+    <MotionSection id="about" className="bg-[#f0f9ff] py-[5.5rem]">
+      <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
+        <div className="grid gap-16 lg:grid-cols-2 lg:items-center">
 
-          {/* Image column */}
+          {/* Image */}
           <div className="relative">
-            <div className="absolute -right-4 -top-4 h-full w-full rounded-[20px] border border-[#1e88e5]/25" />
-            <div className="relative overflow-hidden rounded-[20px] shadow-[0_24px_64px_rgba(13,27,62,0.14)]" style={{ height: "520px" }}>
+            {/* Decorative frame */}
+            <div className="absolute -right-5 -top-5 h-full w-full rounded-[24px] border-[3px] border-[#bae6fd] pointer-events-none" />
+            <div className="absolute -left-4 -bottom-4 h-32 w-32 rounded-[20px] bg-[#7dd3fc]/30 pointer-events-none" />
+
+            <div className="relative overflow-hidden rounded-[24px] shadow-[0_24px_50px_rgba(2,132,199,0.15)]" style={{ height: "540px" }}>
               <MotionImage
                 src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80"
                 alt="Ayyanar Restaurant dining room"
                 className="h-full w-full object-cover"
               />
-              <div className="absolute inset-x-5 bottom-5 rounded-2xl bg-[#e3f2fd]/92 backdrop-blur-sm border border-[#bbdefb] px-6 py-5 shadow-[0_8px_24px_rgba(13,71,161,0.12)]">
+              {/* Overlay gradient bottom */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0284c7]/40 via-transparent to-transparent" />
+
+              {/* Glass info card */}
+              <div className="absolute inset-x-5 bottom-5 rounded-[20px] bg-white/90 backdrop-blur-md border border-white px-6 py-5 shadow-[0_8px_32px_rgba(2,132,199,0.15)]">
                 <p className="eyebrow mb-2">House Promise</p>
-                <p className="text-sm leading-7 text-[#0d1b3e]">
+                <p className="text-[0.8rem] font-medium leading-7 text-[#0369a1]">
                   Traditional recipes, composed plating, attentive service — and
                   the comfort of a generous South Indian table.
                 </p>
@@ -32,34 +39,37 @@ export default function About() {
             </div>
           </div>
 
-          {/* Text column */}
+          {/* Text */}
           <div>
-            <p className="eyebrow mb-4">About the Restaurant</p>
+            <p className="eyebrow mb-5">About the Restaurant</p>
             <h2
-              className="text-4xl font-bold leading-tight text-[#0d1b3e] md:text-5xl"
+              className="text-4xl font-black leading-[1.1] text-[#075985] md:text-5xl xl:text-[3.5rem]"
               style={{ fontFamily: "var(--font-heading), 'Playfair Display', serif" }}
             >
               Heritage cooking shaped
               <br />
-              <em className="font-normal italic text-[#e64a19]">for a finer table.</em>
+              <em className="font-bold italic text-[#f97316]">for a finer table.</em>
             </h2>
 
-            <p className="mt-6 text-base leading-8 text-[#4a6fa5]">
+            <p className="mt-6 text-[0.95rem] font-medium leading-8 text-[#0369a1]">
               Ayyanar Restaurant brings together Tamil Nadu comfort food and a
               refined service style. Expect carefully layered spice, fresh
               ingredients, generous portions, and a room designed for families,
               dates, celebrations, and unhurried meals.
             </p>
 
-            <MotionContainer className="mt-10 grid gap-4 sm:grid-cols-2">
+            {/* Orange rule */}
+            <div className="my-8 h-1 w-16 rounded-full bg-[#f97316]" />
+
+            <MotionContainer className="grid gap-4 sm:grid-cols-2">
               {highlights.map(([title, desc]) => (
                 <div
                   key={title}
-                  className="rounded-2xl border border-[#bbdefb] bg-[#e3f2fd] p-5 shadow-[0_2px_12px_rgba(13,27,62,0.05)] hover:border-[#1e88e5]/40 hover:shadow-[0_6px_20px_rgba(21,101,192,0.10)] transition"
+                  className="group rounded-[20px] border border-[#bae6fd] bg-white p-5 transition duration-300 hover:border-[#7dd3fc] hover:shadow-[0_8px_24px_rgba(2,132,199,0.12)]"
                 >
-                  <div className="mb-3 h-0.5 w-8 rounded-full bg-[#e64a19]" />
-                  <h3 className="mb-1.5 text-[0.875rem] font-semibold text-[#0d1b3e]">{title}</h3>
-                  <p className="text-[0.8125rem] leading-6 text-[#4a6fa5]">{desc}</p>
+                  <div className="mb-3 h-1 w-8 rounded-full bg-[#f97316] transition-all duration-300 group-hover:w-12" />
+                  <h3 className="mb-1.5 text-[0.9rem] font-black text-[#075985]">{title}</h3>
+                  <p className="text-[0.8rem] font-medium leading-6 text-[#0369a1]">{desc}</p>
                 </div>
               ))}
             </MotionContainer>

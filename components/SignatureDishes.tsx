@@ -2,26 +2,22 @@ import { MotionArticle, MotionContainer, MotionImage, MotionSection } from "./An
 
 const dishes = [
   {
-    name: "Chicken Biryani",
-    price: "$ 7",
+    name: "Chicken Biryani", price: "$ 7",
     description: "Dum-cooked seeraga samba rice, tender chicken, mint, and slow-bloomed masala.",
     image: "/images/ChatGPT Image May 13, 2026, 06_57_32 PM.png",
   },
   {
-    name: "Chicken Fried Rice",
-    price: "$ 6",
+    name: "Chicken Fried Rice", price: "$ 6",
     description: "Fragrant rice stir-fried with succulent chicken, vibrant vegetables, and aromatic spices.",
     image: "/images/ChatGPT Image May 13, 2026, 07_04_58 PM.png",
   },
   {
-    name: "Meals Special",
-    price: "$ 5",
+    name: "Meals Special", price: "$ 5",
     description: "A proper banana-leaf style spread with sambar, rasam, kootu, poriyal, and curd.",
     image: "/images/ChatGPT Image May 13, 2026, 06_59_55 PM.png",
   },
   {
-    name: "Fish Biryani",
-    price: "$ 8",
+    name: "Fish Biryani", price: "$ 8",
     description: "Dum-cooked seeraga samba rice, marinated fish, mint, and slow-bloomed masala.",
     image: "/images/ChatGPT Image May 13, 2026, 07_08_16 PM.png",
   },
@@ -29,21 +25,28 @@ const dishes = [
 
 export default function SignatureDishes() {
   return (
-    <MotionSection className="bg-[#bbdefb] py-[5rem]">
-      <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+    <MotionSection
+      className="relative overflow-hidden py-[5.5rem] bg-white"
+    >
+      {/* Decorative background glow */}
+      <div className="absolute top-0 right-0 h-96 w-96 rounded-full bg-[#bae6fd]/50 blur-[80px] pointer-events-none" />
+
+      <div className="relative mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
         <div className="mb-14 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <p className="eyebrow mb-4">Signature Menu</p>
+            <p className="eyebrow mb-5">
+              Signature Menu
+            </p>
             <h2
-              className="max-w-xl text-4xl font-bold leading-tight text-[#0d1b3e] md:text-5xl"
+              className="max-w-lg text-4xl font-black leading-[1.1] text-[#075985] md:text-5xl"
               style={{ fontFamily: "var(--font-heading), 'Playfair Display', serif" }}
             >
               The plates guests
               <br />
-              <em className="font-normal italic text-[#e64a19]">come back for.</em>
+              <em className="font-bold italic text-[#f97316]">come back for.</em>
             </h2>
           </div>
-          <p className="max-w-xs text-sm leading-7 text-[#4a6fa5]">
+          <p className="max-w-xs text-[0.9rem] font-medium leading-7 text-[#0369a1]">
             A curated selection of house favourites, built around aroma, texture,
             and the comforting heat South Indian food does so well.
           </p>
@@ -53,31 +56,26 @@ export default function SignatureDishes() {
           {dishes.map((dish, i) => (
             <MotionArticle
               key={i}
-              className="group overflow-hidden rounded-2xl border border-[#bbdefb] bg-white shadow-[0_4px_20px_rgba(13,27,62,0.07)] transition hover:-translate-y-1 hover:shadow-[0_16px_44px_rgba(13,71,161,0.13)]"
+              className="group overflow-hidden rounded-[24px] border border-[#bae6fd] bg-[#f0f9ff] shadow-[0_12px_24px_rgba(2,132,199,0.06)] transition duration-300 hover:bg-white hover:border-[#7dd3fc] hover:shadow-[0_16px_40px_rgba(2,132,199,0.15)] hover:-translate-y-2"
             >
-              <div className="relative h-56 overflow-hidden">
+              <div className="relative overflow-hidden" style={{ height: "220px" }}>
                 <MotionImage
-                  src={dish.image}
-                  alt={dish.name}
+                  src={dish.image} alt={dish.name}
                   className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0a2459]/50 to-transparent" />
-                <span className="absolute bottom-3 right-3 rounded-full bg-[#e64a19] px-3 py-1 text-xs font-bold text-white shadow-[0_4px_12px_rgba(230,74,25,0.40)]">
+                <span className="absolute bottom-4 right-4 rounded-full bg-[#f97316] px-4 py-1.5 text-[0.8rem] font-black text-white shadow-[0_4px_16px_rgba(249,115,22,0.4)]">
                   {dish.price}
                 </span>
               </div>
-              <div className="p-5">
+              <div className="p-6">
                 <h3
-                  className="text-base font-bold text-[#0d1b3e] group-hover:text-[#1565c0] transition"
+                  className="text-[1.1rem] font-black text-[#075985] group-hover:text-[#0284c7] transition"
                   style={{ fontFamily: "var(--font-heading), 'Playfair Display', serif" }}
                 >
                   {dish.name}
                 </h3>
-                <p className="mt-2 text-[0.8rem] leading-6 text-[#4a6fa5]">{dish.description}</p>
-                <div className="mt-4 flex items-center gap-2">
-                  <span className="h-1.5 w-1.5 rounded-full bg-[#e64a19]" />
-                  <span className="text-[0.65rem] tracking-[0.22em] text-[#7899c7] uppercase">Signature</span>
-                </div>
+                <p className="mt-2 text-[0.8rem] font-medium leading-6 text-[#0369a1]">{dish.description}</p>
+                <div className="mt-5 h-1 w-8 rounded-full bg-[#f97316] transition-all duration-400 group-hover:w-16" />
               </div>
             </MotionArticle>
           ))}

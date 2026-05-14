@@ -28,23 +28,23 @@ const specials = [
 
 export default function ChefSpecials() {
   return (
-    <section id="specials" className="bg-[#e3f2fd] py-[5rem]">
-      <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+    <section id="specials" className="bg-white py-[5.5rem]">
+      <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
 
         {/* Header */}
-        <div className="mb-14 grid gap-6 lg:grid-cols-2 lg:items-end">
+        <div className="mb-16 grid gap-6 lg:grid-cols-2 lg:items-end">
           <div>
-            <p className="eyebrow mb-4">Chef Specials</p>
+            <p className="eyebrow mb-5">Chef Specials</p>
             <h2
-              className="text-4xl font-bold leading-tight text-[#0d1b3e] md:text-5xl"
+              className="text-4xl font-black leading-[1.1] text-[#075985] md:text-5xl"
               style={{ fontFamily: "var(--font-heading), 'Playfair Display', serif" }}
             >
               Crafted daily for
               <br />
-              <em className="font-normal italic text-[#e64a19]">memorable moments.</em>
+              <em className="font-bold italic text-[#f97316]">memorable moments.</em>
             </h2>
           </div>
-          <p className="max-w-md text-sm leading-7 text-[#4a6fa5] lg:self-end">
+          <p className="max-w-md text-[0.95rem] font-medium leading-8 text-[#0369a1] lg:self-end">
             A curated selection that reveals the kitchen's refined spice work,
             terracotta roast, and rich natural craftsmanship.
           </p>
@@ -59,36 +59,38 @@ export default function ChefSpecials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.25 }}
               transition={{ duration: 0.6, delay: i * 0.12 }}
-              className="group overflow-hidden rounded-3xl border border-[#bbdefb] bg-white shadow-[0_6px_28px_rgba(13,27,62,0.07)] transition hover:-translate-y-1 hover:shadow-[0_20px_52px_rgba(13,71,161,0.13)]"
+              className="group overflow-hidden rounded-[24px] border border-[#bae6fd] bg-[#f0f9ff] shadow-[0_12px_36px_rgba(2,132,199,0.06)] transition duration-400 hover:bg-white hover:-translate-y-2 hover:shadow-[0_24px_56px_rgba(2,132,199,0.15)] hover:border-[#7dd3fc]"
             >
-              <div className="relative overflow-hidden" style={{ height: "280px" }}>
+              <div className="relative overflow-hidden" style={{ height: "300px" }}>
                 <img
-                  src={item.image}
-                  alt={item.title}
-                  className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  src={item.image} alt={item.title}
+                  className="h-full w-full object-cover transition duration-600 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0a2459]/55 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0284c7]/50 via-transparent to-transparent opacity-80" />
+                
                 {/* Badge */}
-                <span className="absolute left-4 top-4 rounded-full bg-[#e3f2fd]/90 backdrop-blur-sm px-3.5 py-1.5 text-[0.65rem] font-bold tracking-[0.18em] text-[#1565c0] uppercase shadow-sm">
+                <span className="absolute left-5 top-5 rounded-full bg-white/95 backdrop-blur-md px-4 py-2 text-[0.65rem] font-black tracking-[0.2em] text-[#0284c7] uppercase shadow-[0_4px_16px_rgba(0,0,0,0.15)]">
                   {item.badge}
                 </span>
-                {/* Price — orange preserved */}
-                <span className="absolute bottom-4 right-4 rounded-full bg-[#e64a19] px-4 py-1.5 text-sm font-bold text-white shadow-[0_4px_14px_rgba(230,74,25,0.42)]">
+                
+                {/* Price */}
+                <span className="absolute bottom-5 right-5 rounded-full bg-[#f97316] px-5 py-2 text-[0.9rem] font-black text-white shadow-[0_4px_20px_rgba(249,115,22,0.6)]">
                   {item.price}
                 </span>
               </div>
 
-              <div className="p-7">
+              <div className="p-8">
                 <h3
-                  className="text-xl font-bold text-[#0d1b3e] group-hover:text-[#1565c0] transition"
+                  className="text-xl font-black text-[#075985] group-hover:text-[#0284c7] transition"
                   style={{ fontFamily: "var(--font-heading), 'Playfair Display', serif" }}
                 >
                   {item.title}
                 </h3>
-                <p className="mt-3 text-sm leading-7 text-[#4a6fa5]">{item.description}</p>
-                <div className="mt-6 flex items-center gap-2.5">
-                  <span className="h-1.5 w-1.5 rounded-full bg-[#e64a19]" />
-                  <span className="text-[0.65rem] font-semibold tracking-[0.24em] text-[#7899c7] uppercase">
+                <p className="mt-3 text-[0.9rem] font-medium leading-7 text-[#0369a1]">{item.description}</p>
+                
+                <div className="mt-8 flex items-center gap-3 border-t border-[#bae6fd] pt-6">
+                  <span className="h-2 w-2 rounded-full bg-[#f97316]" />
+                  <span className="text-[0.65rem] font-bold tracking-[0.24em] text-[#0284c7] uppercase">
                     Seasonal kitchen story
                   </span>
                 </div>
