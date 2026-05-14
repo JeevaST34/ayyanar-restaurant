@@ -196,7 +196,7 @@ export default function Menu() {
   const visibleCategories = splitCategoryItems(selectedCategory);
 
   return (
-    <MotionSection id="menu" className="bg-[#FFF7F1] py-24 text-[#3B2A24]">
+    <MotionSection id="menu" className="bg-[#FFF7F1] pt-16 text-[#3B2A24]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-14 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>

@@ -15,7 +15,7 @@ export default function ReservationCTA() {
   return (
     <MotionSection
       id="reservations"
-      className="relative overflow-hidden bg-[#F5E6DA] py-24 text-[#3B2A24]"
+      className="relative overflow-hidden bg-[#F5E6DA] py-16 text-[#3B2A24]"
     >
       <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(234,88,40,0.18),transparent_50%),linear-gradient(0deg,rgba(255,255,255,0.52),transparent)]" />
 

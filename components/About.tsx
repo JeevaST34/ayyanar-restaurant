@@ -21,7 +21,7 @@ export default function About() {
   ];
 
   return (
-    <MotionSection id="about" className="bg-[#FFF7F1] py-24 text-[#3B2A24]">
+    <MotionSection id="about" className="bg-[#FFF7F1] py-16 text-[#3B2A24]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-14 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div className="relative">

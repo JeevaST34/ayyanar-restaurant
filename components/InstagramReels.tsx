@@ -34,7 +34,7 @@ export default function InstagramReels() {
   ];
 
   return (
-    <MotionSection className="bg-[#F5E6DA] pb-24 text-[#3B2A24]">
+    <MotionSection className="bg-[#F5E6DA] pb-16 text-[#3B2A24]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-10 flex items-center justify-between gap-4 border-t border-[#C89C7A]/70 pt-14">
           <div>

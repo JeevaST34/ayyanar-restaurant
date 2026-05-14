@@ -4,31 +4,131 @@ export default function Contact() {
   const contactCards = [
     {
       label: "Address",
-      value: ["11 Veerasamy Rd", "Singapore 207319", "Singapore"],
+      icon: "location",
+      values: [
+        { icon: "home", text: "11 Veerasamy Rd" },
+        { icon: "building", text: "Singapore 207319" },
+        { icon: "flag", text: "Singapore" },
+      ],
     },
     {
       label: "Phone",
-      value: ["+65 9865 0140"],
+      icon: "phone",
+      values: [{ icon: "phone", text: "+65 9865 0140" }],
     },
     {
       label: "Email",
-      value: [
-        "hello@ayyanarrestaurant.com",
-        "reservations@ayyanarrestaurant.com",
+      icon: "mail",
+      values: [
+        { icon: "mail", text: "hello@ayyanarrestaurant.com" },
+        { icon: "mail", text: "reservations@ayyanarrestaurant.com" },
       ],
     },
     {
       label: "Hours",
-      value: [
-        "Monday - Sunday: 7:00 AM - 11:30 PM",
-        // "Lunch: 11:00 AM - 3:00 PM",
-        // "Dinner: 6:00 PM - 11:00 PM",
-      ],
+      icon: "clock",
+      values: [{ icon: "clock", text: "Monday - Sunday: 7:00 AM - 11:30 PM" }],
     },
   ];
 
+  const renderIcon = (type: string) => {
+    switch (type) {
+      case "location":
+        return (
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            className="h-6 w-6"
+          >
+            <path d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7z" />
+            <circle cx="12" cy="9" r="2.5" />
+          </svg>
+        );
+      case "phone":
+        return (
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            className="h-6 w-6"
+          >
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3 5.18 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.72 12.22 12.22 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L9.91 10.09a16 16 0 0 0 6 6l1.44-1.44a2 2 0 0 1 2.11-.45 12.22 12.22 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+        );
+      case "mail":
+        return (
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            className="h-6 w-6"
+          >
+            <path d="M4 5h16v14H4z" />
+            <path d="M22 7L12 13 2 7" />
+          </svg>
+        );
+      case "clock":
+        return (
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            className="h-6 w-6"
+          >
+            <circle cx="12" cy="12" r="8" />
+            <path d="M12 8v4l2 2" />
+          </svg>
+        );
+      case "home":
+        return (
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            className="h-5 w-5"
+          >
+            <path d="M3 11L12 3l9 8v8a1 1 0 0 1-1 1h-6v-6H10v6H4a1 1 0 0 1-1-1v-8z" />
+          </svg>
+        );
+      case "building":
+        return (
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            className="h-5 w-5"
+          >
+            <path d="M4 22V6h16v16" />
+            <path d="M8 10h2M8 14h2M8 18h2M14 10h2M14 14h2M14 18h2" />
+          </svg>
+        );
+      case "flag":
+        return (
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            className="h-5 w-5"
+          >
+            <path d="M5 22V2" />
+            <path d="M5 6h14l-4 4 4 4H5" />
+          </svg>
+        );
+      default:
+        return null;
+    }
+  };
+
   return (
-    <MotionSection id="contact" className="bg-[#FFF7F1] py-24 text-[#3B2A24]">
+    <MotionSection id="contact" className="bg-[#FFF7F1] py-16 text-[#3B2A24]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-14 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
@@ -53,21 +153,34 @@ export default function Contact() {
                 key={card.label}
                 className="card-surface overflow-hidden p-6"
               >
-                <p className="text-xs tracking-[0.22em] text-[#EA5828] uppercase">
-                  {card.label}
-                </p>
-                <div className="mt-4 space-y-1 text-sm leading-6 break-words text-[#6B7280]">
-                  {card.value.map((line) => (
-                    <p key={line} className="break-words whitespace-normal">
-                      {line}
+                <div className="flex items-end gap-4">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#FDE9D9] text-[#EA5828]">
+                    {renderIcon(card.icon)}
+                  </div>
+                  <div>
+                    <p className="text-xs tracking-[0.22em] text-[#EA5828] uppercase">
+                      {card.label}
                     </p>
+                    <span className="mt-3 block h-px w-full max-w-30 bg-[#EA5828]/20" />
+                  </div>
+                </div>
+                <div className="mt-6 space-y-4">
+                  {card.values.map((item) => (
+                    <div key={item.text} className="flex items-center gap-3">
+                      {/* <div className="mt-1 flex h-10 w-10 items-center justify-center rounded-2xl bg-[#F5E6DA] text-[#EA5828] shrink-0">
+                        {renderIcon(item.icon)}
+                      </div> */}
+                      <p className="text-sm leading-6 text-[#3B2A24]">
+                        {item.text}
+                      </p>
+                    </div>
                   ))}
                 </div>
               </MotionArticle>
             ))}
           </MotionContainer>
 
-          <div className="relative min-h-[420px] overflow-hidden rounded-[28px] border border-[#C89C7A] bg-[#F5E6DA] shadow-[0_18px_42px_rgba(234,88,40,0.1)]">
+          <div className="relative min-h-105 overflow-hidden rounded-[28px] border border-[#C89C7A] bg-[#F5E6DA] shadow-[0_18px_42px_rgba(234,88,40,0.1)]">
             <iframe
               title="Ayyanar Restaurant location on Google Maps"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.779047491051!2d103.8532823!3d1.3077817999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19455a495c35%3A0x2a666437645110f0!2sAYYANAR%20RESTAURANT!5e0!3m2!1sen!2sin!4v1778680576237!5m2!1sen!2sin"

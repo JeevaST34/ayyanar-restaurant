@@ -40,7 +40,7 @@ export default function InstagramFeed() {
   ];
 
   return (
-    <MotionSection id="stories" className="bg-[#F5E6DA] py-24 text-[#3B2A24]">
+    <MotionSection id="stories" className="bg-[#F5E6DA] py-16 text-[#3B2A24]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
           <div>
