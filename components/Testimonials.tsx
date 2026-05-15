@@ -43,7 +43,7 @@ export default function Testimonials() {
           </h2>
         </div>
 
-        <MotionContainer className="grid gap-8 md:grid-cols-3">
+        <MotionContainer className="grid gap-8 lg:grid-cols-3">
           {testimonials.map((t) => {
             const initials = t.name.split(" ").map((p) => p[0]).slice(0, 2).join("");
             return (

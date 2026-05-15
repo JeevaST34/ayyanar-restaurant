@@ -51,7 +51,7 @@ export default function ChefSpecials() {
         </div>
 
         {/* Cards */}
-        <div className="grid gap-8 lg:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {specials.map((item, i) => (
             <motion.article
               key={item.title}
@@ -59,7 +59,7 @@ export default function ChefSpecials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.25 }}
               transition={{ duration: 0.6, delay: i * 0.12 }}
-              className="group overflow-hidden rounded-[24px] border border-[#bae6fd] bg-[#f0f9ff] shadow-[0_12px_36px_rgba(2,132,199,0.06)] transition duration-400 hover:bg-white hover:-translate-y-2 hover:shadow-[0_24px_56px_rgba(2,132,199,0.15)] hover:border-[#7dd3fc]"
+              className="group overflow-hidden rounded-[24px] border border-[#bae6fd] bg-[#f0f9ff] shadow-[0_12px_36px_rgba(2,132,199,0.06)] transition duration-400 hover:bg-white hover:-translate-y-2 hover:shadow-[0_24px_56px_rgba(2,132,199,0.15)] hover:border-[#7dd3fc] flex flex-col"
             >
               <div className="relative overflow-hidden" style={{ height: "300px" }}>
                 <img
@@ -79,14 +79,14 @@ export default function ChefSpecials() {
                 </span>
               </div>
 
-              <div className="p-8">
+              <div className="p-8 flex flex-col flex-1">
                 <h3
                   className="text-xl font-black text-[#075985] group-hover:text-[#0284c7] transition"
                   style={{ fontFamily: "var(--font-heading), 'Playfair Display', serif" }}
                 >
                   {item.title}
                 </h3>
-                <p className="mt-3 text-[0.9rem] font-medium leading-7 text-[#0369a1]">{item.description}</p>
+                <p className="mt-3 flex-1 text-[0.9rem] font-medium leading-7 text-[#0369a1]">{item.description}</p>
                 
                 <div className="mt-8 flex items-center gap-3 border-t border-[#bae6fd] pt-6">
                   <span className="h-2 w-2 rounded-full bg-[#f97316]" />

@@ -5,8 +5,8 @@ const images = [
   { src: "/images/ChatGPT Image May 13, 2026, 06_52_38 PM.png", label: "Idly", tall: false },
   { src: "/images/ChatGPT Image May 13, 2026, 06_52_47 PM.png", label: "Pongal", tall: false },
   { src: "/images/ChatGPT Image May 13, 2026, 06_52_44 PM.png", label: "Vadai", tall: true },
-  { src: "/images/ChatGPT Image May 13, 2026, 06_59_55 PM.png", label: "Meals", tall: false },
   { src: "/images/rava-dosa.png", label: "Rava Dosa", tall: true },
+  { src: "/images/ChatGPT Image May 13, 2026, 06_59_55 PM.png", label: "Meals", tall: false },
 ];
 
 export default function Gallery() {
@@ -38,30 +38,36 @@ export default function Gallery() {
 
         {/* Masonry */}
         <div className="masonry-grid">
-          {images.map((img) => (
-            <figure
-              key={img.src}
-              className="group relative overflow-hidden rounded-[24px] shadow-[0_8px_24px_rgba(2,132,199,0.12)] transition duration-400 hover:shadow-[0_20px_48px_rgba(2,132,199,0.25)] hover:-translate-y-1.5"
-            >
-              <div className="relative overflow-hidden" style={{ height: img.tall ? "460px" : "280px" }}>
-                <MotionImage
-                  src={img.src}
-                  alt={img.label}
-                  className="h-full w-full object-cover transition duration-600 group-hover:scale-105"
-                />
-                {/* Soft gradient overlay for text legibility */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#075985]/60 via-transparent to-transparent opacity-70 transition duration-400 group-hover:opacity-100" />
-              </div>
+          {images.map((img, idx) => {
+            const cycle = idx % 4;
+            const isLarge = cycle === 0 || cycle === 3;
+            const heightClass = `h-48 ${isLarge ? 'md:h-[520px]' : 'md:h-[260px]'} ${img.tall ? 'lg:h-[460px]' : 'lg:h-[280px]'}`;
 
-              {/* Label chip */}
-              <figcaption className="absolute bottom-5 left-5 z-10">
-                <span className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/90 px-4 py-2 text-[0.7rem] font-black tracking-[0.2em] text-[#075985] uppercase backdrop-blur-md shadow-[0_4px_16px_rgba(2,132,199,0.15)] transition group-hover:bg-white group-hover:border-[#7dd3fc]">
-                  <span className="h-2 w-2 rounded-full bg-[#f97316]" />
-                  {img.label}
-                </span>
-              </figcaption>
-            </figure>
-          ))}
+            return (
+              <figure
+                key={img.src}
+                className="group relative overflow-hidden rounded-[24px] shadow-[0_8px_24px_rgba(2,132,199,0.12)] transition duration-400 hover:shadow-[0_20px_48px_rgba(2,132,199,0.25)] hover:-translate-y-1.5"
+              >
+                <div className={`relative overflow-hidden ${heightClass}`}>
+                  <MotionImage
+                    src={img.src}
+                    alt={img.label}
+                    className="h-full w-full object-cover transition duration-600 group-hover:scale-105"
+                  />
+                  {/* Soft gradient overlay for text legibility */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#075985]/60 via-transparent to-transparent opacity-70 transition duration-400 group-hover:opacity-100" />
+                </div>
+
+                {/* Label chip */}
+                <figcaption className="absolute bottom-5 left-5 z-10">
+                  <span className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/90 px-4 py-2 text-[0.7rem] font-black tracking-[0.2em] text-[#075985] uppercase backdrop-blur-md shadow-[0_4px_16px_rgba(2,132,199,0.15)] transition group-hover:bg-white group-hover:border-[#7dd3fc]">
+                    <span className="h-2 w-2 rounded-full bg-[#f97316]" />
+                    {img.label}
+                  </span>
+                </figcaption>
+              </figure>
+            );
+          })}
         </div>
       </div>
     </MotionSection>

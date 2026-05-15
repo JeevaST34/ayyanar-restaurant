@@ -67,8 +67,8 @@ export default function InstagramFeed() {
                 src={post.image} alt={post.label}
                 className="h-full w-full object-cover transition duration-500 group-hover:scale-108"
               />
-              <div className="absolute inset-0 flex flex-col justify-end p-4 bg-gradient-to-t from-[#0284c7]/90 via-[#0284c7]/20 to-transparent opacity-0 transition duration-400 group-hover:opacity-100">
-                <div className="translate-y-4 transition duration-400 group-hover:translate-y-0 text-center">
+              <div className="absolute inset-0 flex flex-col justify-end p-4 bg-gradient-to-t from-[#0284c7]/90 via-[#0284c7]/20 to-transparent opacity-100 md:opacity-0 transition duration-400 md:group-hover:opacity-100">
+                <div className="translate-y-0 md:translate-y-4 transition duration-400 md:group-hover:translate-y-0 text-center">
                   <p className="text-[0.65rem] font-black tracking-[0.2em] text-white uppercase">{post.label}</p>
                   <p className="mt-2 flex items-center justify-center gap-1.5 text-[0.65rem] font-bold text-white/90">
                     <svg viewBox="0 0 20 20" fill="currentColor" className="h-3.5 w-3.5 text-[#f97316]">
