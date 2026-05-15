@@ -7,42 +7,42 @@ const menuCategories = [
   {
     title: "Breakfast", note: "Light South Indian favorites to start your day.",
     items: [
-      { name: "Idly",          price: "$ 0.80", description: "Steamed rice cakes served with chutney and sambar." },
-      { name: "Vadai",         price: "$ 0.80", description: "Crispy lentil donuts with a peppery crunch." },
-      { name: "Pongal",        price: "$ 2.00", description: "Creamy rice and lentil porridge with ghee." },
+      { name: "Idly", price: "$ 0.80", description: "Steamed rice cakes served with chutney and sambar." },
+      { name: "Vadai", price: "$ 0.80", description: "Crispy lentil donuts with a peppery crunch." },
+      { name: "Pongal", price: "$ 2.00", description: "Creamy rice and lentil porridge with ghee." },
       { name: "Poori (2 pcs)", price: "$ 2.00", description: "Fluffy fried bread with potato masala." },
-      { name: "Kal Dosai",     price: "$ 1.50", description: "Thin crispy dosa with savory coconut chutney." },
-      { name: "Variety Rice",  price: "$ 1.50", description: "Seasoned rice with peas, carrots and spices." },
+      { name: "Kal Dosai", price: "$ 1.50", description: "Thin crispy dosa with savory coconut chutney." },
+      { name: "Variety Rice", price: "$ 1.50", description: "Seasoned rice with peas, carrots and spices." },
     ],
   },
   {
     title: "Lunch", note: "Hearty midday meals for every appetite.",
     items: [
-      { name: "Veg Meals",     price: "$ 5.00", description: "Rice, curry, sambar, rasam, poriyal and appalam." },
+      { name: "Veg Meals", price: "$ 5.00", description: "Rice, curry, sambar, rasam, poriyal and appalam." },
       { name: "Chicken Meals", price: "$ 7.00", description: "Homestyle chicken curry with rice and sides." },
-      { name: "Mutton Meals",  price: "$ 8.00", description: "Slow-cooked mutton curry with steamed rice." },
-      { name: "Fish Meals",    price: "$ 8.00", description: "Tangy fish curry with rice and accompaniments." },
+      { name: "Mutton Meals", price: "$ 8.00", description: "Slow-cooked mutton curry with steamed rice." },
+      { name: "Fish Meals", price: "$ 8.00", description: "Tangy fish curry with rice and accompaniments." },
     ],
   },
   {
     title: "Dinner", note: "Classic dinner plates and dosas served warm.",
     items: [
-      { name: "Idly",                 price: "$ 0.80", description: "Soft steamed rice cakes with sambar." },
-      { name: "Podi Idly",            price: "$ 3.00", description: "Idly tossed in spiced lentil powder." },
-      { name: "Masala Dosai",         price: "$ 2.50", description: "Golden dosa wrapped around potato masala." },
-      { name: "Onion Dosai",          price: "$ 2.50", description: "Dosa studded with caramelized onions." },
-      { name: "Podi Dosai",           price: "$ 2.00", description: "Dosa served with spicy podi and ghee." },
-      { name: "Vendhaya Keerai Dosai",price: "$ 2.50", description: "Fenugreek dosa with a fragrant green hue." },
+      { name: "Idly", price: "$ 0.80", description: "Soft steamed rice cakes with sambar." },
+      { name: "Podi Idly", price: "$ 3.00", description: "Idly tossed in spiced lentil powder." },
+      { name: "Masala Dosai", price: "$ 2.50", description: "Golden dosa wrapped around potato masala." },
+      { name: "Onion Dosai", price: "$ 2.50", description: "Dosa studded with caramelized onions." },
+      { name: "Podi Dosai", price: "$ 2.00", description: "Dosa served with spicy podi and ghee." },
+      { name: "Vendhaya Keerai Dosai", price: "$ 2.50", description: "Fenugreek dosa with a fragrant green hue." },
     ],
   },
   {
     title: "Hot Drinks", note: "Comforting beverages to pair with every plate.",
     items: [
-      { name: "Tea",        price: "$ 1.00", description: "Strong brewed tea with milk." },
+      { name: "Tea", price: "$ 1.00", description: "Strong brewed tea with milk." },
       { name: "Masala Tea", price: "$ 1.00", description: "Tea spiced with cardamom and ginger." },
-      { name: "Coffee",     price: "$ 1.50", description: "Rich South Indian filter coffee." },
-      { name: "Horlicks Hot",price: "$ 1.50", description: "Warm malted drink with milk." },
-      { name: "Milo Hot",   price: "$ 1.50", description: "Chocolate malt beverage served hot." },
+      { name: "Coffee", price: "$ 1.50", description: "Rich South Indian filter coffee." },
+      { name: "Horlicks Hot", price: "$ 1.50", description: "Warm malted drink with milk." },
+      { name: "Milo Hot", price: "$ 1.50", description: "Chocolate malt beverage served hot." },
     ],
   },
 ];
@@ -82,11 +82,10 @@ export default function Menu() {
             <button
               key={tab}
               onClick={() => setActiveTab(i)}
-              className={`rounded-full px-6 py-2.5 text-[0.8rem] font-black tracking-wide transition-all duration-300 ${
-                i === activeTab
+              className={`rounded-full px-6 py-2.5 text-[0.8rem] font-black tracking-wide transition-all duration-300 ${i === activeTab
                   ? "bg-[#0284c7] text-white shadow-[0_6px_20px_rgba(2,132,199,0.30)]"
                   : "bg-white border-2 border-[#bae6fd] text-[#0369a1] hover:border-[#7dd3fc] hover:text-[#0284c7] shadow-sm"
-              }`}
+                }`}
             >
               {tab}
             </button>
@@ -128,7 +127,7 @@ export default function Menu() {
                 {/* Dotted line */}
                 <div className="mx-4 flex-1 border-b-2 border-dashed border-[#bae6fd] self-center" />
                 {/* Price */}
-                <span className="shrink-0 rounded-full bg-[#f0f9ff] px-4 py-2 text-[0.95rem] font-black text-[#f97316] border border-[#bae6fd] shadow-sm">
+                <span className="shrink-0 inline-flex items-center justify-center whitespace-nowrap rounded-full bg-[#f0f9ff] px-4 py-2 text-[0.95rem] font-black text-[#f97316] border border-[#bae6fd] shadow-sm">
                   {item.price}
                 </span>
               </div>

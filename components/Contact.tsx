@@ -102,7 +102,7 @@ export default function Contact() {
               <p className="text-[0.85rem] font-medium text-[#0369a1]">Sri Veeramakaliamman Temple</p>
               <p className="text-[0.85rem] font-medium text-[#0369a1]">Singapore 207319</p>
               <a
-                href="https://maps.app.goo.gl/example"
+                href="https://www.google.com/maps/dir/?api=1&destination=11+Veerasamy+Rd,+Singapore+207319"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-5 inline-flex items-center gap-2 rounded-full bg-[#f0f9ff] border border-[#bae6fd] px-4 py-2 text-xs font-bold text-[#0284c7] transition hover:bg-[#f97316] hover:text-white hover:border-[#f97316]"

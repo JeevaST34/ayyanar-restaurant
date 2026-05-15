@@ -68,7 +68,7 @@ export default function InstagramReels() {
               {/* Bottom info */}
               <div className="absolute inset-x-5 bottom-5">
                 <h3
-                  className="text-[1.1rem] font-black text-white transition group-hover:text-[#bae6fd]"
+                  className="text-[1.1rem] font-black text-white transition group-hover:text-[#bae6fd] text-white!"
                   style={{ fontFamily: "var(--font-heading), 'Playfair Display', serif" }}
                 >
                   {reel.title}

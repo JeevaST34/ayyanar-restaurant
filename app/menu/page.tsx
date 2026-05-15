@@ -297,7 +297,7 @@ export default function MenuPage() {
                             {item.name}
                           </h3>
                         </div>
-                        <span className="font-black text-[#f97316] rounded-full bg-white border border-[#bae6fd] px-3 py-1 text-sm shadow-sm">
+                        <span className="inline-flex min-w-[4.25rem] items-center justify-center whitespace-nowrap rounded-full bg-white border border-[#bae6fd] px-3 py-1 text-sm font-black text-[#f97316] shadow-sm">
                           {item.price}
                         </span>
                       </div>

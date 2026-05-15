@@ -110,7 +110,19 @@ h1,h2,h3,h4,h5,h6 {
   border-color: var(--card-border-str);
 }
 
+.right-4{
+   right:calc(var(--spacing) * 4);
+}
 /* ── Buttons ─────────────────────────────────────── */
+button,
+a[href],
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+[role="button"] {
+  cursor: pointer;
+}
+
 .btn-primary {
   background: var(--orange);
   color: #fff;

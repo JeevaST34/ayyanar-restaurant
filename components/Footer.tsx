@@ -24,7 +24,7 @@ export default function Footer() {
         { label: "Instagram", href: "https://instagram.com/" },
         { label: "Facebook", href: "https://facebook.com/" },
         { label: "WhatsApp", href: "https://wa.me/6598650140" },
-        { label: "Google Maps", href: "https://maps.app.goo.gl/example" },
+        { label: "Google Maps", href: "https://www.google.com/maps/dir/?api=1&destination=11+Veerasamy+Rd,+Singapore+207319" },
       ],
     },
     {

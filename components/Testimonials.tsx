@@ -53,7 +53,7 @@ export default function Testimonials() {
               >
                 {/* Large open-quote mark */}
                 <span
-                  className="absolute -right-2 top-0 select-none text-[8rem] leading-none text-[#7dd3fc]/20 font-serif"
+                  className="absolute right-4 top-0 select-none text-[8rem] leading-none text-[#7dd3fc]/20 font-serif"
                   aria-hidden="true"
                   style={{ fontFamily: "Georgia, serif" }}
                 >
