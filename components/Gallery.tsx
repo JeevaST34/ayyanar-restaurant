@@ -1,4 +1,4 @@
-import { MotionContainer, MotionImage, MotionSection } from "./Animated";
+import { MotionImage, MotionSection } from "./Animated";
 
 const images = [
   { src: "/images/ChatGPT Image May 13, 2026, 06_57_32 PM.png", label: "Biryani", tall: true },
