@@ -10,7 +10,7 @@ export default function Contact() {
           <circle cx="12" cy="9" r="2.5" />
         </svg>
       ),
-      values: ["11 Veerasamy Rd", "Singapore 207319"],
+      values: ["11 Veerasamy Rd", "Sri Veeramakaliamman Temple", "Singapore 207319"],
     },
     {
       label: "Phone",
@@ -19,7 +19,7 @@ export default function Contact() {
           <path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 013 5.18 2 2 0 015 3h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.91 10.09a16 16 0 006 6l1.44-1.44a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
         </svg>
       ),
-      values: ["+65 9865 0140"],
+      values: ["+65 8335 6561"],
     },
     {
       label: "Email",
@@ -28,7 +28,7 @@ export default function Contact() {
           <path d="M4 5h16v14H4z" /><path d="M22 7L12 13 2 7" />
         </svg>
       ),
-      values: ["hello@ayyanar.com"],
+      values: ["ayyanarrestaurant2026@gmail.com"],
     },
     {
       label: "Hours",
@@ -37,7 +37,7 @@ export default function Contact() {
           <circle cx="12" cy="12" r="8" /><path d="M12 8v4l2 2" />
         </svg>
       ),
-      values: ["Mon – Sun", "7:00 AM – 11:30 PM"],
+      values: ["Mon – Sun", "6:00 AM – 11:00 PM"],
     },
   ];
 
@@ -65,21 +65,21 @@ export default function Contact() {
         </div>
 
         <div className="grid gap-10 lg:grid-cols-[1fr_1.15fr] lg:items-start">
-          
+
           {/* Contact cards */}
           <MotionContainer className="grid gap-5 sm:grid-cols-2">
             {contactCards.map((card) => (
               <MotionArticle
                 key={card.label}
-                className="group rounded-[24px] border border-[#bae6fd] bg-white p-7 shadow-[0_8px_24px_rgba(2,132,199,0.06)] transition duration-400 hover:border-[#7dd3fc] hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(2,132,199,0.15)]"
+                className="group rounded-[24px] border border-[#bae6fd] bg-white p-7 shadow-[0_8px_24px_rgba(2,132,199,0.06)] transition duration-400 hover:border-[#7dd3fc] hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(2,132,199,0.15)] overflow-hidden"
               >
                 <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-[14px] bg-[#f0f9ff] text-[#0284c7] transition-colors duration-300 group-hover:bg-[#f97316] group-hover:text-white">
                   {card.icon}
                 </div>
                 <p className="mb-3 text-[0.65rem] font-bold tracking-[0.2em] text-[#0284c7] uppercase">{card.label}</p>
-                <div className="space-y-1.5">
+                <div className="space-y-1.5 min-w-0">
                   {card.values.map((v) => (
-                    <p key={v} className="text-[0.95rem] font-black text-[#075985]">{v}</p>
+                    <p key={v} className="text-[0.9rem] font-black text-[#075985] break-all whitespace-normal min-w-0">{v}</p>
                   ))}
                 </div>
               </MotionArticle>
@@ -87,7 +87,7 @@ export default function Contact() {
           </MotionContainer>
 
           {/* Map */}
-          <div className="relative overflow-hidden rounded-[32px] border border-[#bae6fd] shadow-[0_16px_56px_rgba(2,132,199,0.15)]" style={{ minHeight: "420px" }}>
+          <div className="relative overflow-hidden rounded-[32px] border border-[#bae6fd] shadow-[0_16px_56px_rgba(2,132,199,0.15)]" style={{ minHeight: "475px" }}>
             <iframe
               title="Ayyanar Restaurant location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.779047491051!2d103.8532823!3d1.3077817999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19455a495c35%3A0x2a666437645110f0!2sAYYANAR%20RESTAURANT!5e0!3m2!1sen!2sin!4v1778680576237!5m2!1sen!2sin"
@@ -99,6 +99,7 @@ export default function Contact() {
             <div className="absolute bottom-6 left-6 right-6 z-10 rounded-[24px] border border-[#bae6fd] bg-white/90 px-7 py-6 shadow-[0_12px_40px_rgba(2,132,199,0.2)] backdrop-blur-md sm:right-auto sm:w-[320px]">
               <p className="eyebrow mb-2">Ayyanar Restaurant</p>
               <p className="mt-3 font-black text-[#075985] text-[1.1rem]">11 Veerasamy Rd</p>
+              <p className="text-[0.85rem] font-medium text-[#0369a1]">Sri Veeramakaliamman Temple</p>
               <p className="text-[0.85rem] font-medium text-[#0369a1]">Singapore 207319</p>
               <a
                 href="https://maps.app.goo.gl/example"

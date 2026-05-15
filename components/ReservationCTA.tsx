@@ -1,8 +1,8 @@
 import { MotionArticle, MotionButton, MotionContainer, MotionSection } from "./Animated";
 
 const details = [
-  ["Location", "11 Veerasamy Rd, Singapore 207319"],
-  ["Dining Hours", "7:00 AM – 11:30 PM, Daily"],
+  ["Location", "11 Veerasamy Rd, Sri Veeramakaliamman Temple, Singapore 207319"],
+  ["Dining Hours", "6:00 AM – 11:00 PM, Daily"],
   ["For Groups", "Private dining and bespoke catering"],
 ];
 
@@ -46,7 +46,7 @@ export default function ReservationCTA() {
                 <p className="mb-2 block text-[0.65rem] font-black tracking-[0.2em] text-[#f97316] uppercase">
                   {label}
                 </p>
-                <p className="text-[0.95rem] font-bold text-white">{value}</p>
+                <p className="text-[0.95rem] font-bold text-white break-all whitespace-normal min-w-0">{value}</p>
               </MotionArticle>
             ))}
           </MotionContainer>
@@ -56,9 +56,9 @@ export default function ReservationCTA() {
         <form className="relative rounded-[32px] border border-white/30 bg-white/20 p-8 backdrop-blur-lg shadow-[0_24px_80px_rgba(2,132,199,0.3)] md:p-10">
           <div className="relative z-10 grid gap-5 md:grid-cols-2">
             {[
-              { label: "Name",   type: "text",   placeholder: "Your name", span: 1 },
-              { label: "Phone",  type: "tel",    placeholder: "+65",       span: 1 },
-              { label: "Guests", type: "number", placeholder: "4",         span: 1 },
+              { label: "Name", type: "text", placeholder: "Your name", span: 1 },
+              { label: "Phone", type: "tel", placeholder: "+65", span: 1 },
+              { label: "Guests", type: "number", placeholder: "4", span: 1 },
             ].map(({ label, type, placeholder, span }) => (
               <label key={label} className={`block ${span === 2 ? "md:col-span-2" : ""}`}>
                 <span className="mb-2 block text-[0.65rem] font-bold tracking-[0.2em] text-white uppercase shadow-sm">

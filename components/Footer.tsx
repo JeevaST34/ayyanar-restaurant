@@ -9,15 +9,15 @@ export default function Footer() {
         { label: "Chef Specials", href: "#specials" },
       ],
     },
-    {
-      heading: "Visit",
-      links: [
-        { label: "Location", href: "#contact" },
-        { label: "Reservations", href: "#reservations" },
-        { label: "Catering", href: "#contact" },
-        { label: "Private Dining", href: "#contact" },
-      ],
-    },
+    // {
+    //   heading: "Visit",
+    //   links: [
+    //     { label: "Location", href: "#contact" },
+    //     { label: "Reservations", href: "#reservations" },
+    //     { label: "Catering", href: "#contact" },
+    //     { label: "Private Dining", href: "#contact" },
+    //   ],
+    // },
     {
       heading: "Follow",
       links: [
@@ -31,9 +31,10 @@ export default function Footer() {
       heading: "Contact",
       links: [
         { label: "11 Veerasamy Rd", href: "#contact" },
+        { label: "Sri Veeramakaliamman Temple", href: "#contact" },
         { label: "Singapore 207319", href: "#contact" },
-        { label: "+65 9865 0140", href: "tel:+6598650140" },
-        { label: "hello@ayyanar.com", href: "mailto:hello@ayyanarrestaurant.com" },
+        { label: "+65 8335 6561", href: "tel:+6598650140" },
+        { label: "ayyanarrestaurant2026@gmail.com", href: "mailto:ayyanarrestaurant2026@gmail.com" },
       ],
     },
   ];
@@ -67,7 +68,7 @@ export default function Footer() {
       <div className="absolute inset-x-0 top-0 h-1.5 bg-[#f97316]" />
 
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
-        <div className="grid gap-12 py-20 lg:grid-cols-[1.5fr_1fr_1fr_1fr_1fr]">
+        <div className="grid gap-8 py-20 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
 
           {/* Brand column */}
           <div className="lg:col-span-1">
@@ -101,7 +102,7 @@ export default function Footer() {
           {/* Link columns */}
           {footerLinks.map((col) => (
             <div key={col.heading}>
-              <h4 className="mb-6 text-[0.7rem] font-bold tracking-[0.25em] text-white uppercase opacity-90">
+              <h4 className="mb-6 text-[0.7rem] font-bold tracking-[0.25em] text-white! uppercase opacity-90">
                 {col.heading}
               </h4>
               <ul className="space-y-4">
@@ -109,7 +110,7 @@ export default function Footer() {
                   <li key={link.label}>
                     <a
                       href={link.href}
-                      className="text-sm font-medium text-white/70 transition duration-300 hover:text-white"
+                      className="text-sm font-medium text-white/70 transition duration-300 hover:text-white break-all whitespace-normal min-w-0"
                     >
                       {link.label}
                     </a>
@@ -126,12 +127,12 @@ export default function Footer() {
             © 2026 Ayyanar Restaurant. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            <a href="#" className="text-xs font-semibold text-white/60 transition hover:text-white">
+            {/* <a href="#" className="text-xs font-semibold text-white/60 transition hover:text-white">
               Privacy Policy
             </a>
             <a href="#" className="text-xs font-semibold text-white/60 transition hover:text-white">
               Terms of Use
-            </a>
+            </a> */}
             <a
               href="https://wa.me/6598650140"
               target="_blank"

@@ -1,11 +1,11 @@
 import { MotionContainer, MotionImage, MotionSection } from "./Animated";
 
 const images = [
-  { src: "/images/ChatGPT Image May 13, 2026, 06_57_32 PM.png", label: "Biryani",  tall: true  },
-  { src: "/images/ChatGPT Image May 13, 2026, 06_52_38 PM.png", label: "Idly",     tall: false },
-  { src: "/images/ChatGPT Image May 13, 2026, 06_52_47 PM.png", label: "Pongal",   tall: false },
-  { src: "/images/ChatGPT Image May 13, 2026, 06_52_44 PM.png", label: "Vadai",    tall: true  },
-  { src: "/images/ChatGPT Image May 13, 2026, 06_59_55 PM.png", label: "Thali",    tall: false },
+  { src: "/images/ChatGPT Image May 13, 2026, 06_57_32 PM.png", label: "Biryani", tall: true },
+  { src: "/images/ChatGPT Image May 13, 2026, 06_52_38 PM.png", label: "Idly", tall: false },
+  { src: "/images/ChatGPT Image May 13, 2026, 06_52_47 PM.png", label: "Pongal", tall: false },
+  { src: "/images/ChatGPT Image May 13, 2026, 06_52_44 PM.png", label: "Vadai", tall: true },
+  { src: "/images/ChatGPT Image May 13, 2026, 06_59_55 PM.png", label: "Meals", tall: false },
   { src: "/images/rava-dosa.png", label: "Rava Dosa", tall: true },
 ];
 
