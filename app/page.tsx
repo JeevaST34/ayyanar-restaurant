@@ -4,7 +4,7 @@ import Stats from '../components/Stats';
 import About from '../components/About';
 import SignatureDishes from '../components/SignatureDishes';
 import Menu from '../components/Menu';
-// import ReservationCTA from '../components/ReservationCTA';
+// import ReservationCTA from '../components/ReservationCTA'; 
 import Gallery from '../components/Gallery';
 import InstagramFeed from '../components/InstagramFeed';
 import InstagramReels from '../components/InstagramReels';
