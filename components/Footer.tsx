@@ -30,9 +30,7 @@ export default function Footer() {
     {
       heading: "Contact",
       links: [
-        { label: "11 Veerasamy Rd", href: "#contact" },
-        { label: "Sri Veeramakaliamman Temple", href: "#contact" },
-        { label: "Singapore 207319", href: "#contact" },
+        { label: "11 Veerasamy Rd , Sri Veeramakaliamman Temple, Singapore 207319", href: "#contact" },
         { label: "+65 8335 6561", href: "tel:+6598650140" },
         { label: "ayyanarrestaurant2026@gmail.com", href: "mailto:ayyanarrestaurant2026@gmail.com" },
       ],

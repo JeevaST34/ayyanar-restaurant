@@ -4,24 +4,24 @@ import { motion } from "framer-motion";
 
 const specials = [
   {
-    title: "Banana Leaf Thali",
-    description: "A full celebration of South Indian hospitality — layered rice, curries, chutneys, and gilded spice on a fresh banana leaf.",
-    price: "$ 42",
-    image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=80",
-    badge: "Chef's Favourite",
+    title: "Mutton Meals",
+    description: "Our signature homestyle platter featuring slow-cooked, tender mutton curry served with aromatic rice, sambar, rasam, and seasonal sides.",
+    price: "$ 8.00",
+    image: "/images/dinner/dinner/Meals.png",
+    badge: "Chef's Special",
   },
   {
-    title: "Coastal Catch Fry",
-    description: "Fresh catch marinated in stone-ground chili and curry leaf, served crisp with lemon.",
-    price: "$ 48",
-    image: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=1200&q=80",
-    badge: "Seasonal",
+    title: "Masala Dosai",
+    description: "Crispy, golden-brown fermented rice crepe wrapped around a savory, spiced potato filling. Served with house-made chutneys and sambar.",
+    price: "$ 2.50",
+    image: "/images/dinner/dinner/masala-dosai.png",
+    badge: "Dinner Favorite",
   },
   {
-    title: "Dum Biryani Reserve",
-    description: "Seeraga samba rice layered with saffron, braised spices, and house-roasted chicken for a refined aroma.",
-    price: "$ 52",
-    image: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=1200&q=80",
+    title: "Chicken Biryani",
+    description: "Fragrant Seeraga Samba rice dum-cooked with succulent chicken, fresh mint, and our secret blend of slow-bloomed masalas.",
+    price: "$ 7.00",
+    image: "/images/ChatGPT Image May 13, 2026, 06_57_32 PM.png",
     badge: "Signature",
   },
 ];
