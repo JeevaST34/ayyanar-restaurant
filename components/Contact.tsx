@@ -10,25 +10,16 @@ export default function Contact() {
           <circle cx="12" cy="9" r="2.5" />
         </svg>
       ),
-      values: ["11 Veerasamy Rd", "Sri Veeramakaliamman Temple", "Singapore 207319"],
+      values: ["11 Veerasamy Rd,", "Singapore - 207319","Landmark:Sri Veeramakaliamman Temple"],
     },
     {
-      label: "Phone",
+      label: "Contact",
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5">
           <path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 013 5.18 2 2 0 015 3h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.91 10.09a16 16 0 006 6l1.44-1.44a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
         </svg>
       ),
-      values: ["+65 8335 6561"],
-    },
-    {
-      label: "Email",
-      icon: (
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5">
-          <path d="M4 5h16v14H4z" /><path d="M22 7L12 13 2 7" />
-        </svg>
-      ),
-      values: ["ayyanarrestaurant2026@gmail.com"],
+      values: ["+65 8335 6561", "ayyanarrestaurant2026@gmail.com"],
     },
     {
       label: "Hours",
@@ -67,20 +58,35 @@ export default function Contact() {
         <div className="grid gap-10 lg:grid-cols-[1fr_1.15fr] lg:items-start">
 
           {/* Contact cards */}
-          <MotionContainer className="grid gap-5 sm:grid-cols-2">
+          <MotionContainer className="grid gap-5">
             {contactCards.map((card) => (
               <MotionArticle
                 key={card.label}
                 className="group rounded-[24px] border border-[#bae6fd] bg-white p-7 shadow-[0_8px_24px_rgba(2,132,199,0.06)] transition duration-400 hover:border-[#7dd3fc] hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(2,132,199,0.15)] overflow-hidden"
               >
-                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-[14px] bg-[#f0f9ff] text-[#0284c7] transition-colors duration-300 group-hover:bg-[#f97316] group-hover:text-white">
-                  {card.icon}
-                </div>
-                <p className="mb-3 text-[0.65rem] font-bold tracking-[0.2em] text-[#0284c7] uppercase">{card.label}</p>
-                <div className="space-y-1.5 min-w-0">
-                  {card.values.map((v) => (
-                    <p key={v} className="text-[0.9rem] font-black text-[#075985] break-all whitespace-normal min-w-0">{v}</p>
-                  ))}
+                <div className="flex items-start gap-5">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-[14px] bg-[#f0f9ff] text-[#0284c7] transition-colors duration-300 group-hover:bg-[#f97316] group-hover:text-white">
+                    {card.icon}
+                  </div>
+                  <div className="min-w-0">
+                    <p className="mb-3 text-[0.65rem] font-bold tracking-[0.2em] text-[#0284c7] uppercase">{card.label}</p>
+                    <div className="space-y-1.5 min-w-0">
+                      {card.values.map((v) => {
+                        if (v.toLowerCase().startsWith("landmark:")) {
+                          const [prefix, ...rest] = v.split(":");
+                          return (
+                            <p key={v} className="text-[0.9rem] font-black text-[#075985] break-all whitespace-normal min-w-0">
+                              <span className="text-[#0284c7] font-bold">{prefix}:</span> {rest.join(":").trim()}
+                            </p>
+                          );
+                        }
+
+                        return (
+                          <p key={v} className="text-[0.9rem] font-black text-[#075985] break-all whitespace-normal min-w-0">{v}</p>
+                        );
+                      })}
+                    </div>
+                  </div>
                 </div>
               </MotionArticle>
             ))}

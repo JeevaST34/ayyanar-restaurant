@@ -66,18 +66,18 @@ export default function Footer() {
       <div className="absolute inset-x-0 top-0 h-1.5 bg-[#f97316]" />
 
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
-        <div className="grid gap-8 py-20 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
+        <div className="grid gap-8 py-10 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
 
           {/* Brand column */}
           <div className="lg:col-span-1">
-            <a href="#home" className="group mb-8 inline-block">
+            <a href="#home" className="group inline-block">
               <img
                 src="./images/logo-footer.svg"
                 alt="Ayyanar Restaurant"
                 className="h-16 w-auto transition duration-300 group-hover:scale-105 filter drop-shadow-[0_2px_8px_rgba(0,0,0,0.2)] brightness-0 invert"
               />
             </a>
-            <p className="mt-4 max-w-xs text-sm font-medium leading-8 text-white/80">
+            <p className="max-w-xs text-sm font-medium leading-8 text-white/80">
               Authentic South Indian dining with a polished room, generous
               hospitality, and premium service — in the heart of Singapore.
             </p>
@@ -120,7 +120,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="flex flex-col gap-6 border-t border-white/20 py-8 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-6 border-t border-white/20 py-5 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs font-semibold text-white/60">
             © 2026 Ayyanar Restaurant. All rights reserved.
           </p>
