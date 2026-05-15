@@ -27,15 +27,24 @@ export default function About() {
               />
               {/* Overlay gradient bottom */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#0284c7]/40 via-transparent to-transparent" />
+            </div>
 
-              {/* Glass info card */}
-              {/* <div className="absolute inset-x-5 bottom-5 rounded-[20px] bg-white/90 backdrop-blur-md border border-white px-6 py-5 shadow-[0_8px_32px_rgba(2,132,199,0.15)]">
-                <p className="eyebrow mb-2">House Promise</p>
-                <p className="text-[0.8rem] font-medium leading-7 text-[#0369a1]">
-                  Traditional recipes, composed plating, attentive service — and
-                  the comfort of a generous South Indian table.
-                </p>
-              </div> */}
+            {/* Floating smaller images */}
+            <div className="absolute -bottom-10 -right-6 flex items-end gap-4">
+              <div className="h-44 w-44 overflow-hidden rounded-[24px] border-[6px] border-[#bae6fd] shadow-[0_16px_32px_rgba(2,132,199,0.2)]">
+                <MotionImage
+                  src="/images/shop-interior-1.png"
+                  alt="Ayyanar Restaurant interior"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="h-36 w-36 overflow-hidden rounded-[24px] border-[6px] border-[#bae6fd] shadow-[0_16px_32px_rgba(2,132,199,0.2)]">
+                <MotionImage
+                  src="/images/shop-interior-2.png"
+                  alt="Ayyanar Restaurant seating"
+                  className="h-full w-full object-cover"
+                />
+              </div>
             </div>
           </div>
 
