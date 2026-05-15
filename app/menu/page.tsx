@@ -133,7 +133,7 @@ const imageCards = [
   // },
   {
     label: "Vadai",
-    src: "/images/ChatGPT Image May 13, 2026, 06_52_44 PM.png",
+    src: "/images/vadai.png",
   },
   // {
   //   label: "Bonda",
@@ -209,7 +209,7 @@ const imageCards = [
   },
   {
     label: "Ven Pongal",
-    src: "/images/ChatGPT Image May 13, 2026, 06_52_47 PM.png",
+    src: "/images/pongal.png",
   },
   {
     label: "Poori",

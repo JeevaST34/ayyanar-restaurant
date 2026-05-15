@@ -4,22 +4,22 @@ const dishes = [
   {
     name: "Chicken Biryani", price: "$ 7.00",
     description: "Dum-cooked seeraga samba rice, tender chicken, mint, and slow-bloomed masala.",
-    image: "/images/ChatGPT Image May 13, 2026, 06_57_32 PM.png",
+    image: "/images/chicken-biryani.png",
   },
   {
     name: "Chicken Fried Rice", price: "$ 6.00",
     description: "Fragrant rice stir-fried with succulent chicken, vibrant vegetables, and aromatic spices.",
-    image: "/images/ChatGPT Image May 13, 2026, 07_04_58 PM.png",
+    image: "/images/chicken-fried-rice.png",
   },
   {
     name: "Meals Special", price: "$ 5.00",
     description: "A proper banana-leaf style spread with sambar, rasam, kootu, poriyal, and curd.",
-    image: "/images/ChatGPT Image May 13, 2026, 06_59_55 PM.png",
+    image: "/images/veg-meals.png",
   },
   {
     name: "Fish Biryani", price: "$ 8.00",
     description: "Dum-cooked seeraga samba rice, marinated fish, mint, and slow-bloomed masala.",
-    image: "/images/ChatGPT Image May 13, 2026, 07_08_16 PM.png",
+    image: "/images/fish-biryani.png",
   },
 ];
 

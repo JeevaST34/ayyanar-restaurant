@@ -3,12 +3,12 @@ import { MotionImage, MotionSection } from "./Animated";
 // Each item has a CSS class name for explicit bento placement at lg breakpoint
 const images = [
   {
-    src: "/images/ChatGPT Image May 13, 2026, 06_57_32 PM.png",
-    label: "Biryani",
+    src: "/images/chicken-biryani.png",
+    label: "Chicken Biryani",
     cls: "gi-biryani",
   },
   {
-    src: "/images/ChatGPT Image May 13, 2026, 06_52_47 PM.png",
+    src: "/images/pongal.png",
     label: "Pongal",
     cls: "gi-pongal",
   },
@@ -18,17 +18,17 @@ const images = [
     cls: "gi-rava-dosa",
   },
   {
-    src: "/images/ChatGPT Image May 13, 2026, 06_52_38 PM.png",
+    src: "/images/idly.png",
     label: "Idly",
     cls: "gi-idly",
   },
   {
-    src: "/images/ChatGPT Image May 13, 2026, 06_52_44 PM.png",
+    src: "/images/vadai.png",
     label: "Vadai",
     cls: "gi-vadai",
   },
   {
-    src: "/images/ChatGPT Image May 13, 2026, 06_59_55 PM.png",
+    src: "/images/veg-meals.png",
     label: "Meals",
     cls: "gi-meals",
   },

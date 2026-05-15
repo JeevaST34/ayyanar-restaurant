@@ -21,7 +21,7 @@ const specials = [
     title: "Chicken Biryani",
     description: "Fragrant Seeraga Samba rice dum-cooked with succulent chicken, fresh mint, and our secret blend of slow-bloomed masalas.",
     price: "$ 7.00",
-    image: "/images/ChatGPT Image May 13, 2026, 06_57_32 PM.png",
+    image: "/images/chicken-biryani.png",
     badge: "Signature",
   },
 ];
@@ -67,12 +67,12 @@ export default function ChefSpecials() {
                   className="h-full w-full object-cover transition duration-600 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0284c7]/50 via-transparent to-transparent opacity-80" />
-                
+
                 {/* Badge */}
                 <span className="absolute left-5 top-5 rounded-full bg-white/95 backdrop-blur-md px-4 py-2 text-[0.65rem] font-black tracking-[0.2em] text-[#0284c7] uppercase shadow-[0_4px_16px_rgba(0,0,0,0.15)]">
                   {item.badge}
                 </span>
-                
+
                 {/* Price */}
                 <span className="absolute bottom-5 right-5 rounded-full bg-[#f97316] px-5 py-2 text-[0.9rem] font-black text-white shadow-[0_4px_20px_rgba(249,115,22,0.6)]">
                   {item.price}
@@ -87,7 +87,7 @@ export default function ChefSpecials() {
                   {item.title}
                 </h3>
                 <p className="mt-3 flex-1 text-[0.9rem] font-medium leading-7 text-[#0369a1]">{item.description}</p>
-                
+
                 <div className="mt-8 flex items-center gap-3 border-t border-[#bae6fd] pt-6">
                   <span className="h-2 w-2 rounded-full bg-[#f97316]" />
                   <span className="text-[0.65rem] font-bold tracking-[0.24em] text-[#0284c7] uppercase">
