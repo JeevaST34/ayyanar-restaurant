@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MotionLink } from "./Animated";
+// import { MotionLink } from "./Animated";
 
 export default function Hero() {
   return (
