@@ -124,13 +124,13 @@ export default function Footer() {
           <p className="text-xs font-semibold text-white/60">
             © 2026 Ayyanar Restaurant. All rights reserved.
           </p>
-          <div className="flex items-center gap-6">
-            {/* <a href="#" className="text-xs font-semibold text-white/60 transition hover:text-white">
+          {/* <div className="flex items-center gap-6">
+            <a href="#" className="text-xs font-semibold text-white/60 transition hover:text-white">
               Privacy Policy
             </a>
             <a href="#" className="text-xs font-semibold text-white/60 transition hover:text-white">
               Terms of Use
-            </a> */}
+            </a>
             <a
               href="https://wa.me/6598650140"
               target="_blank"
@@ -139,7 +139,7 @@ export default function Footer() {
             >
               WhatsApp Us
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
