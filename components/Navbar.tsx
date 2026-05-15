@@ -35,7 +35,7 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4 sm:px-8 lg:px-10">
         <a href="#home" className="group flex items-center gap-3 shrink-0">
           <img
-            src="https://res.cloudinary.com/dxfk1lmpg/image/upload/v1778580920/ChatGPT_Image_May_12_2026_03_35_27_PM_1_lrummf.svg"
+            src="./images/Logo.svg"
             alt="Ayyanar Restaurant Logo"
             className="h-14 w-auto transition duration-300 group-hover:scale-105"
           />
