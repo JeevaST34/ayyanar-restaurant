@@ -1,12 +1,12 @@
 import { MotionContainer, MotionImage, MotionLink, MotionSection } from "./Animated";
 
 const posts = [
-  { image: "/images/dishes/Chicken-uppu-kari.jfif",  label: "Chicken Uppu Kari", likes: 245 },
-  { image: "/images/dishes/Egg-masala.png",           label: "Egg Masala",        likes: 189 },
-  { image: "/images/dishes/fish-fry.jfif",            label: "Fish Fry",          likes: 312 },
-  { image: "/images/dishes/mutton-nalli.png",         label: "Mutton Nalli",      likes: 156 },
-  { image: "/images/dishes/crab-masala.jfif",         label: "Crab Masala",       likes: 278 },
-  { image: "/images/dishes/pepperchicken.jfif",       label: "Pepper Chicken",    likes: 334 },
+  { image: "/images/dishes/Chicken-uppu-kari.jfif", label: "Chicken Uppu Kari", likes: 245 },
+  { image: "/images/dishes/Egg-masala.png", label: "Egg Masala", likes: 189 },
+  { image: "/images/dishes/fish-fry.jfif", label: "Fish Fry", likes: 312 },
+  { image: "/images/dishes/mutton-nalli.png", label: "Mutton Nalli", likes: 156 },
+  { image: "/images/dishes/crab-masala.jfif", label: "Crab Masala", likes: 278 },
+  { image: "/images/dishes/pepperchicken.jfif", label: "Pepper Chicken", likes: 334 },
 ];
 
 export default function InstagramFeed() {
@@ -41,12 +41,12 @@ export default function InstagramFeed() {
               href="https://instagram.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary shrink-0"
+              className="btn-primary shrink-0 w-fit"
             >
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="h-4 w-4">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                <circle cx="12" cy="12" r="4"/>
-                <circle cx="17.5" cy="6.5" r="0.7" fill="currentColor" stroke="none"/>
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="0.7" fill="currentColor" stroke="none" />
               </svg>
               Follow Us
             </a>
