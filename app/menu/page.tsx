@@ -121,24 +121,12 @@ const imageCards = [
   },
   {
     label: "Rava Dosai",
-    src: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    label: "Rava Dosai",
     src: "/images/rava-dosa.png",
   },
-  // {
-  //   label: "Suzhiyam",
-  //   src: "https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=1200&q=80",
-  // },
   {
     label: "Vadai",
     src: "/images/vadai.png",
   },
-  // {
-  //   label: "Bonda",
-  //   src: "https://images.unsplash.com/photo-1564758866814-11699448dfbb?auto=format&fit=crop&w=1200&q=80",
-  // },
   {
     label: "Samosa",
     src: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=80",
@@ -151,13 +139,9 @@ const imageCards = [
     label: "Bun Butter",
     src: "/images/test 4/bun butter.png",
   },
-  // {
-  //   label: "Sundal",
-  //   src: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
-  // },
   {
     label: "Pepper Chicken",
-    src: "/images/dishes/pepperchicken.jfif",
+    src: "/images/dishes/pepperchicken.jpg",
   },
   {
     label: "Mutton Gravy",
@@ -165,11 +149,11 @@ const imageCards = [
   },
   {
     label: "Crab Masala",
-    src: "/images/dishes/crab-masala.jfif",
+    src: "/images/dishes/crab-masala.jpg",
   },
   {
     label: "Fish Curry",
-    src: "/images/dishes/fish-fry.jfif",
+    src: "/images/dishes/fish-fry.jpg",
   },
   {
     label: "Mutton Nalli",
@@ -181,11 +165,11 @@ const imageCards = [
   },
   {
     label: "Chicken Uppu Kari",
-    src: "/images/dishes/Chicken-uppu-kari.jfif",
+    src: "/images/dishes/Chicken-uppu-kari.jpg",
   },
   {
     label: "Chettinad Chicken",
-    src: "/images/dishes/chettinad-masala.jfif",
+    src: "/images/dishes/chettinad-masala.jpg",
   },
   {
     label: "Mutton Bone Soup",
@@ -193,7 +177,7 @@ const imageCards = [
   },
   {
     label: "Prawn Masala",
-    src: "/images/dishes/prawn-masala.jfif",
+    src: "/images/dishes/prawn-masala.jpg",
   },
   {
     label: "Set Meals",
@@ -291,7 +275,7 @@ export default function MenuPage() {
                       key={item.name}
                       className="rounded-[20px] border border-[#bae6fd] bg-[#f0f9ff] p-5 shadow-sm transition hover:border-[#7dd3fc] hover:bg-white"
                     >
-                      <div className="flex items-start justify-between gap-4">
+                      <div className="flex items-center justify-between gap-4">
                         <div>
                           <h3 className="text-[1.05rem] font-black text-[#075985]" style={{ fontFamily: "var(--font-heading), 'Playfair Display', serif" }}>
                             {item.name}
@@ -348,7 +332,7 @@ export default function MenuPage() {
                     key={image.label}
                     className="overflow-hidden rounded-[20px] bg-[#f0f9ff]"
                   >
-                    <img
+                    <MotionImage
                       src={image.src}
                       alt={image.label}
                       className="h-32 w-full object-cover transition duration-300 hover:scale-105"
