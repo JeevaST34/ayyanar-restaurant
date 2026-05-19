@@ -217,8 +217,8 @@ export default function MenuPage() {
 
   return (
     <div className="min-h-screen bg-[#f0f9ff] text-[#075985]">
-      <div className="mx-auto max-w-[90rem] px-4 py-10 sm:px-6 lg:px-8">
-        <MotionSection className="mb-12 flex flex-col gap-6 rounded-[32px] border border-[#bae6fd] bg-white/90 p-8 shadow-[0_20px_60px_rgba(2,132,199,0.08)] sm:p-12">
+      <div className="mx-auto max-w-[90rem] overflow-x-hidden px-3 py-8 sm:px-6 sm:py-10 lg:px-8">
+        <MotionSection className="mb-10 flex flex-col gap-6 rounded-[32px] border border-[#bae6fd] bg-white/90 p-5 shadow-[0_20px_60px_rgba(2,132,199,0.08)] sm:mb-12 sm:p-12">
           <div className="space-y-4">
             <p className="text-xs font-black tracking-[0.28em] text-[#f97316] uppercase">
               Full Menu
@@ -248,10 +248,10 @@ export default function MenuPage() {
         </MotionSection>
 
         {/* Tab Navigation */}
-        <div className="mb-8 flex gap-3">
+        <div className="mb-8 flex flex-col gap-3 sm:flex-row">
           <button
             onClick={() => setActiveView("menu")}
-            className={`rounded-full px-8 py-3 text-[0.85rem] font-black tracking-wide transition-all duration-300 ${activeView === "menu"
+            className={`w-full rounded-full px-5 py-3 text-[0.8rem] font-black tracking-wide transition-all duration-300 sm:w-auto sm:px-8 sm:text-[0.85rem] ${activeView === "menu"
               ? "bg-[#0284c7] text-white shadow-[0_6px_20px_rgba(2,132,199,0.30)]"
               : "bg-white border-2 border-[#bae6fd] text-[#0369a1] hover:border-[#7dd3fc] hover:text-[#0284c7] shadow-sm"
               }`}
@@ -260,7 +260,7 @@ export default function MenuPage() {
           </button>
           <button
             onClick={() => setActiveView("monthly")}
-            className={`rounded-full px-8 py-3 text-[0.85rem] font-black tracking-wide transition-all duration-300 ${activeView === "monthly"
+            className={`w-full rounded-full px-5 py-3 text-[0.8rem] font-black tracking-wide transition-all duration-300 sm:w-auto sm:px-8 sm:text-[0.85rem] ${activeView === "monthly"
               ? "bg-[#0284c7] text-white shadow-[0_6px_20px_rgba(2,132,199,0.30)]"
               : "bg-white border-2 border-[#bae6fd] text-[#0369a1] hover:border-[#7dd3fc] hover:text-[#0284c7] shadow-sm"
               }`}
@@ -546,19 +546,19 @@ export default function MenuPage() {
 
           </div>
         ) : (
-          <div className="grid gap-6 xl:grid-cols-[0.95fr_0.5fr]">
-            <MotionContainer className="space-y-6">
+          <div className="grid gap-6 xl:grid-cols-[minmax(0,1fr)_minmax(0,0.52fr)]">
+            <MotionContainer className="min-w-0 space-y-6">
               {menuCategories.map((category) => (
                 <MotionArticle
                   key={category.title}
-                  className="card-surface p-6 md:p-8"
+                  className="card-surface min-w-0 p-4 sm:p-6 md:p-8"
                 >
                   <div className="mb-6 flex items-center justify-between gap-4 border-b border-[#bae6fd] pb-5">
                     <h2 className="text-[1.75rem] font-black text-[#075985]" style={{ fontFamily: "var(--font-heading), 'Playfair Display', serif" }}>{category.title}</h2>
                     <span className="h-1 w-16 rounded-full bg-[#f97316]" />
                   </div>
                   <div
-                    className={`grid gap-4 ${category.title === "Hot Drinks" || category.title === "Cold Drinks"
+                    className={`grid min-w-0 gap-4 ${category.title === "Hot Drinks" || category.title === "Cold Drinks"
                       ? "lg:grid-cols-2"
                       : "sm:grid-cols-2"
                       }`}
@@ -566,12 +566,12 @@ export default function MenuPage() {
                     {category.items.map((item) => (
                       <div
                         key={item.name}
-                        className="rounded-[20px] border border-[#bae6fd] bg-[#f0f9ff] p-4 shadow-sm transition hover:border-[#7dd3fc] hover:bg-white"
+                        className="min-w-0 rounded-[20px] border border-[#bae6fd] bg-[#f0f9ff] p-4 sm:p-5 shadow-sm transition hover:border-[#7dd3fc] hover:bg-white"
                       >
                         <div
-                          className={`flex gap-4 ${category.title === "Hot Drinks" || category.title === "Cold Drinks"
-                            ? "items-start justify-between"
-                            : "items-center justify-between"
+                          className={`flex min-w-0 gap-3 sm:gap-4 ${category.title === "Hot Drinks" || category.title === "Cold Drinks"
+                            ? "items-center max-[420px]:flex-col max-[420px]:items-start"
+                            : "items-center max-[420px]:flex-col max-[420px]:items-start"
                             }`}
                         >
                           <div className="min-w-0 flex-1">
@@ -579,7 +579,7 @@ export default function MenuPage() {
                               {item.name}
                             </h3>
                           </div>
-                          <span className="inline-flex min-w-[4.25rem] shrink-0 items-center justify-end whitespace-nowrap rounded-full border border-[#bae6fd] bg-white px-3 py-1 text-right text-sm font-black leading-5 text-[#f97316] shadow-sm">
+                          <span className="ml-auto inline-flex min-w-0 max-w-full shrink-0 items-center justify-end whitespace-nowrap rounded-full border border-[#bae6fd] bg-white px-2.5 py-1 text-right text-[0.85rem] font-black leading-5 text-[#f97316] shadow-sm max-[420px]:self-end sm:min-w-[4.25rem] sm:px-3 sm:text-sm">
                             {item.price}
                           </span>
                         </div>
@@ -590,7 +590,7 @@ export default function MenuPage() {
               ))}
             </MotionContainer>
 
-            <aside className="space-y-6">
+            <aside className="min-w-0 space-y-6">
               <section className="card-surface overflow-hidden rounded-[32px] border border-[#bae6fd] bg-white">
                 <div className="bg-gradient-to-r from-[#38bdf8] to-[#0284c7] px-6 py-5 text-white">
                   <h2 className="text-2xl font-black text-white" style={{ fontFamily: "var(--font-heading), 'Playfair Display', serif" }}>Hot Drinks</h2>
