@@ -52,10 +52,10 @@ export const fullMenuCategories: MenuCategory[] = [
   {
     title: "Curries",
     items: [
-      { name: "Chicken with Curry", price: "$ 3.50" },
-      { name: "Mutton with Curry", price: "$ 4.50" },
-      { name: "Fish with Curry", price: "$ 4.50" },
-      { name: "Egg with Curry", price: "$ 1.00" },
+      { name: "Chicken Curry", price: "$ 3.50" },
+      { name: "Mutton Curry", price: "$ 4.50" },
+      { name: "Fish Curry", price: "$ 4.50" },
+      { name: "Egg Curry", price: "$ 1.00" },
     ],
   },
   {

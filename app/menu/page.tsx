@@ -602,7 +602,7 @@ export default function MenuPage() {
                   {imageCards.slice(0, 6).map((image) => (
                     <figure
                       key={image.label}
-                      className="overflow-hidden rounded-[12px] bg-[#f0f9ff]"
+                      className="overflow-hidden rounded-[12px]"
                     >
                       <MotionImage
                         src={image.src}
@@ -628,7 +628,7 @@ export default function MenuPage() {
                   {imageCards.slice(8).map((image) => (
                     <figure
                       key={image.label}
-                      className="overflow-hidden rounded-[12px] bg-[#f0f9ff]"
+                      className="overflow-hidden rounded-[12px]"
                     >
                       <MotionImage
                         src={image.src}
