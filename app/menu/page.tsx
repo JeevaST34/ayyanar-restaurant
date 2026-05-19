@@ -54,18 +54,18 @@ const commonBreakfast = [
   "3 Idly + 1 Vadai + Tea/Coffee",
   "Lemon Rice + Tea/Coffee",
   "Pepper Rice + Tea/Coffee",
-  "Kozhukattai + Tea/Coffee",
+  "Koozh + Tea/Coffee",
   "Puttu + Tea/Coffee",
-  "2 Uttappam",
+  "2 Uthappam",
   "2 Dosa",
   "2 Poori",
 ];
 
 const commonDinner = [
-  "3 Chapati",
+  "3 Chapathi",
   "4 Idly",
   "2 Poratta",
-  "2 Uttappam",
+  "2 Uthappam",
   "2 Dosa",
   "OR",
   "Rice",

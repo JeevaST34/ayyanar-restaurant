@@ -16,7 +16,7 @@ export const fullMenuCategories: MenuCategory[] = [
     items: [
       { name: "Idly", price: "$ 0.80 / per pc" },
       { name: "Pongal", price: "$ 1.50 / per box" },
-      { name: "Pongal", price: "$ 2.00 / dine in" },
+      { name: "Ven Pongal", price: "$ 2.00 / dine in" },
       { name: "Dosa", price: "$ 1.50 / per pc" },
       { name: "Rava Dosa", price: "$ 2.50 / per pc" },
       { name: "Egg Dosa", price: "$ 2.50 / per pc" },
