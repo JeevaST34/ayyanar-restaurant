@@ -6,7 +6,7 @@ const specials = [
   {
     title: "Mutton Meals",
     description: "Our signature homestyle platter featuring slow-cooked, tender mutton curry served with aromatic rice, sambar, rasam, and seasonal sides.",
-    price: "$ 8.00",
+    price: "$ 7.50",
     image: "/images/dinner/dinner/Meals.png",
     badge: "Chef's Special",
   },

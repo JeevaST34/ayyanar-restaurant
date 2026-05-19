@@ -1,12 +1,12 @@
 import { MotionContainer, MotionImage, MotionLink, MotionSection } from "./Animated";
 
 const posts = [
-  { image: "/images/dishes/Chicken-uppu-kari.jpg", label: "Chicken Uppu Kari", likes: 245 },
-  { image: "/images/dishes/Egg-masala.png", label: "Egg Masala", likes: 189 },
-  { image: "/images/dishes/fish-fry.jpg", label: "Fish Fry", likes: 312 },
-  { image: "/images/dishes/mutton-nalli.png", label: "Mutton Nalli", likes: 156 },
-  { image: "/images/dishes/crab-masala.jpg", label: "Crab Masala", likes: 278 },
-  { image: "/images/dishes/pepperchicken.jpg", label: "Pepper Chicken", likes: 334 },
+  { image: "/images/dishes/Chicken-uppu-kari.jpg", label: "Chicken Curry", likes: 245 },
+  { image: "/images/dishes/Egg-masala.png", label: "Egg Curry", likes: 189 },
+  { image: "/images/dishes/fish-fry.jpg", label: "Fish Curry", likes: 312 },
+  { image: "/images/dishes/mutton-gravy.png", label: "Mutton Curry", likes: 156 },
+  { image: "/images/chicken-fried-rice.png", label: "Chicken Fried Rice", likes: 278 },
+  { image: "/images/fish-meal.png", label: "Fish Meal", likes: 334 },
 ];
 
 export default function InstagramFeed() {

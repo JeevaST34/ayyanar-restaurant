@@ -1,10 +1,10 @@
 import { MotionContainer, MotionImage, MotionLink, MotionSection } from "./Animated";
 
 const reels = [
-  { thumbnail: "/images/dishes/Mutton-bone-Soup.png", title: "Mutton Bone Soup", views: "12.5K", duration: "0:45" },
-  { thumbnail: "/images/dishes/chettinad-masala.jpg", title: "Chettinad Masala", views: "8.9K", duration: "1:12" },
-  { thumbnail: "/images/dishes/prawn-masala.jpg", title: "Prawn Masala", views: "15.2K", duration: "0:58" },
-  { thumbnail: "/images/dishes/mutton-gravy.png", title: "Mutton Gravy", views: "6.7K", duration: "2:15" },
+  { thumbnail: "/images/dishes/mutton-gravy.png", title: "Mutton Curry", views: "12.5K", duration: "0:45" },
+  { thumbnail: "/images/prawn-briyani.png", title: "Prawn Briyani", views: "15.2K", duration: "0:58" },
+  { thumbnail: "/images/dishes/Chicken-uppu-kari.jpg", title: "Chettinad Curry", views: "8.9K", duration: "1:12" },
+  { thumbnail: "/images/fish-biryani.png", title: "Fish Briyani", views: "6.7K", duration: "2:15" },
 ];
 
 export default function InstagramReels() {

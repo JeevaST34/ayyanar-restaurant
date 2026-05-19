@@ -2,50 +2,7 @@
 
 import { useState } from "react";
 import { MotionArticle, MotionLink, MotionSection } from "./Animated";
-
-const menuCategories = [
-  {
-    title: "Breakfast", note: "Light South Indian favorites to start your day.",
-    items: [
-      { name: "Idly", price: "$ 0.80", description: "Steamed rice cakes served with chutney and sambar." },
-      { name: "Vadai", price: "$ 0.80", description: "Crispy lentil donuts with a peppery crunch." },
-      { name: "Pongal", price: "$ 2.00", description: "Creamy rice and lentil porridge with ghee." },
-      { name: "Poori (2 pcs)", price: "$ 2.00", description: "Fluffy fried bread with potato masala." },
-      { name: "Kal Dosai", price: "$ 1.50", description: "Thin crispy dosa with savory coconut chutney." },
-      { name: "Variety Rice", price: "$ 1.50", description: "Seasoned rice with peas, carrots and spices." },
-    ],
-  },
-  {
-    title: "Lunch", note: "Hearty midday meals for every appetite.",
-    items: [
-      { name: "Veg Meals", price: "$ 5.00", description: "Rice, curry, sambar, rasam, poriyal and appalam." },
-      { name: "Chicken Meals", price: "$ 7.00", description: "Homestyle chicken curry with rice and sides." },
-      { name: "Mutton Meals", price: "$ 8.00", description: "Slow-cooked mutton curry with steamed rice." },
-      { name: "Fish Meals", price: "$ 8.00", description: "Tangy fish curry with rice and accompaniments." },
-    ],
-  },
-  {
-    title: "Dinner", note: "Classic dinner plates and dosas served warm.",
-    items: [
-      { name: "Idly", price: "$ 0.80", description: "Soft steamed rice cakes with sambar." },
-      { name: "Podi Idly", price: "$ 3.00", description: "Idly tossed in spiced lentil powder." },
-      { name: "Masala Dosai", price: "$ 2.50", description: "Golden dosa wrapped around potato masala." },
-      { name: "Onion Dosai", price: "$ 2.50", description: "Dosa studded with caramelized onions." },
-      { name: "Podi Dosai", price: "$ 2.00", description: "Dosa served with spicy podi and ghee." },
-      { name: "Vendhaya Keerai Dosai", price: "$ 2.50", description: "Fenugreek dosa with a fragrant green hue." },
-    ],
-  },
-  {
-    title: "Hot Drinks", note: "Comforting beverages to pair with every plate.",
-    items: [
-      { name: "Tea", price: "$ 1.00", description: "Strong brewed tea with milk." },
-      { name: "Masala Tea", price: "$ 1.00", description: "Tea spiced with cardamom and ginger." },
-      { name: "Coffee", price: "$ 1.50", description: "Rich South Indian filter coffee." },
-      { name: "Horlicks Hot", price: "$ 1.50", description: "Warm malted drink with milk." },
-      { name: "Milo Hot", price: "$ 1.50", description: "Chocolate malt beverage served hot." },
-    ],
-  },
-];
+import { previewMenuCategories as menuCategories } from "../data/menu";
 
 const tabs = ["Breakfast", "Lunch", "Dinner", "Hot Drinks"];
 

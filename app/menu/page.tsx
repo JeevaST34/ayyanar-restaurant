@@ -5,11 +5,11 @@ import { Sun, Moon, UtensilsCrossed, CheckCircle2 } from "lucide-react";
 import {
   MotionArticle,
   MotionContainer,
-  MotionDiv,
   MotionImage,
   MotionLink,
   MotionSection,
 } from "../../components/Animated";
+import { fullMenuCategories as menuCategories } from "../../data/menu";
 
 const weeklyMealPlan = [
   {
@@ -74,89 +74,7 @@ const commonDinner = [
   "Rasam",
 ];
 
-const menuCategories = [
-  {
-    title: "Breakfast",
-    items: [
-      { name: "Idly", price: "$ 0.80" },
-      { name: "Vadai", price: "$ 0.80" },
-      { name: "Pongal", price: "$ 2.00" },
-      { name: "Poori (2 pcs)", price: "$ 2.00" },
-      { name: "Kal Dosai", price: "$ 1.50" },
-      { name: "Variety Rice", price: "$ 1.50" },
-    ],
-  },
-  {
-    title: "Lunch",
-    items: [
-      { name: "Veg Meals", price: "$ 5.00" },
-      { name: "Chicken Meals", price: "$ 7.00" },
-      { name: "Mutton Meals", price: "$ 8.00" },
-      { name: "Fish Meals", price: "$ 8.00" },
-    ],
-  },
-  {
-    title: "Biryani",
-    items: [
-      { name: "Egg Biriyani", price: "$ 5.00" },
-      { name: "Chicken Biriyani", price: "$ 7.00" },
-      { name: "Mutton Biriyani", price: "$ 8.00" },
-      { name: "Fish Biriyani", price: "$ 8.00" },
-    ],
-  },
-  {
-    title: "Dinner",
-    items: [
-      { name: "Idly", price: "$ 0.80" },
-      { name: "Podi Idly", price: "$ 3.00" },
-      { name: "Dosai", price: "$ 1.50" },
-      { name: "Masala Dosai", price: "$ 2.50" },
-      { name: "Onion Dosai", price: "$ 2.50" },
-      { name: "Podi Dosai", price: "$ 2.00" },
-      { name: "Onion Podi Dosai", price: "$ 2.50" },
-      { name: "Vendhaya Keerai Dosai", price: "$ 2.50" },
-      { name: "Kal Dosai", price: "$ 1.50" },
-    ],
-  },
-  {
-    title: "Dinner Specials",
-    items: [
-      { name: "Egg Dosai", price: "$ 2.50" },
-      { name: "Rava Dosai", price: "$ 2.50" },
-      { name: "Rava Onion Dosai", price: "$ 3.00" },
-      { name: "Uthappam", price: "$ 2.00" },
-      { name: "Onion Uthappam", price: "$ 2.50" },
-      { name: "Onion Podi Uthappam", price: "$ 3.00" },
-      { name: "Ghee Roast", price: "$ 4.00" },
-      { name: "Parotta (2 pcs)", price: "$ 3.00" },
-      { name: "Kothu Parotta", price: "$ 6.00" },
-      { name: "Chapathi (2 pcs)", price: "$ 2.50" },
-      { name: "Veg Fried Rice", price: "$ 5.00" },
-      { name: "Egg Fried Rice", price: "$ 6.00" },
-      { name: "Chicken Fried Rice", price: "$ 6.00" },
-    ],
-  },
-  {
-    title: "Egg Special",
-    items: [
-      { name: "Omelette", price: "$ 2.00" },
-      { name: "Half Boil", price: "$ 1.00" },
-      { name: "Egg Podi Mass", price: "$ 2.50" },
-      { name: "Egg Kalaki", price: "$ 2.00" },
-    ],
-  },
-  {
-    title: "Hot Drinks",
-    items: [
-      { name: "Tea", price: "$ 1.00" },
-      { name: "Masala Tea", price: "$ 1.00" },
-      { name: "Coffee", price: "$ 1.50" },
-      { name: "Horlicks Hot", price: "$ 1.50" },
-      { name: "Milo Hot", price: "$ 1.50" },
-      { name: "Boost", price: "$ 1.50" },
-    ],
-  },
-];
+
 
 const imageCards = [
   {
@@ -196,56 +114,56 @@ const imageCards = [
     src: "/images/vadai.png",
   },
   {
-    label: "Samosa",
-    src: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=80",
+    label: "Koozh",
+    src: "/images/koozh.png",
   },
   {
-    label: "Puffs",
-    src: "/images/test 4/puffs.png",
+    label: "Puttu",
+    src: "/images/puttu.png",
   },
   {
-    label: "Bun Butter",
-    src: "/images/test 4/bun butter.png",
+    label: "Rava Dosai",
+    src: "/images/rava-dosa.png",
   },
   {
-    label: "Pepper Chicken",
-    src: "/images/dishes/pepperchicken.jpg",
+    label: "Mutton Biryani",
+    src: "/images/mutton-briyani.png",
   },
   {
-    label: "Mutton Gravy",
+    label: "Mutton Curry",
     src: "/images/dishes/mutton-gravy.png",
   },
   {
-    label: "Crab Masala",
-    src: "/images/dishes/crab-masala.jpg",
+    label: "Coconut Rice",
+    src: "/images/cocunt-rice.png",
   },
   {
     label: "Fish Curry",
     src: "/images/dishes/fish-fry.jpg",
   },
   {
-    label: "Mutton Nalli",
-    src: "/images/dishes/mutton-nalli.png",
+    label: "Fish Briyani",
+    src: "/images/fish-biryani.png",
   },
   {
-    label: "Egg Masala",
+    label: "Egg Curry",
     src: "/images/dishes/Egg-masala.png",
   },
   {
-    label: "Chicken Uppu Kari",
+    label: "Chicken Curry",
     src: "/images/dishes/Chicken-uppu-kari.jpg",
   },
   {
-    label: "Chettinad Chicken",
-    src: "/images/dishes/chettinad-masala.jpg",
+    label: "Mutton Briyani",
+    src: "/images/mutton-briyani.png",
   },
   {
-    label: "Mutton Bone Soup",
-    src: "/images/dishes/Mutton-bone-Soup.png",
+    label: "Prawn Briyani",
+    src: "/images/prawn-briyani.png",
   },
   {
-    label: "Prawn Masala",
-    src: "/images/dishes/prawn-masala.jpg",
+    label: "Fish Meal",
+    src: "/images/fish-meal.png",
   },
   {
     label: "Set Meals",
@@ -260,7 +178,7 @@ const imageCards = [
     src: "/images/dinner/dinner/Dosa.png",
   },
   {
-    label: "Ven Pongal",
+    label: "Pongal",
     src: "/images/pongal.png",
   },
   {
@@ -276,16 +194,17 @@ const imageCards = [
     src: "/images/dinner/dinner/masala-dosai.png",
   },
   {
-    label: "Chicken Kothu Prata",
-    src: "/images/dinner/dinner/Chicken-kothu-parotta.png",
+    label: "Pepper Rice",
+    src: "/images/pepper-rice.png",
+  },
+  
+  {
+    label: "Chicken Fried Rice",
+    src: "/images/chicken-fried-rice.png",
   },
   {
-    label: "Uthappam",
-    src: "/images/dinner/dinner/uthappam.png",
-  },
-  {
-    label: "Chicken Fried Noodles",
-    src: "/images/dinner/dinner/Chicken-fried-noodles.png",
+    label: "Omlette",
+    src: "/images/Omlette.png",
   },
   {
     label: "Parotta",
@@ -298,7 +217,7 @@ export default function MenuPage() {
 
   return (
     <div className="min-h-screen bg-[#f0f9ff] text-[#075985]">
-      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[90rem] px-4 py-10 sm:px-6 lg:px-8">
         <MotionSection className="mb-12 flex flex-col gap-6 rounded-[32px] border border-[#bae6fd] bg-white/90 p-8 shadow-[0_20px_60px_rgba(2,132,199,0.08)] sm:p-12">
           <div className="space-y-4">
             <p className="text-xs font-black tracking-[0.28em] text-[#f97316] uppercase">
@@ -627,7 +546,7 @@ export default function MenuPage() {
 
           </div>
         ) : (
-          <div className="grid gap-6 xl:grid-cols-[0.95fr_0.75fr]">
+          <div className="grid gap-6 xl:grid-cols-[0.95fr_0.5fr]">
             <MotionContainer className="space-y-6">
               {menuCategories.map((category) => (
                 <MotionArticle
@@ -638,19 +557,29 @@ export default function MenuPage() {
                     <h2 className="text-[1.75rem] font-black text-[#075985]" style={{ fontFamily: "var(--font-heading), 'Playfair Display', serif" }}>{category.title}</h2>
                     <span className="h-1 w-16 rounded-full bg-[#f97316]" />
                   </div>
-                  <div className="grid gap-4 sm:grid-cols-2">
+                  <div
+                    className={`grid gap-4 ${category.title === "Hot Drinks" || category.title === "Cold Drinks"
+                      ? "lg:grid-cols-2"
+                      : "sm:grid-cols-2"
+                      }`}
+                  >
                     {category.items.map((item) => (
                       <div
                         key={item.name}
-                        className="rounded-[20px] border border-[#bae6fd] bg-[#f0f9ff] p-5 shadow-sm transition hover:border-[#7dd3fc] hover:bg-white"
+                        className="rounded-[20px] border border-[#bae6fd] bg-[#f0f9ff] p-4 shadow-sm transition hover:border-[#7dd3fc] hover:bg-white"
                       >
-                        <div className="flex items-center justify-between gap-4">
-                          <div>
+                        <div
+                          className={`flex gap-4 ${category.title === "Hot Drinks" || category.title === "Cold Drinks"
+                            ? "items-start justify-between"
+                            : "items-center justify-between"
+                            }`}
+                        >
+                          <div className="min-w-0 flex-1">
                             <h3 className="text-[1.05rem] font-black text-[#075985]" style={{ fontFamily: "var(--font-heading), 'Playfair Display', serif" }}>
                               {item.name}
                             </h3>
                           </div>
-                          <span className="inline-flex min-w-[4.25rem] items-center justify-center whitespace-nowrap rounded-full bg-white border border-[#bae6fd] px-3 py-1 text-sm font-black text-[#f97316] shadow-sm">
+                          <span className="inline-flex min-w-[4.25rem] shrink-0 items-center justify-end whitespace-nowrap rounded-full border border-[#bae6fd] bg-white px-3 py-1 text-right text-sm font-black leading-5 text-[#f97316] shadow-sm">
                             {item.price}
                           </span>
                         </div>
@@ -673,14 +602,14 @@ export default function MenuPage() {
                   {imageCards.slice(0, 6).map((image) => (
                     <figure
                       key={image.label}
-                      className="overflow-hidden rounded-[20px] bg-[#f0f9ff]"
+                      className="overflow-hidden rounded-[12px] bg-[#f0f9ff]"
                     >
                       <MotionImage
                         src={image.src}
                         alt={image.label}
                         className="h-32 w-full object-cover transition duration-300 hover:scale-105"
                       />
-                      <figcaption className="bg-white border-t border-[#bae6fd] px-3 py-2 text-[0.8rem] font-black text-[#075985] text-center">
+                      <figcaption className="rounded-b-[20px] bg-white border-t border-[#bae6fd] px-3 py-2 text-[0.8rem] font-black text-[#075985] text-center">
                         {image.label}
                       </figcaption>
                     </figure>
@@ -699,14 +628,14 @@ export default function MenuPage() {
                   {imageCards.slice(8).map((image) => (
                     <figure
                       key={image.label}
-                      className="overflow-hidden rounded-[20px] bg-[#f0f9ff]"
+                      className="overflow-hidden rounded-[12px] bg-[#f0f9ff]"
                     >
                       <MotionImage
                         src={image.src}
                         alt={image.label}
                         className="h-32 w-full object-cover transition duration-300 hover:scale-105"
                       />
-                      <figcaption className="bg-white border-t border-[#bae6fd] px-3 py-2 text-[0.8rem] font-black text-[#075985] text-center">
+                      <figcaption className="rounded-b-[20px] bg-white border-t border-[#bae6fd] px-3 py-2 text-[0.8rem] font-black text-[#075985] text-center">
                         {image.label}
                       </figcaption>
                     </figure>

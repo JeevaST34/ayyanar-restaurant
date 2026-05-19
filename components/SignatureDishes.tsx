@@ -7,19 +7,19 @@ const dishes = [
     image: "/images/chicken-biryani.png",
   },
   {
-    name: "Chicken Fried Rice", price: "$ 6.00",
+    name: "Chicken Fried Rice", price: "$ 5.50",
     description: "Fragrant rice stir-fried with succulent chicken, vibrant vegetables, and aromatic spices.",
     image: "/images/chicken-fried-rice.png",
-  },
-  {
-    name: "Meals Special", price: "$ 5.00",
-    description: "A proper banana-leaf style spread with sambar, rasam, kootu, poriyal, and curd.",
-    image: "/images/veg-meals.png",
   },
   {
     name: "Fish Biryani", price: "$ 8.00",
     description: "Dum-cooked seeraga samba rice, marinated fish, mint, and slow-bloomed masala.",
     image: "/images/fish-biryani.png",
+  },
+  {
+    name: "Meals Special", price: "$ 5.50",
+    description: "A proper banana-leaf style spread with sambar, rasam, kootu, poriyal, and curd.",
+    image: "/images/veg-meals.png",
   },
 ];
 
