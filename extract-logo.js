@@ -1,1 +1,0 @@
-const fs=require("fs"); const p=fs.readFileSync("logo.svg","utf8"); const m=p.match(/xlink:href="data:image\/png;base64,([^"]+)"/); if(!m){console.error("no match"); process.exit(1);} fs.writeFileSync("logo.png", Buffer.from(m[1],"base64")); console.log("wrote", fs.statSync("logo.png").size);
