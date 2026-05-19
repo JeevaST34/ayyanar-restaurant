@@ -5,6 +5,7 @@ import { Sun, Moon, UtensilsCrossed, CheckCircle2 } from "lucide-react";
 import {
   MotionArticle,
   MotionContainer,
+  MotionDiv,
   MotionImage,
   MotionLink,
   MotionSection,
@@ -354,7 +355,7 @@ export default function MenuPage() {
           <div className="space-y-8">
 
             {/* HERO */}
-            <div className="relative overflow-hidden rounded-[36px] border border-sky-200 bg-gradient-to-r from-sky-50 via-white to-sky-50 p-8 md:p-12 shadow-[0_20px_60px_rgba(2,132,199,0.08)]">
+            <MotionSection className="relative overflow-hidden rounded-[36px] border border-sky-200 bg-gradient-to-r from-sky-50 via-white to-sky-50 p-8 md:p-12 shadow-[0_20px_60px_rgba(2,132,199,0.08)]">
 
               <div className="absolute top-0 right-0 h-[260px] w-[260px] rounded-full bg-sky-200/30 blur-3xl"></div>
               <div className="absolute bottom-0 left-0 h-[220px] w-[220px] rounded-full bg-sky-100/40 blur-3xl"></div>
@@ -425,13 +426,13 @@ export default function MenuPage() {
 
                 </div>
               </div>
-            </div>
+            </MotionSection>
 
             {/* BREAKFAST + DINNER */}
-            <div className="grid gap-7 lg:grid-cols-2">
+            <MotionContainer className="grid gap-7 lg:grid-cols-2">
 
               {/* BREAKFAST */}
-              <div className="relative overflow-hidden rounded-[32px] border border-sky-200 bg-white/90 p-8 shadow-[0_20px_60px_rgba(2,132,199,0.06)] backdrop-blur-xl">
+              <MotionArticle className="relative overflow-hidden rounded-[32px] border border-sky-200 bg-white/90 p-8 shadow-[0_20px_60px_rgba(2,132,199,0.06)] backdrop-blur-xl">
 
                 <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-sky-100 opacity-50"></div>
 
@@ -487,10 +488,10 @@ export default function MenuPage() {
 
                   </ul>
                 </div>
-              </div>
+              </MotionArticle>
 
               {/* DINNER */}
-              <div className="relative overflow-hidden rounded-[32px] border border-sky-200 bg-white/90 p-8 shadow-[0_20px_60px_rgba(2,132,199,0.06)] backdrop-blur-xl">
+              <MotionArticle className="relative overflow-hidden rounded-[32px] border border-sky-200 bg-white/90 p-8 shadow-[0_20px_60px_rgba(2,132,199,0.06)] backdrop-blur-xl">
 
                 <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-sky-100 opacity-50"></div>
 
@@ -547,11 +548,11 @@ export default function MenuPage() {
 
                   </ul>
                 </div>
-              </div>
-            </div>
+              </MotionArticle>
+            </MotionContainer>
 
             {/* WEEKLY PLAN */}
-            <div className="overflow-hidden rounded-[36px] border border-sky-200 bg-white shadow-[0_20px_60px_rgba(2,132,199,0.06)]">
+            <MotionSection className="overflow-hidden rounded-[36px] border border-sky-200 bg-white shadow-[0_20px_60px_rgba(2,132,199,0.06)]">
 
               {/* HEADER */}
               <div className="border-b border-sky-100 bg-gradient-to-r from-sky-50 to-white px-8 py-7">
@@ -622,7 +623,7 @@ export default function MenuPage() {
                   </div>
                 ))}
               </div>
-            </div>
+            </MotionSection>
 
           </div>
         ) : (
